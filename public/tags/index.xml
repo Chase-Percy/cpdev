@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on CP-DEV</title>
+    <link>http://www.cp-dev.tech/tags/</link>
+    <description>Recent content in Tags on CP-DEV</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>dev@cp-dev.tech (Chase Percy)</managingEditor>
+    <webMaster>dev@cp-dev.tech (Chase Percy)</webMaster><atom:link href="http://www.cp-dev.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
