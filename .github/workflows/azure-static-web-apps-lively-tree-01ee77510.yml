@@ -17,6 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          checkout: self
           lfs: true
           submodules: true
       - name: Build And Deploy
