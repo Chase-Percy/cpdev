@@ -1,4 +1,4 @@
-baseURL = 'cp-dev.tech'
+baseURL = 'https://www.cp-dev.tech/'
 languageCode = 'en-us'
 title = 'CP-DEV'
 theme = "beautifulhugo"
