@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-## A diablo inspired twin-stick shooter
+## A diablo inspired thing
 
 yep clones for days...
 
