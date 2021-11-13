@@ -9,22 +9,22 @@ pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
 [Params]
-#  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+  homeTitle = "CP-DEV" # Set a different text for the header on the home page
   subtitle = "Chase Percy"
-  mainSections = ["post","posts"]
+  mainSections = ["post"]
   logo = "img/snake.jpg" # Expecting square dimensions
   favicon = "img/s_favicon.png"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
-  comments = true
-  readingTime = true
-  wordCount = true
+#  comments = true
+#  readingTime = true
+#  wordCount = true
   useHLJS = true
   socialShare = true
   delayDisqus = true
   showRelatedPosts = true
-#  hideAuthor = true
+  hideAuthor = true
 #  gcse = " 6ac285c19fc72aacf " # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 #[[Params.bigimg]]
@@ -52,7 +52,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [[menu.main]]
     name = "About"
-    url = "page/about/"
+    url = "info/about/"
     weight = 3
 
 [[menu.main]]
@@ -63,23 +63,23 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     parent = "Projects"
     name = "Big Balls Roll"
-    url = "page/big-balls-roll"
+    url = "project/big-balls-roll"
     weight = 1
 
 [[menu.main]]
     parent = "Projects"
     name = "The Arcanist"
-    url = "page/the-arcanist"
+    url = "project/the-arcanist"
     weight = 2
 
 [[menu.main]]
     parent = "Projects"
     name = "Unix Shell"
-    url = "page/unix-shell"
+    url = "project/unix-shell"
     weight = 3
 
 [[menu.main]]
     name = "Contact Details"
-    url = "page/contact-details"
+    url = "info/contact-details"
     weight = 3
 

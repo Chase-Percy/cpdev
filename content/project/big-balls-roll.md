@@ -1,9 +1,9 @@
 ---
 title: "Big Balls Roll"
 author: "Chase Percy"
-type: ""
+type: "page"
 date: 2021-11-13T16:45:38+08:00
-subtitle: "Chase Percy"
+subtitle: "ICT289 Project"
 image: ""
 tags: []
 ---
