@@ -8,6 +8,6 @@ image: ""
 tags: []
 ---
 
-### Email: [dev@cp-dev.tech](mailto:dev@cp-dev.tech)
+### Email: [chase@cp-dev.tech](mailto:chase@cp-dev.tech)
 ### Other stuff one day...
 ![Minion](https://octodex.github.com/images/minion.png)

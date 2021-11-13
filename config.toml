@@ -27,10 +27,22 @@ pygmentsCodefencesGuessSyntax = true
   hideAuthor = true
 #  gcse = " 6ac285c19fc72aacf " # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
+#[[Params.bigimg]]
+#  src = "img/B1.jpg"
+#  desc = ""
+#[[Params.bigimg]]
+#  src = "img/B2.jpg"
+#  desc = ""
+  # position: see values of CSS background-position.
+  # position = "center top"
+#[[Params.bigimg]]
+#  src = "img/S3.jpg"
+#  desc = ""
+
 [Author]
   name = "Chase Percy"
-  website = "www.cp-dev.tech"
-  email = "dev@cp-dev.tech"
+  website = ""
+  email = "chase@cp-dev.tech"
   github = "Chase-Percy"
 
 [[menu.main]]
