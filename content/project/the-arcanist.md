@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-![cpp_logo](/img/cpp.png)
+![cpp_logo](/img/ta_icons.png)
 
 ## A diablo inspired thing
 

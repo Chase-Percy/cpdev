@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-![c_logo](/img/c_lua.png)
+![logos](/img/bbr_icons.png)
 
 ## A Marbles and monkey ball inspired game
 

@@ -8,8 +8,8 @@ image: ""
 tags: []
 ---
 
-![c_logo](/img/c.png)
+![c_logo](/img/us_icons.png)
 
-## A cool shell
+## A minimal but complete unix shell
 
 It's so coolest
