@@ -8,6 +8,8 @@ image: ""
 tags: []
 ---
 
+![c_logo](/img/c_lua.png)
+
 ## A Marbles and monkey ball inspired game
 
 This is a balls game :3

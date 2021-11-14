@@ -8,6 +8,8 @@ image: ""
 tags: []
 ---
 
+![c_logo](/img/c.png)
+
 ## A cool shell
 
 It's so coolest

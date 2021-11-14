@@ -8,6 +8,8 @@ image: ""
 tags: []
 ---
 
+![cpp_logo](/img/cpp.png)
+
 ## A diablo inspired thing
 
 yep clones for days...
