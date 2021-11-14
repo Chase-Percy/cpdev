@@ -13,7 +13,7 @@ looks bare, and I need some content for it...
 
 If you see this then yea my site is still under construction!  
 ... or you scrolled really far down  
-... or I never really post much in the future 
+... or I never really posted much in the future 
 
 Anyway, the plan is to demo a bunch of my projects on here and use this as a little portfolio  
 for myself seeing as I have no other forms of social media to advertise from :)
