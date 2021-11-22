@@ -297,7 +297,9 @@ const createScene = function () {
     camera.upperBetaLimit = (Math.PI / 2) * 0.9;
     camera.lowerRadiusLimit = 10;
     camera.upperRadiusLimit = 30;
+    camera.position = new BABYLON.Vector3(-1, 9, 12);
     camera.attachControl(canvas, true);
+
     const ambient = new BABYLON.HemisphericLight("ambient", new BABYLON.Vector3(mapSize / 2, 3, mapSize / 2));
     const dirLight = new BABYLON.DirectionalLight("dir", new BABYLON.Vector3(0, 0, -1), scene);
     dirLight.position = new BABYLON.Vector3(0, 2, 1);
