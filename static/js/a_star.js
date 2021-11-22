@@ -280,12 +280,12 @@ const createScene = function () {
 
     map.createMesh();
 
-    //map.setNodeBlock(3, 3, true);
-    //map.setNodeBlock(3, 4, true);
-    //map.setNodeBlock(3, 5, true);
-    //map.setNodeBlock(4, 3, true);
-    //map.setNodeBlock(5, 3, true);
-    //map.setNodeBlock(6, 3, true);
+    map.setNodeBlock(3, 3, true);
+    map.setNodeBlock(3, 4, true);
+    map.setNodeBlock(3, 5, true);
+    map.setNodeBlock(3, 2, true);
+    map.setNodeBlock(3, 1, true);
+    map.setNodeBlock(4, 3, true);
 
     const camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 15, new BABYLON.Vector3(0, 0, 0));
     camera.attachControl(canvas, true);
