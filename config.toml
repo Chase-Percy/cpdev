@@ -17,27 +17,14 @@ pygmentsCodefencesGuessSyntax = true
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
-#  comments = true
-#  readingTime = true
-#  wordCount = true
+# comments = true
+# readingTime = true
+# wordCount = true
   useHLJS = true
-  # socialShare = true
+# socialShare = true
   delayDisqus = true
   showRelatedPosts = true
   hideAuthor = true
-#  gcse = " 6ac285c19fc72aacf " # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
-
-#[[Params.bigimg]]
-#  src = "img/B1.jpg"
-#  desc = ""
-#[[Params.bigimg]]
-#  src = "img/B2.jpg"
-#  desc = ""
-  # position: see values of CSS background-position.
-  # position = "center top"
-#[[Params.bigimg]]
-#  src = "img/S3.jpg"
-#  desc = ""
 
 [Author]
   name = "Chase Percy"
