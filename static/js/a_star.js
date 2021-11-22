@@ -1,16 +1,15 @@
 class node {
-    constructor(G, H, F, location, blocked) {
+    constructor(G, H, F, blocked) {
         this.G = G;
         this.H = H;
         this.F = F;
-        this.location = location;
         this.blocked = blocked;
     };
 }
 
 class graph {
-    #nodeMap = new Array(0);
-    #meshMap = new Array(0);
+    #nodeMap = new Array(3);
+    #meshMap = new Array(3);
     #red = new BABYLON.Color3(0.8, 0, 0);
     #green = new BABYLON.Color3(0, 0.8, 0);
     #blue = new BABYLON.Color3(0, 0, 0.8);
@@ -18,6 +17,9 @@ class graph {
     #black = new BABYLON.Color3(0.1, 0.1, 0.1);
 
     constructor(size, start, end) {
+        if (size < 3) {
+            size = 3;
+        }
         this.start = start;
         this.end = end;
         this.size = size;
@@ -29,7 +31,7 @@ class graph {
             this.#nodeMap[i] = new Array(size);
             this.#meshMap[i] = new Array(size);
             for (let j = 0; j < size; ++j) {
-                this.#nodeMap[i][j] = new node(0, 0, 0, [i, j], false);
+                this.#nodeMap[i][j] = new node(0, 0, 0, false);
             }
         }
     };
