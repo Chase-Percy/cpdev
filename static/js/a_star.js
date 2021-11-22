@@ -9,8 +9,8 @@ class node {
 }
 
 class graph {
-    #nodeMap;
-    #meshMap;
+    #nodeMap = new Array(0);
+    #meshMap = new Array(0);
     #red = new BABYLON.Color3(0.8, 0, 0);
     #green = new BABYLON.Color3(0, 0.8, 0);
     #blue = new BABYLON.Color3(0, 0, 0.8);
