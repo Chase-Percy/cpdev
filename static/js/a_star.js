@@ -91,12 +91,15 @@ class graph {
             for (let j = 1; j < this.size - 1; ++j) {
                 if (i === this.start[0] && j === this.start[1]) {
                     this.#meshMap[i][j].material.diffuseColor = this.#green;
+                    this.#meshMap[i][j].position.y = 0.25;
                 } else if (i === this.end[0] && j === this.end[1]) {
                     this.#meshMap[i][j].material.diffuseColor = this.#red;
+                    this.#meshMap[i][j].position.y = 0.25;
                 } else if (this.#nodeMap[i][j].blocked) {
                     this.#meshMap[i][j].material.diffuseColor = this.#black;
                 } else {
                     this.#meshMap[i][j].material.diffuseColor = this.#grey;
+                    this.#meshMap[i][j].position.y = 0;
                 }
             }
         }
@@ -261,7 +264,9 @@ class graph {
 
         current = current.parent;
         while (current !== this.#nodeMap[this.start[0]][this.start[1]]) {
-            this.#meshMap[current.location[0]][current.location[1]].material.diffuseColor = this.#blue;
+            let mesh = this.#meshMap[current.location[0]][current.location[1]];
+            mesh.material.diffuseColor = this.#blue;
+            mesh.position.y = 0.1;
             current = current.parent;
         }
     };
@@ -287,7 +292,11 @@ const createScene = function () {
     map.setNodeBlock(3, 1, true);
     map.setNodeBlock(4, 3, true);
 
-    const camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 15, new BABYLON.Vector3(0, 0, 0));
+    const camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 15, new BABYLON.Vector3(mapSize / 2, 0, mapSize / 2));
+    camera.lowerBetaLimit = 0.1;
+    camera.upperBetaLimit = (Math.PI / 2) * 0.9;
+    camera.lowerRadiusLimit = 10;
+    camera.upperRadiusLimit = 30;
     camera.attachControl(canvas, true);
     const ambient = new BABYLON.HemisphericLight("ambient", new BABYLON.Vector3(mapSize / 2, 3, mapSize / 2));
     const dirLight = new BABYLON.DirectionalLight("dir", new BABYLON.Vector3(0, 0, -1), scene);
