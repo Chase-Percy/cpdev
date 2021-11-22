@@ -21,7 +21,7 @@ pygmentsCodefencesGuessSyntax = true
 #  readingTime = true
 #  wordCount = true
   useHLJS = true
-  socialShare = true
+  # socialShare = true
   delayDisqus = true
   showRelatedPosts = true
   hideAuthor = true
@@ -53,7 +53,7 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     name = "About"
     url = "info/about/"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     identifier = "Projects"
@@ -79,7 +79,18 @@ pygmentsCodefencesGuessSyntax = true
     weight = 3
 
 [[menu.main]]
-    name = "Contact Details"
-    url = "info/contact-details"
+    identifier = "Algorithms"
+    name = "Algorithms"
     weight = 3
+
+[[menu.main]]
+    parent = "Algorithms"
+    name = "A*"
+    url = "algorithms/a_star"
+    weight = 2
+
+[[menu.main]]
+    name = "Contact"
+    url = "info/contact-details"
+    weight = 5
 
