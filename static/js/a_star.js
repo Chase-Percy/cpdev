@@ -5,7 +5,7 @@ class node {
         this.F = F;
         this.location = location;
         this.blocked = blocked;
-    }
+    };
 }
 
 class graph {
@@ -32,7 +32,7 @@ class graph {
                 this.#nodeMap[i][j] = new node(0, 0, 0, [i, j], false);
             }
         }
-    }
+    };
 
     setNodeBlock(x, y, blocked) {
         this.#nodeMap[x][y].blocked = blocked;
@@ -43,7 +43,7 @@ class graph {
             this.#meshMap[x][y].material.diffuseColor = this.#grey;
             this.#meshMap[x][y].position.y = 0;
         }
-    }
+    };
 
     toggleNodeBlock(x, y) {
         x = parseInt(x);
@@ -59,19 +59,19 @@ class graph {
                 this.#meshMap[x][y].position.y = 0;
             }
         }
-    }
+    };
 
     setNodeGFH(x, y, G, F, H) {
         this.#nodeMap[x][y].G = G;
         this.#nodeMap[x][y].F = F;
         this.#nodeMap[x][y].H = H;
-    }
+    };
 
     #createMaterial(i, j, scene) {
         let mat = new BABYLON.StandardMaterial((i).toString() + (j).toString(), scene);
         mat.alpha = 1;
         return mat;
-    }
+    };
 
     createMesh(scene) {
         for (let i = 0; i < this.size; ++i) {
@@ -93,7 +93,7 @@ class graph {
                 }
             }
         }
-    }
+    };
 
     createShadowMap(scene, shadowGen) {
         for (let i = 0; i < this.size; ++i) {
@@ -102,11 +102,11 @@ class graph {
                 this.#meshMap[i][j].recieveShadows = true;
             }
         }
-    }
+    };
 
     #calculateBestPath() {
 
-    }
+    };
 }
 
 const canvas = window.document.getElementById("renderCanvas"); // Get the canvas element
