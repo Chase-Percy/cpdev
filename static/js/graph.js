@@ -231,7 +231,6 @@ export class graph {
             open.splice(index, 1);
 
             if (current.location[0] === this.end[0] && current.location[1] === this.end[1]) {
-                console.log("end found");
                 break;
             }
 
