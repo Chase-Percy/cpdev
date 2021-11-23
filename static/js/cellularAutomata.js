@@ -91,7 +91,7 @@ class CA_Graph {
         this.resetMaterial();
     };
 
-    #updateMesh(temp, row, col) {
+    updateMesh(temp, row, col) {
         let mesh = this.#meshMap[row][col];
 
         if (temp[row][col]) {
