@@ -67,15 +67,15 @@ export class graph {
 
     #isInBounds(x, y) {
         return (x < this.size - 1 && y < this.size - 1 && x >= 1 && y >= 1);
-    }
+    };
 
     #isStartNode(x, y) {
         return (x === this.start[0] && y === this.start[1]);
-    }
+    };
 
     #isEndNode(x, y) {
         return (x === this.end[0] && y === this.end[1]);
-    }
+    };
 
     toggleNodeBlock(x, y) {
         x = Math.floor(x + 0.25);
@@ -115,7 +115,7 @@ export class graph {
                 this.#calculateBestPath();
             }
         }
-    }
+    };
 
     #createMaterial(i, j, scene) {
         let mat = new BABYLON.StandardMaterial((i).toString() + (j).toString(), scene);
@@ -140,7 +140,7 @@ export class graph {
                 }
             }
         }
-    }
+    };
 
     #resetNodeCosts() {
         for (let i = 0; i < this.size; ++i) {
@@ -152,7 +152,7 @@ export class graph {
                 node.parent = null;
             }
         }
-    }
+    };
 
     createMesh(scene) {
         for (let i = 1; i < this.size - 1; ++i) {
@@ -182,7 +182,7 @@ export class graph {
             neighbour.H = h;
             neighbour.parent = current;
         }
-    }
+    };
 
     #getLowestFCost(open) {
         let lowest = open[0];
@@ -193,7 +193,7 @@ export class graph {
             }
         }
         return lowest;
-    }
+    };
 
     #checkNeighbour(current, neighbour, open, closed, cost) {
         if (closed.indexOf(neighbour) === -1 && !neighbour.blocked) {
@@ -202,7 +202,7 @@ export class graph {
                 open.push(neighbour);
             }
         }
-    }
+    };
 
     #calculateBestPath() {
         if (!this.#startActive || !this.#endActive) {

@@ -89,7 +89,7 @@ class CA_Graph {
     clear() {
         this.#initCellMap();
         this.#resetMaterial();
-    }
+    };
 
     #updateMesh(temp, row, col) {
         let mesh = this.#meshMap[row][col];
@@ -101,7 +101,7 @@ class CA_Graph {
             mesh.material.diffuseColor = this.#grey;
             mesh.position.y = 0;
         }
-    }
+    };
 
     update() {
         if (!this.#isRunning) {
@@ -216,7 +216,7 @@ const createMap = function (scene, mapSize) {
     }
 
     return caMap;
-}
+};
 
 // Add your code here matching the playground format
 let mapSize = 18;
