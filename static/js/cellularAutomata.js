@@ -18,16 +18,16 @@ class CA_Graph {
             this.#meshMap[i] = new Array(size);
             this.#cellMap[i] = new Array(size);
         }
-        this.#initCellMap();
+        this.initCellMap();
     };
 
-    #createMaterial(i, j, scene) {
+    createMaterial(i, j, scene) {
         let mat = new BABYLON.StandardMaterial((i).toString() + (j).toString(), scene);
         mat.alpha = 1;
         return mat;
     };
 
-    #initCellMap() {
+    initCellMap() {
         for (let i = 0; i < this.size; ++i) {
             for (let j = 0; j < this.size; ++j) {
                 this.#cellMap[i][j] = false;
@@ -35,7 +35,7 @@ class CA_Graph {
         }
     };
 
-    #resetMaterial() {
+    resetMaterial() {
         for (let i = 0; i < this.size; ++i) {
             for (let j = 0; j < this.size; ++j) {
                 if (this.#cellMap[i][j]) {
@@ -57,11 +57,11 @@ class CA_Graph {
                 this.#meshMap[i][j].position.z = j;
 
                 if (this.#meshMap[i][j].material == null) {
-                    this.#meshMap[i][j].material = this.#createMaterial(i, j, scene);
+                    this.#meshMap[i][j].material = this.createMaterial(i, j, scene);
                 }
             }
         }
-        this.#resetMaterial();
+        this.resetMaterial();
     };
 
     toggleCell(x, y) {
@@ -69,7 +69,7 @@ class CA_Graph {
         y = Math.floor(y + 0.25);
         if (x >= 0 && y >= 0 && x < this.size && y < this.size) {
             this.#cellMap[x][y] = !this.#cellMap[x][y];
-            this.#resetMaterial();
+            this.resetMaterial();
         }
     };
 
@@ -77,7 +77,7 @@ class CA_Graph {
         if (x >= 0 && y >= 0 && x < this.size && y < this.size) {
             this.#cellMap[x][y] = active;
             if (update) {
-                this.#resetMaterial();
+                this.resetMaterial();
             }
         }
     }
@@ -87,8 +87,8 @@ class CA_Graph {
     };
 
     clear() {
-        this.#initCellMap();
-        this.#resetMaterial();
+        this.initCellMap();
+        this.resetMaterial();
     };
 
     #updateMesh(temp, row, col) {
@@ -162,7 +162,7 @@ class CA_Graph {
                     temp[row][col] = true;
                 }
 
-                this.#updateMesh(temp, row, col);
+                this.updateMesh(temp, row, col);
             }
         }
 

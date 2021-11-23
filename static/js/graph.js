@@ -62,25 +62,25 @@ export class graph {
             this.#meshMap[x][y].material.diffuseColor = this.#grey;
             this.#meshMap[x][y].position.y = 0;
         }
-        this.#calculateBestPath();
+        this.calculateBestPath();
     };
 
-    #isInBounds(x, y) {
+    isInBounds(x, y) {
         return (x < this.size - 1 && y < this.size - 1 && x >= 1 && y >= 1);
     };
 
-    #isStartNode(x, y) {
+    isStartNode(x, y) {
         return (x === this.start[0] && y === this.start[1]);
     };
 
-    #isEndNode(x, y) {
+    isEndNode(x, y) {
         return (x === this.end[0] && y === this.end[1]);
     };
 
     toggleNodeBlock(x, y) {
         x = Math.floor(x + 0.25);
         y = Math.floor(y + 0.25);
-        if (this.#isInBounds(x, y) && !this.#isStartNode(x, y) && !this.#isEndNode(x, y)) {
+        if (this.isInBounds(x, y) && !this.isStartNode(x, y) && !this.isEndNode(x, y)) {
             this.#nodeMap[x][y].blocked = !this.#nodeMap[x][y].blocked;
             if (this.#nodeMap[x][y].blocked) {
                 this.#meshMap[x][y].material.diffuseColor = this.#black;
@@ -90,40 +90,40 @@ export class graph {
                 this.#meshMap[x][y].position.y = 0;
             }
         }
-        this.#calculateBestPath();
+        this.calculateBestPath();
     };
 
     toggleObjectiveBlocks(x, y) {
         x = Math.floor(x + 0.25);
         y = Math.floor(y + 0.25);
-        if ((this.#isStartNode(x, y) && this.#endActive) || !this.#startActive) {
+        if ((this.isStartNode(x, y) && this.#endActive) || !this.#startActive) {
             if (this.#startActive) {
                 this.#startActive = false;
-                this.#resetMaterial();
-            } else if (!this.#isEndNode(x, y) && this.#isInBounds(x, y) && !this.#nodeMap[x][y].blocked) {
+                this.resetMaterial();
+            } else if (!this.isEndNode(x, y) && this.isInBounds(x, y) && !this.#nodeMap[x][y].blocked) {
                 this.start = [x, y];
                 this.#startActive = true;
-                this.#calculateBestPath();
+                this.calculateBestPath();
             }
-        } else if ((this.#isEndNode(x, y) && this.#startActive) || !this.#endActive) {
+        } else if ((this.isEndNode(x, y) && this.#startActive) || !this.#endActive) {
             if (this.#endActive) {
                 this.#endActive = false;
-                this.#resetMaterial();
-            } else if (!this.#isStartNode(x, y) && this.#isInBounds(x, y) && !this.#nodeMap[x][y].blocked) {
+                this.resetMaterial();
+            } else if (!this.isStartNode(x, y) && this.isInBounds(x, y) && !this.#nodeMap[x][y].blocked) {
                 this.end = [x, y];
                 this.#endActive = true;
-                this.#calculateBestPath();
+                this.calculateBestPath();
             }
         }
     };
 
-    #createMaterial(i, j, scene) {
+    createMaterial(i, j, scene) {
         let mat = new BABYLON.StandardMaterial((i).toString() + (j).toString(), scene);
         mat.alpha = 1;
         return mat;
     };
 
-    #resetMaterial() {
+    resetMaterial() {
         for (let i = 1; i < this.size - 1; ++i) {
             for (let j = 1; j < this.size - 1; ++j) {
                 if (i === this.start[0] && j === this.start[1] && this.#startActive) {
@@ -142,7 +142,7 @@ export class graph {
         }
     };
 
-    #resetNodeCosts() {
+    resetNodeCosts() {
         for (let i = 0; i < this.size; ++i) {
             for (let j = 0; j < this.size; ++j) {
                 let node = this.#nodeMap[i][j];
@@ -162,14 +162,14 @@ export class graph {
                 this.#meshMap[i][j].position.z = j;
 
                 if (this.#meshMap[i][j].material == null) {
-                    this.#meshMap[i][j].material = this.#createMaterial(i, j, scene);
+                    this.#meshMap[i][j].material = this.createMaterial(i, j, scene);
                 }
             }
         }
-        this.#resetMaterial();
+        this.resetMaterial();
     };
 
-    #updateCosts(current, neighbour, cost) {
+    updateCosts(current, neighbour, cost) {
         let g = current.G + cost;
         let dx = Math.abs(neighbour.location[0] - this.end[0]);
         let dy = Math.abs(neighbour.location[1] - this.end[1]);
@@ -184,7 +184,7 @@ export class graph {
         }
     };
 
-    #getLowestFCost(open) {
+    getLowestFCost(open) {
         let lowest = open[0];
 
         for (let i = 0; i < open.length; ++i) {
@@ -195,21 +195,21 @@ export class graph {
         return lowest;
     };
 
-    #checkNeighbour(current, neighbour, open, closed, cost) {
+    checkNeighbour(current, neighbour, open, closed, cost) {
         if (closed.indexOf(neighbour) === -1 && !neighbour.blocked) {
-            this.#updateCosts(current, neighbour, cost);
+            this.updateCosts(current, neighbour, cost);
             if (open.indexOf(neighbour) === -1) {
                 open.push(neighbour);
             }
         }
     };
 
-    #calculateBestPath() {
+    calculateBestPath() {
         if (!this.#startActive || !this.#endActive) {
             return;
         }
-        this.#resetMaterial();
-        this.#resetNodeCosts();
+        this.resetMaterial();
+        this.resetNodeCosts();
         let open = new Array(0);
         let closed = new Array(0);
         const adjacentCost = 10;
@@ -223,7 +223,7 @@ export class graph {
             if (first) {
                 first = false;
             } else {
-                current = this.#getLowestFCost(open);
+                current = this.getLowestFCost(open);
             }
             closed.push(current);
 
@@ -240,11 +240,10 @@ export class graph {
             let neighbourMD = this.#nodeMap[current.location[0] - 1][current.location[1]];
             let neighbourMU = this.#nodeMap[current.location[0] + 1][current.location[1]];
 
-            this.#checkNeighbour(current, neighbourML, open, closed, adjacentCost);
-            this.#checkNeighbour(current, neighbourMR, open, closed, adjacentCost);
-            this.#checkNeighbour(current, neighbourMD, open, closed, adjacentCost);
-            this.#checkNeighbour(current, neighbourMU, open, closed, adjacentCost);
-
+            this.checkNeighbour(current, neighbourML, open, closed, adjacentCost);
+            this.checkNeighbour(current, neighbourMR, open, closed, adjacentCost);
+            this.checkNeighbour(current, neighbourMD, open, closed, adjacentCost);
+            this.checkNeighbour(current, neighbourMU, open, closed, adjacentCost);
 
             // Diagonal
             let neighbourBL = this.#nodeMap[current.location[0] - 1][current.location[1] - 1];
@@ -252,10 +251,10 @@ export class graph {
             let neighbourTR = this.#nodeMap[current.location[0] + 1][current.location[1] - 1];
             let neighbourTL = this.#nodeMap[current.location[0] + 1][current.location[1] + 1];
 
-            this.#checkNeighbour(current, neighbourBL, open, closed, diagonalCost);
-            this.#checkNeighbour(current, neighbourBR, open, closed, diagonalCost);
-            this.#checkNeighbour(current, neighbourTR, open, closed, diagonalCost);
-            this.#checkNeighbour(current, neighbourTL, open, closed, diagonalCost);
+            this.checkNeighbour(current, neighbourBL, open, closed, diagonalCost);
+            this.checkNeighbour(current, neighbourBR, open, closed, diagonalCost);
+            this.checkNeighbour(current, neighbourTR, open, closed, diagonalCost);
+            this.checkNeighbour(current, neighbourTL, open, closed, diagonalCost);
         }
 
         current = current.parent;
