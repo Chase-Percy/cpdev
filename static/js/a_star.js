@@ -1,3 +1,7 @@
+window.onerror = function (message, url, linenumber) {
+    alert('JavaScript error: ' + message + ' on line ' + linenumber + ' for ' + url);
+}
+
 import {graph} from "./graph.js";
 
 const canvas = window.document.getElementById("renderCanvas"); // Get the canvas element
