@@ -3,7 +3,7 @@ import {graph} from "./graph.js";
 const canvas = window.document.getElementById("renderCanvas"); // Get the canvas element
 const engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
-function createGraph(scene, shadowGen, mapSize) {
+function createGraph(scene, mapSize) {
     let g = new graph(mapSize, [1, 1], [9, 4]);
 
     g.createMesh();
@@ -14,8 +14,6 @@ function createGraph(scene, shadowGen, mapSize) {
     g.setNodeBlock(3, 5, true);
     g.setNodeBlock(3, 2, true);
     g.setNodeBlock(4, 3, true);
-
-    g.createShadowMap(scene, shadowGen);
 
     scene.onPointerDown = function (event, result) {
         if (event.button === 2) {
@@ -45,9 +43,7 @@ const createScene = function () {
     const dirLight = new BABYLON.DirectionalLight("dir", new BABYLON.Vector3(0, -1, 0), scene);
     dirLight.intesity = 0.5;
 
-    let shadowGen = new BABYLON.ShadowGenerator(1024, dirLight);
-
-    createGraph(scene, shadowGen, mapSize);
+    createGraph(scene, mapSize);
 
     return scene;
 };

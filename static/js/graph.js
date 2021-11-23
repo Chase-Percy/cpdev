@@ -169,15 +169,6 @@ export class graph {
         this.#resetMaterial();
     };
 
-    createShadowMap(scene, shadowGen) {
-        for (let i = 1; i < this.size - 1; ++i) {
-            for (let j = 1; j < this.size - 1; ++j) {
-                shadowGen.addShadowCaster(this.#meshMap[i][j], false);
-                this.#meshMap[i][j].recieveShadows = true;
-            }
-        }
-    };
-
     #updateCosts(current, neighbour, cost) {
         let g = current.G + cost;
         let dx = Math.abs(neighbour.location[0] - this.end[0]);
