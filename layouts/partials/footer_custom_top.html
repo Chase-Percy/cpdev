@@ -6,22 +6,17 @@ Or you can delete these file if you don't need it.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.js" integrity="sha256-HdIuWBZj4eftihsoDCJoMYjZi6aNVaw7YlUpzKT3ZxI=" crossorigin="anonymous"></script>
 -->
 
+{{ if or (eq .Title "A*") (eq .Title "Cellular Automata") }}
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+<script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+
+<canvas id="renderCanvas" touch-action="none"></canvas> <!-- touch-action="none" for best results from PEP -->
+
 {{ if eq .Title "A*" }}
-<script src="https://cdn.babylonjs.com/babylon.js"></script>
-<script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
-<script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
-
-<canvas id="renderCanvas" touch-action="none"></canvas> <!-- touch-action="none" for best results from PEP -->
-
 <script src="/js/a_star.js" type="module"></script>
-{{ end }}
 
-{{ if eq .Title "Cellular Automata" }}
-<script src="https://cdn.babylonjs.com/babylon.js"></script>
-<script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
-<script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
-
-<canvas id="renderCanvas" touch-action="none"></canvas> <!-- touch-action="none" for best results from PEP -->
-
+{{ else if eq .Title "Cellular Automata" }}
 <script src="/js/cellularAutomata.js" type="module"></script>
+{{ end }}
 {{ end }}
