@@ -15,3 +15,13 @@ Or you can delete these file if you don't need it.
 
 <script src="/js/a_star.js" type="module"></script>
 {{ end }}
+
+{{ if eq .Title "Cellular Automata" }}
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+<script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+
+<canvas id="renderCanvas" touch-action="none"></canvas> <!-- touch-action="none" for best results from PEP -->
+
+<script src="/js/cellularAutomata.js" type="module"></script>
+{{ end }}

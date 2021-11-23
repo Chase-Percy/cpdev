@@ -11,4 +11,4 @@ tags: []
 ### Controls:
 - Left-click to place/remove black blocks
 - Right-click on the red or green block then click to place them again
-- Scroll-down to rotate camera
+- Scroll wheel down to rotate

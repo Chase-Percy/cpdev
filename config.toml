@@ -77,6 +77,12 @@ pygmentsCodefencesGuessSyntax = true
     weight = 2
 
 [[menu.main]]
+    parent = "Algorithms"
+    name = "Cellular Automata"
+    url = "algorithms/cellular-automata"
+    weight = 3
+
+[[menu.main]]
     name = "Contact"
     url = "info/contact-details"
     weight = 5
