@@ -46,6 +46,8 @@ tags: []
 - LLVM Style Guide
 {{< endcolumns >}}
 
+![Kanban](/img/bbr/kanban.png)
+
 ---
 ---
 
