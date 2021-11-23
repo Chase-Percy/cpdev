@@ -73,6 +73,15 @@ class CA_Graph {
         }
     };
 
+    setCell(x, y, active, update) {
+        if (x >= 0 && y >= 0 && x < this.size && y < this.size) {
+            this.#cellMap[x][y] = active;
+            if (update) {
+                this.#resetMaterial();
+            }
+        }
+    }
+
     toggleSimulation() {
         this.#isRunning = !this.#isRunning;
     };
@@ -163,50 +172,29 @@ class CA_Graph {
     };
 }
 
-function createGlider(caMap) {
-    //Left square
-    caMap.toggleCell(1, 30);
-    caMap.toggleCell(2, 30);
-    caMap.toggleCell(1, 29);
-    caMap.toggleCell(2, 29);
+function createPenta(caMap) {
+    caMap.setCell(5, 15, true, false);
+    caMap.setCell(4, 14, true, false);
+    caMap.setCell(5, 14, true, false);
+    caMap.setCell(6, 14, true, false);
 
-    // Left Ship
-    caMap.toggleCell(11, 30);
-    caMap.toggleCell(11, 29);
-    caMap.toggleCell(11, 28);
-    caMap.toggleCell(12, 31);
-    caMap.toggleCell(12, 27);
-    caMap.toggleCell(13, 32);
-    caMap.toggleCell(13, 26);
-    caMap.toggleCell(14, 32);
-    caMap.toggleCell(14, 26);
-    caMap.toggleCell(15, 29);
-    caMap.toggleCell(16, 31);
-    caMap.toggleCell(16, 27);
-    caMap.toggleCell(17, 30);
-    caMap.toggleCell(17, 29);
-    caMap.toggleCell(17, 28);
-    caMap.toggleCell(18, 29);
+    caMap.setCell(4, 11, true, false);
+    caMap.setCell(5, 11, true, false);
+    caMap.setCell(6, 11, true, false);
 
-    // Right Ship
-    caMap.toggleCell(21, 32);
-    caMap.toggleCell(21, 31);
-    caMap.toggleCell(21, 30);
-    caMap.toggleCell(22, 32);
-    caMap.toggleCell(22, 31);
-    caMap.toggleCell(22, 30);
-    caMap.toggleCell(23, 33);
-    caMap.toggleCell(23, 29);
-    caMap.toggleCell(25, 34);
-    caMap.toggleCell(25, 33);
-    caMap.toggleCell(25, 29);
-    caMap.toggleCell(25, 28);
+    caMap.setCell(4, 9, true, false);
+    caMap.setCell(4, 8, true, false);
+    caMap.setCell(6, 9, true, false);
+    caMap.setCell(6, 8, true, false);
 
-    // Right square
-    caMap.toggleCell(35, 32);
-    caMap.toggleCell(35, 31);
-    caMap.toggleCell(36, 32);
-    caMap.toggleCell(36, 31);
+    caMap.setCell(4, 6, true, false);
+    caMap.setCell(5, 6, true, false);
+    caMap.setCell(6, 6, true, false);
+
+    caMap.setCell(5, 3, true, false);
+    caMap.setCell(4, 3, true, false);
+    caMap.setCell(6, 3, true, false);
+    caMap.setCell(5, 2, true, true);
 }
 
 
@@ -215,7 +203,7 @@ const createMap = function (scene, mapSize) {
 
     caMap.createMesh(scene);
 
-    createGlider(caMap);
+    createPenta(caMap);
 
     scene.onPointerDown = function (event, result) {
         if (event.button === 2) {
@@ -231,7 +219,7 @@ const createMap = function (scene, mapSize) {
 }
 
 // Add your code here matching the playground format
-let mapSize = 38;
+let mapSize = 18;
 const createScene = function () {
 
     const scene = new BABYLON.Scene(engine);
@@ -240,14 +228,14 @@ const createScene = function () {
     camera.lowerBetaLimit = 0.1;
     camera.upperBetaLimit = (Math.PI / 2) * 0.9;
     camera.lowerRadiusLimit = 10;
-    camera.upperRadiusLimit = 60;
-    camera.position = new BABYLON.Vector3(mapSize / 2, 50, 0);
+    camera.upperRadiusLimit = 30;
+    camera.position = new BABYLON.Vector3(mapSize / 2, 30, 0);
     camera.attachControl(canvas, true, false);
     camera.panningSensibility = 0;
 
     const ambient = new BABYLON.HemisphericLight("ambient", new BABYLON.Vector3(mapSize / 2, 3, mapSize / 2));
-    const dirLight = new BABYLON.DirectionalLight("dir", new BABYLON.Vector3(0, -1, 0), scene);
-    dirLight.intesity = 0.5;
+    const dirLight = new BABYLON.DirectionalLight("dir", new BABYLON.Vector3(-2, -1, 0), scene);
+    dirLight.intesity = 0.01;
 
     return scene;
 };

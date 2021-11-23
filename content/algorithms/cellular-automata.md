@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-#### More shapes can be found [here!](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+#### Rules & shapes can be found [here!](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 ### Controls:
 - Left-click to place a block
