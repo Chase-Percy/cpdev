@@ -8,6 +8,11 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
+[markup]
+ [markup.goldmark]
+  [markup.goldmark.renderer]
+   unsafe = true
+
 [Params]
   homeTitle = "CP-DEV" # Set a different text for the header on the home page
   subtitle = "Chase Percy"
