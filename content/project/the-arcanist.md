@@ -24,7 +24,7 @@ ___
 - Chase Percy
 
 ## Repo
-- [The Arcahnist (not active yet)]()
+- [The Arcanist (not active yet)]()
 ---
 ---
 
@@ -32,14 +32,14 @@ ___
 {{< columns >}}
 - Weekly meetings
 - Kanban Board
-- Git with Github for source control
+- Git with GitHub for source control
   - Git flow model
   - Git LFS
   - Branch Protection
 - Peer code review
 {{< column >}}
 - CI/CD
-  - Github Actions
+  - GitHub Actions
   - Static Analyzer (CPPCheck)
   - Automated unit tests (Gtest)
   - Clang-format
@@ -63,9 +63,9 @@ todo
 todo
 ### Arcanist Game Implementation
 todo
-### Sound Implementation
+### Collision Detection
 todo
-### Map Generation
+### Seeded Map Generation
 todo
 ### Connection Between Game State & AI  
 todo
