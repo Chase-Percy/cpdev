@@ -32,7 +32,7 @@ tags: []
 {{< columns >}}
 - Weekly meetings
 - Kanban Board
-- Git with Github for source control
+- Git with GitHub for source control
   - Git flow model
   - Git LFS
   - Branch Protection
