@@ -10,14 +10,12 @@ tags: []
 
 ![logos](/img/bbr/icons.png)
 
----
----
 ## A Marbles and monkey ball inspired game
 
 {{< youtube 2XUEb0cKoXo >}}
 
----
----
+{{< line >}}
+
 ## Development Team
 - Peter Crabbe
 - Matthew Davis
@@ -25,8 +23,6 @@ tags: []
 
 ## Repo
 - [Big Balls Roll](https://github.com/MajorArkwolf/BigBallsRoll)
----
----
 
 ## Project Planning and Tools
 {{< columns >}}
@@ -48,8 +44,7 @@ tags: []
 
 ![Kanban](/img/bbr/kanban.png)
 
----
----
+{{< line >}}
 
 ## Features developed by me
 ### Texture Manager
@@ -85,6 +80,3 @@ I Helped Peter implement game logic in LUA, such as level transitions and ball m
 I Added scripts for in-game menu interactions/HUD, scoring, and polish such as models in the game.
 
 ![Logic](/img/bbr/logic.png)
-
----
----

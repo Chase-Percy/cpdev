@@ -10,14 +10,12 @@ tags: []
 
 ![cpp_logo](/img/ta/icons.png)
 
-___
-___
 ## A diablo inspired dungeon crawler
 
 {{< youtube WlOtn7QeDh0 >}}
 
----
----
+{{< line >}}
+
 ## Development Team
 - Matthew Davis
 - Michael John
@@ -25,8 +23,6 @@ ___
 
 ## Repo
 - [The Arcanist (not active yet)]()
----
----
 
 ## Project Planning and Tools
 {{< columns >}}
@@ -52,8 +48,7 @@ ___
 {{< figure src = "/img/ta/actions2.png" >}}
 {{< /gallery >}}
 
----
----
+{{< line >}}}
 
 ## Features developed by me
 
@@ -104,7 +99,3 @@ independent of the AI entities themselves. This was so if an AI entity was kille
 still exist, but now represent a dead enemy at the AI entities last location.
 
 ![AI Integration](/img/ta/integration.png)
-
----
----
-

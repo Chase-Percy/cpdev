@@ -1,3 +1,21 @@
+<style>
+    hr {
+        color: royalblue;
+        background-color: royalblue;
+    }
+</style>
+
+<style>
+    hr.blue {
+        display: block;
+        color: royalblue;
+        overflow: hidden;
+        height: 2px;
+        background-color: royalblue;
+    }
+</style>
+
+
 {{ if or (eq .Title "A*") (eq .Title "Cellular Automata") }}
 <style>
     #renderCanvas {
