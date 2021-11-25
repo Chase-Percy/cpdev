@@ -9,13 +9,12 @@ tags: []
 ---
 
 ### Email: [chase@cp-dev.tech](mailto:chase@cp-dev.tech)
-
-### Message:
 <div class="form-style-8">
+    <H2>Message</H2>
   <form name="contact" method="POST" data-netlify="true">
     <input type="text" name="field1" placeholder="Full Name" required/>
     <input type="email" name="field2" placeholder="Email" required/>
-    <textarea name="message" placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+    <textarea name="message" placeholder="Message" onkeydown="adjust_textarea(this)"></textarea>
     <button name="send" type="submit">Send</button>
   </form>
 </div>
