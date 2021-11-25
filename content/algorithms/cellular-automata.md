@@ -7,7 +7,7 @@ subtitle: "Game of Life"
 image: ""
 tags: []
 ---
-
+![Icons](/img/algo/icons.png)
 #### Rules & shapes can be found [here!](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 ### Controls:

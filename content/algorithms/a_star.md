@@ -7,6 +7,7 @@ subtitle: "Pathfinding"
 image: ""
 tags: []
 ---
+![Icons](/img/algo/icons.png)
 
 ### Controls:
 - Left-click to place/remove black blocks
