@@ -48,7 +48,7 @@ tags: []
 {{< figure src = "/img/ta/actions2.png" >}}
 {{< /gallery >}}
 
-{{< line >}}}
+{{< line >}}
 
 ## Features developed by me
 
