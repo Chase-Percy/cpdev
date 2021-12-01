@@ -8,9 +8,12 @@ image: ""
 tags: []
 ---
 
+Feel free to send me a email or message if you have any questions, or you are interested in getting in contact with me!
+
 ### Email: [chase@cp-dev.tech](mailto:chase@cp-dev.tech)
+
+### Message:
 <div class="form-style-8">
-    <H2>Message</H2>
   <form name="contact" method="POST" data-netlify="true">
     <input type="text" name="field1" placeholder="Full Name" required/>
     <input type="email" name="field2" placeholder="Email" required/>
