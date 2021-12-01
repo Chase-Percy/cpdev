@@ -70,28 +70,32 @@ Anyway, now for some more specific information below :)
 {{< whiteLine >}}
 
 {{< columns >}}
-### Development languages
-* C
-* CPP
-* C#
-* Java
-* Javascript
-* HTML
-* CSS
-* Oracle SQL
-{{< column >}}
 ### Development Tools
 * Version Control
   * Git
 * GitHub
   * Repository hosting
   * Project management
-    * Organisation
-    * Kanban
-    * Bug Tracking
-* Build system
+  * Kanban
+  * Bug Tracking
+* Build System
   * Make
   * CMake
 * CI/CD
   * GitHub Actions
+* Documentation
+  * Doxygen
+  * Javadoc
+* Static Analyzer
+  * CPPCheck
+{{< column >}}
+### Development languages
+ * C
+ * CPP
+ * C#
+ * Java
+ * Javascript
+ * HTML
+ * CSS
+ * Oracle SQL
 {{< endcolumns >}}
