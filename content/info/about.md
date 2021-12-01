@@ -48,6 +48,11 @@ Anyway, now for some more specific information below :)
 
 [Chase Percy - CV (Not Active)]()
 
+
+### Academic Transcript
+
+[Chase Percy - Academic Transcript (Not Active)]()
+
 {{< line >}}
 
 {{< columns >}}
@@ -98,4 +103,15 @@ Anyway, now for some more specific information below :)
  * HTML
  * CSS
  * Oracle SQL
+{{< endcolumns >}}
+
+{{< whiteLine >}}
+
+{{< columns >}}
+### Operating System Experience
+* Windows
+* Linux (Native Ubuntu & WSL2/WSLG)
+{{< column >}}
+
+ 
 {{< endcolumns >}}
