@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-Feel free to send me a email or message if you have any questions, or you are interested in getting in contact with me!
+Feel free to send me an email or message if you have any questions, or you are interested in getting in contact with me!
 
 ### Email: [chase@cp-dev.tech](mailto:chase@cp-dev.tech)
 
