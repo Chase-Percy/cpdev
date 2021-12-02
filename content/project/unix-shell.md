@@ -17,11 +17,11 @@ tags: []
 
 ## Development Team
 - Chase Percy
-- Nunzia Sorrentino
+- [Nunzia Sorrentino](https://au.linkedin.com/in/nunzia-sorrentino-bbb393111)
 
 ## Repo
 - [Unix Shell](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac3098a5c72e3/ICT374/)   
-(Hosted through GitFront to prevent plagiarism and adhere to unit guidelines)
+(Hosted through GitFront instead of a public GitHub repo to prevent plagiarism and adhere to unit guidelines)
 
 ## Project Planning and Tools
 {{< columns >}}

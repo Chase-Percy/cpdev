@@ -22,7 +22,8 @@ tags: []
 - Chase Percy
 
 ## Repo
-- [The Arcanist (not active yet)]()
+- [The Arcanist](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/)  
+(Hosted through GitFront instead of a public GitHub repo to prevent plagiarism and adhere to unit guidelines)
 
 ## Project Planning and Tools
 {{< columns >}}
