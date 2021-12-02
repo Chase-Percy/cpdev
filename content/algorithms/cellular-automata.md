@@ -14,5 +14,3 @@ tags: []
 - Left-click to place a block
 - Right-click to start or stop the simulation
 - Scroll wheel down to clear the board
-
-
