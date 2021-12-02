@@ -7,7 +7,7 @@ subtitle: "Pathfinding"
 image: ""
 tags: []
 ---
-![Icons](/img/algo/icons.png)
+![Icons](/img/algo/icons.png "JAVASCRIPT | BABYLON JS")
 
 ### Controls:
 - Left-click to place/remove black blocks

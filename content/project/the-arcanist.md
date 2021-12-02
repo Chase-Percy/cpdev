@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-![cpp_logo](/img/ta/icons.png)
+![cpp_logo](/img/ta/icons.png "CPP | CMAKE | GITHUB")
 
 ## A diablo inspired dungeon crawler
 

@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-![c_logo](/img/us_icons.png)
+![c_logo](/img/us_icons.png "C | GITHUB")
 
 ## A minimal but complete unix shell
 
