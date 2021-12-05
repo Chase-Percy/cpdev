@@ -1,0 +1,67 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Content-Security-Policy = "
+                                       default-src 'self';
+
+                                       font-src 'self'
+                                       https://cdnjs.cloudflare.com
+                                       https://fonts.gstatic.com
+                                       https://maxcdn.bootstrapcdn.com
+                                       https://use.fontawesome.com;
+
+                                       img-src 'self';
+
+                                       frame-src 'self'
+                                       https://www.youtube.com/;
+
+                                       style-src 'self' 'unsafe-hashes'
+                                       https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css
+                                       https://use.fontawesome.com/releases/v5.5.0/css/all.css
+                                       https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+                                       https://fonts.googleapis.com
+                                       https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css
+                                       https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css
+                                       'sha256-0EZqoz+oBhx7gF4nvY2bSqoGyy4zLjNF+SDQXGp/ZrY='
+                                       'sha256-OfdFi2HSgYH+q5U1WBsCzU7mg2gj6uKJRngWCtKX958='
+                                       'sha256-cwnG7OeAwftcz61OYdA+xPTVA3O8vB0aKHZWlHgvdjg='
+                                       'sha256-YFOIjkCvZnAH6R5z1ZjUI/Zgf7uslK5vN80+lsdvYss='
+                                       'sha256-pslgdEvT+/Gdw7PVSi35Z6h6fby0p0V089Ac0goSbb0='
+                                       'sha256-wqcGYdO3JMUMZlZYwoVBxlSpFoBZUO1n+HJXVRrajBs='
+                                       'sha256-FTvNS+kx4HQlk1mjAboUa6iwXe2C7R8VMVHg1hQ94ug='
+                                       'sha256-M4LEqFm1cHl8G927piaBZGgVFy/d1e94uiv+bU24Yro='
+                                       'sha256-QMaulb3eVv1JOPpmyGHgSpDLlKTUUF6qIu6Z0EuXK5Y='
+                                       'sha256-iIMMXEWQC3BsvVig+qs0zryc+06f3gP1CakVGeqRXMQ='
+                                       'sha256-R0MnB1yp4dQt7zeVBqigVwrU9plrHD9la8Ay5FWTEX0='
+                                       'sha256-eBldQm/qH/WiSSj2ccgvCsRzFVnmV38k9lCQtHyzXA4='
+                                       'sha256-GKAN6QbhGHqa8VmVzy/zBId270+p8iMUhTPpbJQlRT4='
+                                       'sha256-0PsWxn+B8H5lwgiessadGq3VFchRU+6mjyWpvUG5Ce8='
+                                       'sha256-eBldQm/qH/WiSSj2ccgvCsRzFVnmV38k9lCQtHyzXA4='
+                                       'sha256-R0MnB1yp4dQt7zeVBqigVwrU9plrHD9la8Ay5FWTEX0='
+                                       'sha256-eBldQm/qH/WiSSj2ccgvCsRzFVnmV38k9lCQtHyzXA4='
+                                       'sha256-R0MnB1yp4dQt7zeVBqigVwrU9plrHD9la8Ay5FWTEX0='
+                                       'sha256-qs0Yszad4nwVEsj8rSanks1hcT2dyXhaY9lTOibYQLU='
+                                       'sha256-NPY5CJj9epSon2pbrw7eMFxO8tJT8/CkmVZ4PgDSdvw='
+                                       'sha256-cgdsZAF6T6ZzaK0C16FZ4OSYGdapU2km5/SUcwOHO/Y='
+                                       'sha256-UtN4QLIBrl7VeFOR+JDVHqYnDkYS0tbJyncuP4YB8Gc=';
+
+                                       script-src 'self'
+                                       https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.1/katex.min.js
+                                       https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.1/contrib/auto-render.min.js
+                                       https://code.jquery.com/jquery-3.6.0.min.js
+                                       https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js
+                                       https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js
+                                       https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js
+                                       https://cdn.babylonjs.com/babylon.js
+                                       https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js
+                                       https://code.jquery.com/pep/0.4.3/pep.js
+                                       'sha256-GKAN6QbhGHqa8VmVzy/zBId270+p8iMUhTPpbJQlRT4='
+                                       'sha256-0PsWxn+B8H5lwgiessadGq3VFchRU+6mjyWpvUG5Ce8='
+                                       'sha256-qs0Yszad4nwVEsj8rSanks1hcT2dyXhaY9lTOibYQLU='
+                                       'sha256-GKAN6QbhGHqa8VmVzy/zBId270+p8iMUhTPpbJQlRT4='
+                                       'sha256-qs0Yszad4nwVEsj8rSanks1hcT2dyXhaY9lTOibYQLU='
+                                       'sha256-0PsWxn+B8H5lwgiessadGq3VFchRU+6mjyWpvUG5Ce8='
+                                       'sha256-o7HP03Ywo8+++Pr2POR/Pb5TtjLjCd/rh5R2H/D/Mwc=';"
