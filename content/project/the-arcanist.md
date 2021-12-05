@@ -23,7 +23,7 @@ tags: []
 
 ## Repo
 - [The Arcanist](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/)  
-(Hosted through GitFront instead of a public GitHub repo to prevent plagiarism and adhere to unit guidelines)
+(Hosted through GitFront instead of a public GitHub repo to help prevent plagiarism)
 
 ## Project Planning and Tools
 {{< columns >}}
@@ -97,6 +97,7 @@ and a range of possible obstacle densities.
 The AI and game state were associated through game objects which were updated to match the location
 and rotation of AI entities. Appropriate associated models were mapped to these objects and were kept
 independent of the AI entities themselves. This was so if an AI entity was killed the object would
-still exist, but now represent a dead enemy at the AI entities last location.
+still exist, but now represent a dead enemy at the AI entities last location. I also helped adjust the AI to better
+navigate the rooms and refined certain features such as collisions and tweaking movement values.
 
 ![AI Integration](/img/ta/integration.png)

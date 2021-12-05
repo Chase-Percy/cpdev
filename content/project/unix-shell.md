@@ -21,7 +21,7 @@ tags: []
 
 ## Repo
 - [Unix Shell](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac3098a5c72e3/ICT374/)   
-(Hosted through GitFront instead of a public GitHub repo to prevent plagiarism and adhere to unit guidelines)
+(Hosted through GitFront instead of a public GitHub repo to help prevent plagiarism)
 
 ## Project Planning and Tools
 {{< columns >}}
@@ -58,4 +58,9 @@ Both the * and ? wildcards are supported and are expanded during the tokenizatio
 ### Command Creation
 Command creation is the process of converting the tokens into a format that can be processed by the shell. This takes
 into account the `? & ;` separators and separates commands appropriately.
+
+### Shell Built-ins
+CD, Change the shell prompt, and exit were provided as built in shell commands that were executed from the parent
+shell. The only built-in that was executed in a child process was the PWD command so that it's output could be used
+with file redirection and piping between processes.
 
