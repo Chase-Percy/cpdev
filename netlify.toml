@@ -4,7 +4,7 @@
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "
+    Content-Security-Policy = '''
                                        default-src 'self';
 
                                        font-src 'self'
@@ -66,4 +66,4 @@
                                        'sha256-qs0Yszad4nwVEsj8rSanks1hcT2dyXhaY9lTOibYQLU='
                                        'sha256-NPY5CJj9epSon2pbrw7eMFxO8tJT8/CkmVZ4PgDSdvw='
                                        'sha256-cgdsZAF6T6ZzaK0C16FZ4OSYGdapU2km5/SUcwOHO/Y='
-                                       'sha256-UtN4QLIBrl7VeFOR+JDVHqYnDkYS0tbJyncuP4YB8Gc=';"
+                                       'sha256-UtN4QLIBrl7VeFOR+JDVHqYnDkYS0tbJyncuP4YB8Gc=';'''
