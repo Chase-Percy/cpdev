@@ -1,29 +1,59 @@
-<style>
-    hr {
-        color: royalblue;
-        background-color: royalblue;
-    }
-</style>
+<meta http-equiv="Content-Security-Policy"
+      content=" default-src 'self';
 
-<style>
-    hr.blue {
-        display: block;
-        color: royalblue;
-        overflow: hidden;
-        height: 3px;
-        background-color: royalblue;
-    }
+                                                      font-src 'self'
+                                                      https://cdnjs.cloudflare.com
+                                                      https://fonts.gstatic.com
+                                                      https://maxcdn.bootstrapcdn.com
+                                                      https://use.fontawesome.com
+                                                      https://stackpath.bootstrapcdn.com;
 
-    hr.white {
-            display: block;
-            color: white;
-            overflow: hidden;
-            height: 3px;
-            background-color: white;
-            border: 1px white;
-        }
-</style>
+                                                      img-src 'self'
+                                                      https://i.ytimg.com/vi_webp/2XUEb0cKoXo/mqdefault.webp
+                                                      https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.svg;
 
+                                                      frame-src 'self'
+                                                      https://www.youtube.com/;
+
+                                                      object-src 'none';
+
+                                                      style-src 'self'
+                                                      https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css
+                                                      https://use.fontawesome.com/releases/v5.5.0/css/all.css
+                                                      https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css
+                                                      https://fonts.googleapis.com
+                                                      https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css
+                                                      https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css
+                                                      'sha256-slTiuoOyHa8PK+bmv7Jn6MimHl8/v+xwARlD0sj/zfA='
+                                                      'sha256-SDcE9vKARLw3IvI2Yj1CWCkfl8YONU0VM/QOKxFek5c='
+                                                      'sha256-UBCHLCqruOsRKPsCwz1OvHuxPBeEvdFH9piYgDdpw28='
+                                                      'sha256-TticbkVH4dhw94fpOkML+S3qamZBFFoEaSsxCkTy7EE='
+                                                      'sha256-PDPmXZiYkV0/hkF3A8lI7Sb1Yss6r0SytdtPe6DC5PM='
+                                                      'sha256-peN89MK9iAymBz+6LNPYjp9ZwGTR3MtqIaBAfuckquI='
+                                                      'sha256-NPY5CJj9epSon2pbrw7eMFxO8tJT8/CkmVZ4PgDSdvw='
+                                                      'sha256-cgdsZAF6T6ZzaK0C16FZ4OSYGdapU2km5/SUcwOHO/Y='
+                                                      'sha256-uNld7bsf7WcrlYThngNFTZnlIPWxsA8/9vQ2phT33ws='
+                                                      'sha256-68VqkZ3FC36rguad3HCtxa7WiBHFbTSilhcC3Nr6MZQ='
+                                                      'sha256-3xQ+74vbvt36ipYDUWQwiUVSBe9mnHpIAELntJHGixU='
+                                                      'sha256-XL0f1ePILUcPL+leAx79oueH/yaFJt1URiM1SKSHTEY='
+                                                      'sha256-KlnGfhm0X7VixGKYZhJlFzaB1QNQh4ePco/gyN76bj4='
+                                                      'sha256-1eZlhqS0367vUUmiMKB67unJplkTXAJ9roykB1fE1SE=';
+
+                                                      script-src 'self'
+                                                      https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js
+                                                      https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js
+                                                      https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js
+                                                      https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js
+                                                      https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js
+                                                      https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js
+                                                      https://cdn.babylonjs.com/babylon.js
+                                                      https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js
+                                                      https://code.jquery.com/pep/0.4.3/pep.js
+                                                      'sha256-GKAN6QbhGHqa8VmVzy/zBId270+p8iMUhTPpbJQlRT4='
+                                                      'sha256-0PsWxn+B8H5lwgiessadGq3VFchRU+6mjyWpvUG5Ce8='
+                                                      'sha256-qs0Yszad4nwVEsj8rSanks1hcT2dyXhaY9lTOibYQLU=';">
+
+<link rel='stylesheet' type='text/css' href="{{.Site.BaseURL}}css/cp-dev.css">
 
 {{ if or (eq .Title "A*") (eq .Title "Cellular Automata") }}
 <style>
@@ -53,81 +83,5 @@
 
 {{ if eq .Title "Contact Details" }}
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<style type="text/css">
-    .form-style-8 {
-        font-family: 'Open Sans', arial, sans;
-        width: auto;
-        padding: 30px;
-        background: #FFFFFF;
-        margin: 25px auto;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-        -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-        -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-
-    }
-
-    .form-style-8 h2 {
-        background: royalblue;
-        font-family: 'Open Sans', sans-serif;
-        color: white;
-        font-size: 24px;
-        font-weight: bold;
-        padding: 15px;
-        margin: -35x -30px 30px -30px;
-    }
-
-    .form-style-8 input,
-    .form-style-8 textarea,
-    .form-style-8 select {
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        outline: none;
-        display: block;
-        width: 100%;
-        padding: 7px;
-        border: none;
-        border-bottom: 1px solid #ddd;
-        background: transparent;
-        margin-bottom: 10px;
-        font: 16px Arial, Helvetica, sans-serif;
-        height: 45px;
-    }
-
-    .form-style-8 textarea {
-        resize: none;
-        overflow: hidden;
-    }
-
-    .form-style-8 button[type="submit"] {
-        -moz-box-shadow: inset 0px 1px 0px 0px royalblue;
-        -webkit-box-shadow: inset 0px 1px 0px 0px royalblue;
-        box-shadow: inset 0px 1px 0px 0px royalblue;
-        background-color: royalblue;
-        border: 1px solid black;
-        display: inline-block;
-        cursor: pointer;
-        color: #FFFFFF;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 13px;
-        font-weight: bold;
-        padding: 8px 18px;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    .form-style-8 button[type="submit"]:hover {
-        background: linear-gradient(to bottom, cornflowerblue 5%, cornflowerblue 100%);
-        background-color: cornflowerblue;
-    }
-</style>
-
-<script type="text/javascript">
-    //auto expand textarea
-    function adjust_textarea(h) {
-        h.style.height = "20px";
-        h.style.height = (h.scrollHeight) + "px";
-    }
-</script>
-
+<link href="{{.Site.BaseURL}}css/contactDetails.css" rel='stylesheet' type='text/css'>
 {{ end }}
