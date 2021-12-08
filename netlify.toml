@@ -1,3 +1,6 @@
+[[plugins]]
+package = "netlify-plugin-image-optim"
+
 [[headers]]
   for = "/*"
   [headers.values]
