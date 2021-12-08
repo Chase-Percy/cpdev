@@ -38,12 +38,12 @@
                                        'sha256-peN89MK9iAymBz+6LNPYjp9ZwGTR3MtqIaBAfuckquI='
                                        'sha256-NPY5CJj9epSon2pbrw7eMFxO8tJT8/CkmVZ4PgDSdvw='
                                        'sha256-cgdsZAF6T6ZzaK0C16FZ4OSYGdapU2km5/SUcwOHO/Y='
-                                       'sha256-uNld7bsf7WcrlYThngNFTZnlIPWxsA8/9vQ2phT33ws='
-                                       'sha256-68VqkZ3FC36rguad3HCtxa7WiBHFbTSilhcC3Nr6MZQ='
-                                       'sha256-3xQ+74vbvt36ipYDUWQwiUVSBe9mnHpIAELntJHGixU='
-                                       'sha256-XL0f1ePILUcPL+leAx79oueH/yaFJt1URiM1SKSHTEY='
-                                       'sha256-KlnGfhm0X7VixGKYZhJlFzaB1QNQh4ePco/gyN76bj4='
-                                       'sha256-1eZlhqS0367vUUmiMKB67unJplkTXAJ9roykB1fE1SE=';
+                                       'sha256-ZXk3zFkN2Ntejzq+inSyPI8X1iEjaHc2USTOom56DyQ='
+                                       'sha256-nNjO4vaA7lRpu1i489DcQ3sHp9efSP+b13buVe0S1OY='
+                                       'sha256-VVdhf4mhGN/LViHGX4wTZ0xHElnOYgT3ITSKo2d70qk='
+                                       'sha256-+y9gMGV/P3FngGum9Mvnx6eIkNXd3OdDL9QocAU07Ag='
+                                       'sha256-GAKmQIFmKEndinx2ia5tcieIbmUHMFahxx/NeF/qaao='
+                                       'sha256-NGmS0KnoFDIlsdtZdtOPR52L8m75ZJNNhwPjkNjcCmw=';
 
                                        script-src 'self'
                                        https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js
