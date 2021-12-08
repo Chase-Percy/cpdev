@@ -16,7 +16,8 @@
 
                                        img-src 'self'
                                        https://i.ytimg.com/vi_webp/2XUEb0cKoXo/mqdefault.webp
-                                       https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.svg;
+                                       https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.svg
+                                       https://d33wubrfki0l68.cloudfront.net;
 
                                        frame-src 'self'
                                        https://www.youtube.com/;
