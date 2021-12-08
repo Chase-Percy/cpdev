@@ -43,11 +43,7 @@ tags: []
 - Doxygen
 {{< endcolumns >}}
 
-{{< gallery >}}
-{{< figure src = "/img/ta/kanban.png" >}}
-{{< figure src = "/img/ta/actions1.png" >}}
-{{< figure src = "/img/ta/actions2.png" >}}
-{{< /gallery >}}
+{{< gallery dir="/img/ta/project/" />}}
 
 {{< line >}}
 
@@ -69,11 +65,7 @@ was what allowed us to achieve greater visual fidelity while maintaining good pe
 ### GUI
 Designed by me using the [ImGui](https://github.com/ocornut/imgui) Library. 
 
-{{< gallery >}}
-{{< figure src = "/img/ta/gui0.png" >}}
-{{< figure src = "/img/ta/gui1.png" >}}
-{{< figure src = "/img/ta/gui2.png" >}}
-{{< /gallery >}}
+{{< gallery dir="/img/ta/gui/" />}}
 
 ### Arcanist Game Implementation
 This included the game logic for the arcanist (excluding AI). Object events such as model updates, basic enemy
