@@ -7,7 +7,10 @@ subtitle: "Pathfinding"
 image: ""
 tags: []
 ---
-![Icons](/img/algo/icons.png "JAVASCRIPT | BABYLON JS")
+
+{{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
+
+{{< whiteLine >}}
 
 ### Controls:
 - Left-click to place/remove black blocks

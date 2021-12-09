@@ -39,3 +39,13 @@ iframe.youtube {
     height: 100%;
     border: 0;
 }
+
+figure figcaption {
+    text-align: center;
+}
+
+figure.lazyimg {
+    position: relative;
+    height: auto;
+    width: auto;
+}

@@ -7,7 +7,8 @@ subtitle: "Chase Percy"
 image: ""
 tags: []
 ---
-![me](/img/me.png)
+
+{{< lazyimg src="/img/me.png" class="lazyimg" >}}
 
 ## A bit about me
 

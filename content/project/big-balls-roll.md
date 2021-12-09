@@ -8,7 +8,9 @@ image: ""
 tags: []
 ---
 
-![logos](/img/bbr/icons.png "C | LUA | CMAKE | GITHUB")
+{{< lazyimg src="/img/bbr/icons.png" class="lazyimg" title="C | LUA | CMAKE | GITHUB" >}}
+
+{{< whiteLine >}}
 
 ## A Marbles and monkey ball inspired game
 
@@ -42,7 +44,9 @@ tags: []
 - LLVM Style Guide
 {{< endcolumns >}}
 
-![Kanban](/img/bbr/kanban.png)
+{{< whiteLine >}}
+
+{{< lazyimg src="/img/bbr/kanban.png" class="lazyimg" >}}
 
 {{< line >}}
 
@@ -53,7 +57,7 @@ dynamically during runtime and through pre-loading at engine start
 up. The manager was responsible for storing texture ID's and providing them
 when a texture was requested. [STB_IMAGE](https://github.com/nothings/stb/blob/master/stb_image.h) was used to load textures from PNG and JPG filetypes.
 
-![textures](/img/bbr/tm.png)
+{{< lazyimg src="/img/bbr/tm.png" class="lazyimg" >}}
 
 ### Physics Debug Renderer
 A debug renderer to show the Bounding boxes of the physics objects
@@ -61,22 +65,22 @@ within the scene. A vector data structure was implemented so that
 debug data could be inserted dynamically without having to first check
 the number of collision bodies were in the scene.
 
-![debug](/img/bbr/debug.png)
+{{< lazyimg src="/img/bbr/debug.png" >}}
 
 ### GUI
 The GUI was implemented using the [Nuklear](https://github.com/Immediate-Mode-UI/Nuklear) immediate mode GUI 
 library.
 
-![GUI](/img/bbr/gui.png)
+{{< lazyimg src="/img/bbr/gui.png" class="lazyimg" >}}
 
 ### Skybox
 A simple skybox that was rendered in a 1x1 cube around the players 
 camera and drawn first in the scene with depth off.
 
-![Skybox](/img/bbr/skybox.png)
+{{< lazyimg src="/img/bbr/skybox.png" class="lazyimg" >}}
 
 ### Game Logic (Shared)
 I Helped Peter implement game logic in LUA, such as level transitions and ball movement and control.
 I Added scripts for in-game menu interactions/HUD, scoring, and polish such as models in the game.
 
-![Logic](/img/bbr/logic.png)
+{{< lazyimg src="/img/bbr/logic.png" class="lazyimg" >}}

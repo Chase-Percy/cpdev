@@ -8,7 +8,9 @@ image: ""
 tags: []
 ---
 
-![c_logo](/img/us_icons.png "C | GITHUB")
+{{< lazyimg src="/img/us_icons.png" title="C | GITHUB" loading="lazy" >}}
+
+{{< whiteLine >}}
 
 ## A minimal but complete unix shell
 -- Todo: add video

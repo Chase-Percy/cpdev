@@ -7,7 +7,11 @@ subtitle: "Game of Life"
 image: ""
 tags: []
 ---
-![Icons](/img/algo/icons.png "JAVASCRIPT | BABYLON JS")
+
+{{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
+
+{{< whiteLine >}}
+
 #### Rules & shapes can be found [here!](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 ### Controls:

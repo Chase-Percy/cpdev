@@ -8,7 +8,9 @@ image: ""
 tags: []
 ---
 
-![cpp_logo](/img/ta/icons.png "CPP | CMAKE | GITHUB")
+{{< lazyimg src="/img/ta/icons.png" class="lazyimg" title="CPP | CMAKE | GITHUB" class="lazyimg" >}}
+
+{{< whiteLine >}}
 
 ## A diablo inspired dungeon crawler
 
@@ -71,7 +73,7 @@ Designed by me using the [ImGui](https://github.com/ocornut/imgui) Library.
 This included the game logic for the arcanist (excluding AI). Object events such as model updates, basic enemy
 animations, input handling, level transitions, shadows, collision particles, etc...
 
-![game implementation](/img/ta/implementation.png)
+{{< lazyimg src="/img/ta/implementation.png" class="lazyimg" >}}
 
 ### Collision Detection
 Basic collision detection was used with data provided from map generation. This was used to ensure AI stayed within
@@ -83,7 +85,7 @@ the bounds of the map or walk through obstacles and that projectiles would explo
 A room generation and Map generation algorithm I made was used to randomly generate a map with a set amount of rooms
 and a range of possible obstacle densities.
 
-![map](/img/ta/map.png)
+{{< lazyimg src="/img/ta/map.png" class="lazyimg" >}}
 
 ### Connection Between Game State & AI  
 The AI and game state were associated through game objects which were updated to match the location
@@ -92,4 +94,4 @@ independent of the AI entities themselves. This was so if an AI entity was kille
 still exist, but now represent a dead enemy at the AI entities last location. I also helped adjust the AI to better
 navigate the rooms and refined certain features such as collisions and tweaking movement values.
 
-![AI Integration](/img/ta/integration.png)
+{{< lazyimg src="/img/ta/integration.png" class="lazyimg" >}}
