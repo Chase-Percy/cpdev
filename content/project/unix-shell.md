@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-{{< lazyimg src="/img/us_icons.png" title="C | GITHUB" loading="lazy" >}}
+{{< lazyimg src="/img/unix/icons.png" title="C | GITHUB" >}}
 
 {{< whiteLine >}}
 
@@ -43,10 +43,14 @@ tags: []
 - Kanban Board
 {{< endcolumns >}}
 
+{{< whiteLine >}}
+
+{{< lazyimg src="/img/unix/kanban.png" >}}
+
 {{< line >}}
 
 ## Features developed by me
-
+{{< whiteLine >}}
 ### Tokenization
 The tokenizer is responsible for transforming user input into a format that can be processed when the program creates
 commands from the input.
@@ -54,15 +58,28 @@ For the tokenization process I wanted to ensure that it would be able to scale f
 input from a user. To cater for this a vector like data structure was created and used when processing and storing user
 input.
 
+{{< lazyimg src="/img/unix/tokenization.png" >}}
+
+{{< whiteLine >}}
+
 ### Wildcards
 Both the * and ? wildcards are supported and are expanded during the tokenization process.
+
+{{< lazyimg src="/img/unix/wildcard.png" >}}
+
+{{< whiteLine >}}
 
 ### Command Creation
 Command creation is the process of converting the tokens into a format that can be processed by the shell. This takes
 into account the `? & ;` separators and separates commands appropriately.
+
+{{< lazyimg src="/img/unix/command.png" >}}
+
+{{< whiteLine >}}
 
 ### Shell Built-ins
 CD, Change the shell prompt, and exit were provided as built in shell commands that were executed from the parent
 shell. The only built-in that was executed in a child process was the PWD command so that it's output could be used
 with file redirection and piping between processes.
 
+{{< lazyimg src="/img/unix/built-ins.png" >}}

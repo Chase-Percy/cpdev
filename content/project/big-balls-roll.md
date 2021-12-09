@@ -51,6 +51,7 @@ tags: []
 {{< line >}}
 
 ## Features developed by me
+{{< whiteLine >}}
 ### Texture Manager
 A simple texture manager that was responsible for loading textures 
 dynamically during runtime and through pre-loading at engine start 
@@ -58,6 +59,7 @@ up. The manager was responsible for storing texture ID's and providing them
 when a texture was requested. [STB_IMAGE](https://github.com/nothings/stb/blob/master/stb_image.h) was used to load textures from PNG and JPG filetypes.
 
 {{< lazyimg src="/img/bbr/tm.png" class="lazyimg" >}}
+{{< whiteLine >}}
 
 ### Physics Debug Renderer
 A debug renderer to show the Bounding boxes of the physics objects
@@ -66,18 +68,21 @@ debug data could be inserted dynamically without having to first check
 the number of collision bodies were in the scene.
 
 {{< lazyimg src="/img/bbr/debug.png" >}}
+{{< whiteLine >}}
 
 ### GUI
 The GUI was implemented using the [Nuklear](https://github.com/Immediate-Mode-UI/Nuklear) immediate mode GUI 
 library.
 
 {{< lazyimg src="/img/bbr/gui.png" class="lazyimg" >}}
+{{< whiteLine >}}
 
 ### Skybox
 A simple skybox that was rendered in a 1x1 cube around the players 
 camera and drawn first in the scene with depth off.
 
 {{< lazyimg src="/img/bbr/skybox.png" class="lazyimg" >}}
+{{< whiteLine >}}
 
 ### Game Logic (Shared)
 I Helped Peter implement game logic in LUA, such as level transitions and ball movement and control.

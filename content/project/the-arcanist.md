@@ -51,6 +51,8 @@ tags: []
 
 ## Features developed by me
 
+{{< whiteLine >}}
+
 ### Game Engine
 - [OFF](https://en.wikipedia.org/wiki/OFF_(file_format)), [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file), and [MTL](https://en.wikipedia.org/wiki/Wavefront_.obj_file#Material_template_library) Loader
 - [VBO](https://en.wikipedia.org/wiki/Vertex_buffer_object) Support
@@ -68,24 +70,28 @@ was what allowed us to achieve greater visual fidelity while maintaining good pe
 Designed by me using the [ImGui](https://github.com/ocornut/imgui) Library. 
 
 {{< gallery dir="/img/ta/gui/" />}}
+{{< whiteLine >}}
 
 ### Arcanist Game Implementation
 This included the game logic for the arcanist (excluding AI). Object events such as model updates, basic enemy
 animations, input handling, level transitions, shadows, collision particles, etc...
 
 {{< lazyimg src="/img/ta/implementation.png" class="lazyimg" >}}
+{{< whiteLine >}}
 
 ### Collision Detection
 Basic collision detection was used with data provided from map generation. This was used to ensure AI stayed within
 the bounds of the map or walk through obstacles and that projectiles would explode on impacting something. 
 
 {{< youtube EzsScwbQ-j0  >}}
+{{< whiteLine >}}
 
 ### Seeded Map Generation
 A room generation and Map generation algorithm I made was used to randomly generate a map with a set amount of rooms
 and a range of possible obstacle densities.
 
 {{< lazyimg src="/img/ta/map.png" class="lazyimg" >}}
+{{< whiteLine >}}
 
 ### Connection Between Game State & AI  
 The AI and game state were associated through game objects which were updated to match the location
