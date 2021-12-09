@@ -20,7 +20,9 @@ package = "netlify-plugin-image-optim"
   # https://github.com/kangax/html-minifier#options-quick-reference
   [plugins.inputs.minifierOptions]
     removeComments = true
-    collapseInlineTagWhitespace = false
+    collapseWhiteSpace = true
+    collapseInlineTagWhitespace = true
+    removeRedundantAttributes = true
 
 [[headers]]
   for = "/*"
