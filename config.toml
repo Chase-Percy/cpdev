@@ -20,9 +20,9 @@ pygmentsCodefencesGuessSyntax = true
 # comments = true
 # readingTime = true
 # wordCount = true
-  useHLJS = true
+# useHLJS = true
 # socialShare = true
-  delayDisqus = true
+# delayDisqus = true
   showRelatedPosts = true
   hideAuthor = true
 
