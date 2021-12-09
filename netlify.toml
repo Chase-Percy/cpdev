@@ -23,6 +23,20 @@ package = "netlify-plugin-image-optim"
     collapseWhiteSpace = true
     collapseInlineTagWhitespace = true
     removeRedundantAttributes = true
+    collapseBooleanAttributes = true
+    decodeEntities = true
+    html5 = true
+    minifyCSS = true
+    minifyJS = true
+    processConditionalComments = true
+    removeAttributeQuotes = true
+    removeOptionalTags = true
+    removeScriptTypeAttributes = true
+    removeStyleLinkTypeAttributes = true
+    sortAttributes = true
+    sortClassName = true
+    trimCustomFragments = true
+    useShortDoctype = true
 
 [[headers]]
   for = "/*"
