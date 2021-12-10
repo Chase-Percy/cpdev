@@ -1,4 +1,4 @@
-<link rel='stylesheet' type='text/css' href="{{.Site.BaseURL}}css/cp-dev.css" media="print" onload="this.media='all'">
+<link rel='stylesheet' type='text/css' href="{{.Site.BaseURL}}css/cp-dev.css">
 
 {{ if or (eq .Title "A*") (eq .Title "Cellular Automata") }}
 <style>
@@ -27,6 +27,6 @@
 {{ end }}
 
 {{ if eq .Title "Contact Details" }}
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' media="print" onload="this.media='all'">
-<link href="{{.Site.BaseURL}}css/contactDetails.css" rel='stylesheet' type='text/css' media="print" onload="this.media='all'">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href="{{.Site.BaseURL}}css/contactDetails.css" rel='stylesheet' type='text/css'>
 {{ end }}
