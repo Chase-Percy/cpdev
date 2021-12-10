@@ -65,4 +65,5 @@ package = "netlify-plugin-image-optim"
                                        https://d33wubrfki0l68.cloudfront.net
                                        'sha256-GKAN6QbhGHqa8VmVzy/zBId270+p8iMUhTPpbJQlRT4='
                                        'sha256-0PsWxn+B8H5lwgiessadGq3VFchRU+6mjyWpvUG5Ce8='
-                                       'sha256-qs0Yszad4nwVEsj8rSanks1hcT2dyXhaY9lTOibYQLU='; '''
+                                       'sha256-qs0Yszad4nwVEsj8rSanks1hcT2dyXhaY9lTOibYQLU='
+                                       'sha256-V42Y1nx2Vbr1877xzmCTt5qllEyRJjtdyGloSxQwx34='; '''
