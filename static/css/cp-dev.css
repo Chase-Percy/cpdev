@@ -49,3 +49,7 @@ figure.lazyimg {
     height: auto;
     width: auto;
 }
+
+div.textCentre {
+    text-align: center;
+}

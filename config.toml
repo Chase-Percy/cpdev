@@ -66,21 +66,11 @@ pygmentsCodefencesGuessSyntax = true
     weight = 3
 
 [[menu.main]]
+    parent = "Projects"
     identifier = "Algorithms"
+    url = "project/algorithms"
     name = "Algorithms"
-    weight = 3
-
-[[menu.main]]
-    parent = "Algorithms"
-    name = "A*"
-    url = "algorithms/a_star"
-    weight = 2
-
-[[menu.main]]
-    parent = "Algorithms"
-    name = "Cellular Automata"
-    url = "algorithms/cellular-automata"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Contact"
