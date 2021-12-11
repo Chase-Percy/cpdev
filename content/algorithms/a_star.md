@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-{{< lazyimg src="/img/algo/icons.webp" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
+{{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
 
 {{< whiteLine >}}
 
