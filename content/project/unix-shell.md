@@ -6,6 +6,7 @@ date: 2021-11-13T16:52:11+08:00
 subtitle: "ICT374 Project"
 image: ""
 tags: []
+bigimg: [{src: "/img/unix/banner.png"}]
 ---
 
 {{< lazyimg src="/img/unix/icons.png" title="C | GITHUB" >}}

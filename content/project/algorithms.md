@@ -6,6 +6,7 @@ date: 2021-12-10T18:13:28+08:00
 subtitle: "Interactive and Fun"
 image: ""
 tags: []
+bigimg: [{src: "/img/algo/banner.png"}]
 ---
 {{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
 {{< whiteLine >}}
