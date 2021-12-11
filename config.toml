@@ -78,4 +78,4 @@ pygmentsCodefencesGuessSyntax = true
     weight = 5
 
 [[Params.bigimg]]
-  src = "img/trees.jpg"
+  src = "img/trees.jpg" # image credit: https://www.pexels.com/photo/pine-trees-1834399/
