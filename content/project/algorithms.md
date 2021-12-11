@@ -7,7 +7,7 @@ subtitle: "Interactive and Fun"
 image: ""
 tags: []
 ---
-{{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
+{{< lazyimg src="/img/algo/icons.webp" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
 {{< whiteLine >}}
 
 This page contains a continuously growing collection of algorithms written in javascript and made interactive through
@@ -19,7 +19,7 @@ the Babylon JS game engine.
 
 {{< centreText h="2" >}} A* Pathfinding {{< /centreText >}}
 
-{{< lazyimg src="/img/algo/a_star.png" height="50%" width="50%" >}}
+{{< lazyimg src="/img/algo/a_star.webp" height="50%" width="50%" >}}
 
 {{< whiteLine >}}
 
@@ -39,7 +39,7 @@ For more information about A* pathfinding please read [here!](https://en.wikiped
 
 {{< centreText h="2" >}} Cellular Automata {{< /centreText >}}
 
-{{< lazyimg src="/img/algo/cell.png" height="50%" width="50%" >}}
+{{< lazyimg src="/img/algo/cell.webp" height="50%" width="50%" >}}
 {{< whiteLine >}}
 
 A program that implements conways game of life, a variant of cellular automata. 

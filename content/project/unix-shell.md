@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-{{< lazyimg src="/img/unix/icons.png" title="C | GITHUB" >}}
+{{< lazyimg src="/img/unix/icons.webp" title="C | GITHUB" >}}
 
 {{< whiteLine >}}
 
@@ -45,7 +45,7 @@ tags: []
 
 {{< whiteLine >}}
 
-{{< lazyimg src="/img/unix/kanban.png" >}}
+{{< lazyimg src="/img/unix/kanban.webp" >}}
 
 {{< line >}}
 
@@ -58,14 +58,14 @@ For the tokenization process I wanted to ensure that it would be able to scale f
 input from a user. To cater for this a vector like data structure was created and used when processing and storing user
 input.
 
-{{< lazyimg src="/img/unix/tokenization.png" >}}
+{{< lazyimg src="/img/unix/tokenization.webp" >}}
 
 {{< whiteLine >}}
 
 ### Wildcards
 Both the * and ? wildcards are supported and are expanded during the tokenization process.
 
-{{< lazyimg src="/img/unix/wildcard.png" >}}
+{{< lazyimg src="/img/unix/wildcard.webp" >}}
 
 {{< whiteLine >}}
 
@@ -73,7 +73,7 @@ Both the * and ? wildcards are supported and are expanded during the tokenizatio
 Command creation is the process of converting the tokens into a format that can be processed by the shell. This takes
 into account the `? & ;` separators and separates commands appropriately.
 
-{{< lazyimg src="/img/unix/command.png" >}}
+{{< lazyimg src="/img/unix/command.webp" >}}
 
 {{< whiteLine >}}
 
@@ -82,4 +82,4 @@ CD, Change the shell prompt, and exit were provided as built in shell commands t
 shell. The only built-in that was executed in a child process was the PWD command so that it's output could be used
 with file redirection and piping between processes.
 
-{{< lazyimg src="/img/unix/built-ins.png" >}}
+{{< lazyimg src="/img/unix/built-ins.webp" >}}

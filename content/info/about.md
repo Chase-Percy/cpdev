@@ -8,7 +8,9 @@ image: ""
 tags: []
 ---
 
-{{< lazyimg src="/img/me.png" class="lazyimg" >}}
+{{< lazyimg src="/img/me.webp" class="lazyimg" >}}
+
+TODO: Get better pic :p
 
 ## A bit about me
 

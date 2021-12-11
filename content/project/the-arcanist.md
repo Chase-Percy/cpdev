@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-{{< lazyimg src="/img/ta/icons.png" class="lazyimg" title="CPP | CMAKE | GITHUB" class="lazyimg" >}}
+{{< lazyimg src="/img/ta/icons.webp" class="lazyimg" title="CPP | CMAKE | GITHUB" class="lazyimg" >}}
 
 {{< whiteLine >}}
 
@@ -76,7 +76,7 @@ Designed by me using the [ImGui](https://github.com/ocornut/imgui) Library.
 This included the game logic for the arcanist (excluding AI). Object events such as model updates, basic enemy
 animations, input handling, level transitions, shadows, collision particles, etc...
 
-{{< lazyimg src="/img/ta/implementation.png" class="lazyimg" >}}
+{{< lazyimg src="/img/ta/implementation.webp" class="lazyimg" >}}
 {{< whiteLine >}}
 
 ### Collision Detection
@@ -90,7 +90,7 @@ the bounds of the map or walk through obstacles and that projectiles would explo
 A room generation and Map generation algorithm I made was used to randomly generate a map with a set amount of rooms
 and a range of possible obstacle densities.
 
-{{< lazyimg src="/img/ta/map.png" class="lazyimg" >}}
+{{< lazyimg src="/img/ta/map.webp" class="lazyimg" >}}
 {{< whiteLine >}}
 
 ### Connection Between Game State & AI  
@@ -100,4 +100,4 @@ independent of the AI entities themselves. This was so if an AI entity was kille
 still exist, but now represent a dead enemy at the AI entities last location. I also helped adjust the AI to better
 navigate the rooms and refined certain features such as collisions and tweaking movement values.
 
-{{< lazyimg src="/img/ta/integration.png" class="lazyimg" >}}
+{{< lazyimg src="/img/ta/integration.webp" class="lazyimg" >}}

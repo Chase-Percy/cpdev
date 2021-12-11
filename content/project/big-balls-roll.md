@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-{{< lazyimg src="/img/bbr/icons.png" class="lazyimg" title="C | LUA | CMAKE | GITHUB" >}}
+{{< lazyimg src="/img/bbr/icons.webp" class="lazyimg" title="C | LUA | CMAKE | GITHUB" >}}
 
 {{< whiteLine >}}
 
@@ -46,7 +46,7 @@ tags: []
 
 {{< whiteLine >}}
 
-{{< lazyimg src="/img/bbr/kanban.png" class="lazyimg" >}}
+{{< lazyimg src="/img/bbr/kanban.webp" class="lazyimg" >}}
 
 {{< line >}}
 
@@ -58,7 +58,7 @@ dynamically during runtime and through pre-loading at engine start
 up. The manager was responsible for storing texture ID's and providing them
 when a texture was requested. [STB_IMAGE](https://github.com/nothings/stb/blob/master/stb_image.h) was used to load textures from PNG and JPG filetypes.
 
-{{< lazyimg src="/img/bbr/tm.png" class="lazyimg" >}}
+{{< lazyimg src="/img/bbr/tm.webp" class="lazyimg" >}}
 {{< whiteLine >}}
 
 ### Physics Debug Renderer
@@ -67,25 +67,25 @@ within the scene. A vector data structure was implemented so that
 debug data could be inserted dynamically without having to first check
 the number of collision bodies were in the scene.
 
-{{< lazyimg src="/img/bbr/debug.png" >}}
+{{< lazyimg src="/img/bbr/debug.webp" >}}
 {{< whiteLine >}}
 
 ### GUI
 The GUI was implemented using the [Nuklear](https://github.com/Immediate-Mode-UI/Nuklear) immediate mode GUI 
 library.
 
-{{< lazyimg src="/img/bbr/gui.png" class="lazyimg" >}}
+{{< lazyimg src="/img/bbr/gui.webp" class="lazyimg" >}}
 {{< whiteLine >}}
 
 ### Skybox
 A simple skybox that was rendered in a 1x1 cube around the players 
 camera and drawn first in the scene with depth off.
 
-{{< lazyimg src="/img/bbr/skybox.png" class="lazyimg" >}}
+{{< lazyimg src="/img/bbr/skybox.webp" class="lazyimg" >}}
 {{< whiteLine >}}
 
 ### Game Logic (Shared)
 I Helped Peter implement game logic in LUA, such as level transitions and ball movement and control.
 I Added scripts for in-game menu interactions/HUD, scoring, and polish such as models in the game.
 
-{{< lazyimg src="/img/bbr/logic.png" class="lazyimg" >}}
+{{< lazyimg src="/img/bbr/logic.webp" class="lazyimg" >}}
