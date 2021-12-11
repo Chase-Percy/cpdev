@@ -7,7 +7,7 @@ subtitle: "Interactive and Fun"
 image: ""
 tags: []
 ---
-{{< lazyimg src="/img/algo/icons.webp" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
+{{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
 {{< whiteLine >}}
 
 This page contains a continuously growing collection of algorithms written in javascript and made interactive through
