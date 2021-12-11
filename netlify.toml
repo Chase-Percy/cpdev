@@ -10,7 +10,7 @@ package = "netlify-plugin-image-optim"
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = '''
+    Content-Security-Policy = "
                                        default-src 'self';
 
                                        font-src 'self'
@@ -30,13 +30,28 @@ package = "netlify-plugin-image-optim"
 
                                        object-src 'none';
 
-                                       style-src 'self' 'unsafe-inline'
+                                       style-src 'self'
                                        https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css
                                        https://use.fontawesome.com/releases/v5.5.0/css/all.css
                                        https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css
                                        https://fonts.googleapis.com
                                        https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css
-                                       https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css;
+                                       https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css
+                                       'sha256-slTiuoOyHa8PK+bmv7Jn6MimHl8/v+xwARlD0sj/zfA='
+                                       'sha256-SDcE9vKARLw3IvI2Yj1CWCkfl8YONU0VM/QOKxFek5c='
+                                       'sha256-UBCHLCqruOsRKPsCwz1OvHuxPBeEvdFH9piYgDdpw28='
+                                       'sha256-TticbkVH4dhw94fpOkML+S3qamZBFFoEaSsxCkTy7EE='
+                                       'sha256-PDPmXZiYkV0/hkF3A8lI7Sb1Yss6r0SytdtPe6DC5PM='
+                                       'sha256-peN89MK9iAymBz+6LNPYjp9ZwGTR3MtqIaBAfuckquI='
+                                       'sha256-NPY5CJj9epSon2pbrw7eMFxO8tJT8/CkmVZ4PgDSdvw='
+                                       'sha256-cgdsZAF6T6ZzaK0C16FZ4OSYGdapU2km5/SUcwOHO/Y='
+                                       'sha256-faF1ECocvHGtuKtNjtyYZSBZjz5LYZ36UQdMg5UAaKc='
+                                       'sha256-H6WnXlal+Rl5E9mjv3zTHGqpQG1J0j5tJ+zGCcyuA5Q='
+                                       'sha256-nHO1EqgalDviFCEOicxRbTu95Emla6SI0pkw+NHeuPE='
+                                       'sha256-DuBbm8hhpvismraz3MJhBlMD6Gh0LrHHYSn/P7dZLg0='
+                                       'sha256-j/wQfv+LDnGZd6+340jjpwCuaN4MphLC5X0dVKcwpKs='
+                                       'sha256-1W85jEjWZNk1NOUKfq9C8k3V12XMU7Qc5cIRSJar0gc='
+                                       'sha256-OJSHKOjjFoWqGO7bP0otblj28VVjR5xVY5Vm4tv76A0=';
 
                                        script-src 'self'
                                        https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js
@@ -52,4 +67,4 @@ package = "netlify-plugin-image-optim"
                                        'sha256-GKAN6QbhGHqa8VmVzy/zBId270+p8iMUhTPpbJQlRT4='
                                        'sha256-0PsWxn+B8H5lwgiessadGq3VFchRU+6mjyWpvUG5Ce8='
                                        'sha256-qs0Yszad4nwVEsj8rSanks1hcT2dyXhaY9lTOibYQLU='
-                                       'sha256-V42Y1nx2Vbr1877xzmCTt5qllEyRJjtdyGloSxQwx34='; '''
+                                       'sha256-V42Y1nx2Vbr1877xzmCTt5qllEyRJjtdyGloSxQwx34='; "
