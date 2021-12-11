@@ -6,7 +6,7 @@ date: 2021-11-13T16:45:38+08:00
 subtitle: "ICT289 Project"
 image: ""
 tags: []
-bigimg: [{src: "/img/bbr/banner.png"}]
+bigimg: [{src: "https://6499oujm.cdn.imgeng.in/img/bbr/banner.png"}]
 ---
 
 {{< lazyimg src="/img/bbr/icons.png" class="lazyimg" title="C | LUA | CMAKE | GITHUB" >}}

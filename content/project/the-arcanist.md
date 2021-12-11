@@ -6,7 +6,7 @@ date: 2021-11-13T16:47:55+08:00
 subtitle: "ICT290 Project"
 image: ""
 tags: []
-bigimg: [{src: "/img/ta/banner.webp"}]
+bigimg: [{src: "https://6499oujm.cdn.imgeng.in/img/ta/banner.webp"}]
 ---
 
 {{< lazyimg src="/img/ta/icons.png" class="lazyimg" title="CPP | CMAKE | GITHUB" class="lazyimg" >}}

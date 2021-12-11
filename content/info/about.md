@@ -6,7 +6,7 @@ date: 2021-11-13T16:19:50+08:00
 subtitle: "Chase Percy"
 image: ""
 tags: []
-bigimg: [{src: "/img/trees.jpg"}]
+bigimg: [{src: "https://6499oujm.cdn.imgeng.in/img/trees.jpg"}]
 ---
 
 {{< lazyimg src="/img/me.png" class="lazyimg" >}}

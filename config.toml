@@ -12,8 +12,8 @@ pygmentsCodefencesGuessSyntax = true
   homeTitle = "CP-DEV" # Set a different text for the header on the home page
   subtitle = "Chase Percy"
   mainSections = ["post"]
-  logo = "img/snake.webp" # Expecting square dimensions
-  favicon = "img/s_favicon.webp"
+  logo = "https://6499oujm.cdn.imgeng.in/img/snake.webp" # Expecting square dimensions
+  favicon = "https://6499oujm.cdn.imgeng.in/img/s_favicon.webp"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
@@ -78,4 +78,4 @@ pygmentsCodefencesGuessSyntax = true
     weight = 5
 
 [[Params.bigimg]]
-  src = "img/trees.jpg" # image credit: https://www.pexels.com/photo/pine-trees-1834399/
+  src = "https://6499oujm.cdn.imgeng.in/img/trees.jpg" # image credit: https://www.pexels.com/photo/pine-trees-1834399/

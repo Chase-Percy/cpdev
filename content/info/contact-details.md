@@ -6,7 +6,7 @@ date: 2021-11-13T17:02:07+08:00
 subtitle: "Chase Percy"
 image: ""
 tags: []
-bigimg: [{src: "/img/trees.jpg"}]
+bigimg: [{src: "https://6499oujm.cdn.imgeng.in/img/trees.jpg"}]
 ---
 
 Feel free to send me an email or message if you have any questions, or you are interested in getting in contact with me!
