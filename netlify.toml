@@ -10,7 +10,7 @@ package = "netlify-plugin-image-optim"
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "
+    Content-Security-Policy = '''
                                        default-src 'self';
 
                                        font-src 'self'
@@ -67,4 +67,4 @@ package = "netlify-plugin-image-optim"
                                        'sha256-GKAN6QbhGHqa8VmVzy/zBId270+p8iMUhTPpbJQlRT4='
                                        'sha256-0PsWxn+B8H5lwgiessadGq3VFchRU+6mjyWpvUG5Ce8='
                                        'sha256-qs0Yszad4nwVEsj8rSanks1hcT2dyXhaY9lTOibYQLU='
-                                       'sha256-V42Y1nx2Vbr1877xzmCTt5qllEyRJjtdyGloSxQwx34='; "
+                                       'sha256-V42Y1nx2Vbr1877xzmCTt5qllEyRJjtdyGloSxQwx34='; '''
