@@ -77,3 +77,5 @@ pygmentsCodefencesGuessSyntax = true
     url = "info/contact-details"
     weight = 5
 
+[[Params.bigimg]]
+  src = "img/trees.jpg"

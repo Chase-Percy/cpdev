@@ -3,7 +3,7 @@ title: "Algorithms"
 author: "Chase Percy"
 type: "page"
 date: 2021-12-10T18:13:28+08:00
-subtitle: "Interactive and Informative"
+subtitle: "Interactive and Fun"
 image: ""
 tags: []
 ---
