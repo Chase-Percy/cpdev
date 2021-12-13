@@ -16,7 +16,8 @@
 
                                        img-src 'self'
                                        https://elegant-pasteur-9ecd6b.netlify.app
-                                       https://i.ytimg.com/vi_webp/2XUEb0cKoXo/mqdefault.webp;
+                                       https://i.ytimg.com/vi_webp/2XUEb0cKoXo/mqdefault.webp
+                                       https://d33wubrfki0l68.cloudfront.net;
 
                                        frame-src 'self'
                                        https://www.youtube.com/;
