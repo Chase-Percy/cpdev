@@ -8,9 +8,11 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = '''
-                                       default-src 'self';
+                                       default-src 'self'
+                                       https://elegant-pasteur-9ecd6b.netlify.app;
 
                                        font-src 'self'
+                                       https://elegant-pasteur-9ecd6b.netlify.app
                                        https://cdnjs.cloudflare.com
                                        https://fonts.gstatic.com
                                        https://maxcdn.bootstrapcdn.com
@@ -18,6 +20,7 @@
                                        https://stackpath.bootstrapcdn.com;
 
                                        img-src 'self'
+                                       https://elegant-pasteur-9ecd6b.netlify.app
                                        https://i.ytimg.com/vi_webp/2XUEb0cKoXo/mqdefault.webp
                                        https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.svg
                                        https://d33wubrfki0l68.cloudfront.net;
@@ -28,6 +31,7 @@
                                        object-src 'none';
 
                                        style-src 'self'
+                                       https://elegant-pasteur-9ecd6b.netlify.app
                                        https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css
                                        https://use.fontawesome.com/releases/v5.5.0/css/all.css
                                        https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css
@@ -51,6 +55,7 @@
                                        'sha256-OJSHKOjjFoWqGO7bP0otblj28VVjR5xVY5Vm4tv76A0=';
 
                                        script-src 'self'
+                                       https://elegant-pasteur-9ecd6b.netlify.app
                                        https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js
                                        https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js
                                        https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js
