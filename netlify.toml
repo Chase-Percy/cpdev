@@ -1,9 +1,6 @@
 [build]
   command = "hugo --minify"
 
-[[plugins]]
-package = "netlify-plugin-image-optim"
-
 [[headers]]
   for = "/*"
   [headers.values]
@@ -23,8 +20,7 @@ package = "netlify-plugin-image-optim"
                                        img-src 'self'
                                        https://i.ytimg.com/vi_webp/2XUEb0cKoXo/mqdefault.webp
                                        https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.svg
-                                       https://d33wubrfki0l68.cloudfront.net
-                                       https://6499oujm.cdn.imgeng.in;
+                                       https://d33wubrfki0l68.cloudfront.net;
 
                                        frame-src 'self'
                                        https://www.youtube.com/;
