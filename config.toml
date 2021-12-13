@@ -25,6 +25,7 @@ pygmentsCodefencesGuessSyntax = true
 # delayDisqus = true
   showRelatedPosts = true
   hideAuthor = true
+  selfHosted = true
 
 [Author]
   name = "Chase Percy"
