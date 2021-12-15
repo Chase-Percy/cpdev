@@ -77,9 +77,14 @@ class graph {
         return (x === this.end[0] && y === this.end[1]);
     };
 
+    toggleBlock(x, y) {
+        this.toggleObjectiveBlocks(x, y);
+        this.toggleNodeBlock(x, y);
+    }
+
     toggleNodeBlock(x, y) {
-        x = Math.floor(x + 0.25);
-        y = Math.floor(y + 0.25);
+        x = Math.round(x);
+        y = Math.round(y);
         if (this.isInBounds(x, y) && !this.isStartNode(x, y) && !this.isEndNode(x, y)) {
             this.#nodeMap[x][y].blocked = !this.#nodeMap[x][y].blocked;
             if (this.#nodeMap[x][y].blocked) {
@@ -94,8 +99,8 @@ class graph {
     };
 
     toggleObjectiveBlocks(x, y) {
-        x = Math.floor(x + 0.25);
-        y = Math.floor(y + 0.25);
+        x = Math.round(x);
+        y = Math.round(y);
         if ((this.isStartNode(x, y) && this.#endActive) || !this.#startActive) {
             if (this.#startActive) {
                 this.#startActive = false;
@@ -283,10 +288,9 @@ function createGraph(scene, mapSize) {
     g.setNodeBlock(4, 3, true);
 
     scene.onPointerDown = function (event, result) {
-        if (event.button === 2) {
-            g.toggleObjectiveBlocks(result.pickedPoint.x, result.pickedPoint.z);
-        } else if (event.button === 0) {
-            g.toggleNodeBlock(result.pickedPoint.x, result.pickedPoint.z);
+        if (event.button === 0) {
+            g.toggleBlock(result.pickedPoint.x, result.pickedPoint.z);
+
         }
     }
 }
@@ -297,14 +301,8 @@ const createScene = function () {
     const scene = new BABYLON.Scene(engine);
 
     let mapSize = 10;
-    const camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 15, new BABYLON.Vector3(mapSize / 2, 0, mapSize / 2));
-    camera.lowerBetaLimit = 0.1;
-    camera.upperBetaLimit = (Math.PI / 2) * 0.9;
-    camera.lowerRadiusLimit = 10;
-    camera.upperRadiusLimit = 30;
-    camera.position = new BABYLON.Vector3(-1, 9, 12);
-    camera.attachControl(canvas, true, false);
-    camera.panningSensibility = 0;
+    var camera = new BABYLON.UniversalCamera("UniversalCamera", new BABYLON.Vector3(-3, 12, mapSize / 2), scene);
+    camera.setTarget(new BABYLON.Vector3(mapSize / 2, 0, mapSize / 2));
 
     const ambient = new BABYLON.HemisphericLight("ambient", new BABYLON.Vector3(mapSize / 2, 3, mapSize / 2));
     const dirLight = new BABYLON.DirectionalLight("dir", new BABYLON.Vector3(0, -1, 0), scene);

@@ -13,6 +13,5 @@ tags: []
 {{< whiteLine >}}
 
 ### Controls:
-- Left-click to place/remove black blocks
-- Right-click on the red or green block then click to place them again
-- Scroll wheel down to rotate
+- Click on blocks to replace and remove them
+- Clicking on the red/green blocks will allow you to move them
