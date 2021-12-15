@@ -23,4 +23,4 @@ tags: []
 {{< button id="stop" class="game3" >}} Stop {{< /button >}}
 {{< button id="reset" class="game3" >}} Reset {{< /button >}}
 
-{{< centreText id="status" h="3" >}} Status: Stopped {{< /centreText >}} 
+{{< centreText id="status" h="3" >}} Status: Not Running {{< /centreText >}} 
