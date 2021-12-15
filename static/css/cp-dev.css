@@ -134,6 +134,6 @@ details.dark summary.dark::-webkit-details-marker {
 }
 
 details.dark > ul {
-  padding-bottom: 1rem;
+  padding: 3rem;
   margin-bottom: 0;
 }
