@@ -11,6 +11,8 @@ tags: []
 {{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
 
 {{< whiteLine >}}
+{{< button href="/project/algorithms/" class="game centre" >}} ALGORITHMS {{< /button >}}
+
 
 ### Controls:
 - Click on blocks to replace and remove them

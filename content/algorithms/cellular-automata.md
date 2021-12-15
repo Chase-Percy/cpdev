@@ -11,6 +11,9 @@ tags: []
 {{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
 
 {{< whiteLine >}}
+{{< button href="/project/algorithms/" class="game centre" >}} ALGORITHMS {{< /button >}}
+
+{{< whiteLine >}}
 
 #### Rules & shapes can be found [here!](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
@@ -19,8 +22,8 @@ tags: []
 
 {{< line >}}
 
-{{< button id="start" class="game3" >}} Start {{< /button >}}
-{{< button id="stop" class="game3" >}} Stop {{< /button >}}
-{{< button id="reset" class="game3" >}} Reset {{< /button >}}
+{{< button id="start" class="game game3" >}} Start {{< /button >}}
+{{< button id="stop" class="game game3" >}} Stop {{< /button >}}
+{{< button id="reset" class="game game3" >}} Reset {{< /button >}}
 
 {{< centreText id="status" h="3" >}} Status: Not Running {{< /centreText >}} 

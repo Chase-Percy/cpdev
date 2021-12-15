@@ -31,7 +31,7 @@ For more information about A* pathfinding please read [here!](https://en.wikiped
 
 {{< whiteLine >}}
 
-{{< centreText h="3" href="/algorithms/a_star" >}} PLAY A* PATHFINDING DEMO {{< /centreText >}}
+{{< button href="/algorithms/a_star" class="game centre" >}} PLAY A* PATHFINDING DEMO {{< /button >}}
 
 {{< whiteLine >}}
 {{< line >}}
@@ -48,9 +48,8 @@ A program that implements conways game of life, a variant of cellular automata.
 The rules for conways game of life can be found [here!](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) 
 
 {{< whiteLine >}}
-{{< centreText h="3" href="/algorithms/cellular-automata" >}} PLAY CELLULAR AUTOMATA DEMO {{< /centreText >}}
 
-
+{{< button href="/algorithms/cellular-automata" class="game centre" >}} PLAY CELLULAR AUTOMATA DEMO {{< /button >}}
 {{< whiteLine >}}
 {{< line >}}
 
