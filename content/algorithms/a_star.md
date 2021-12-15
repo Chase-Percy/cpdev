@@ -11,7 +11,7 @@ tags: []
 {{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
 
 {{< whiteLine >}}
-{{< button href="/project/algorithms/" class="game centre" >}} ALGORITHMS {{< /button >}}
+{{< button href="/project/algorithms/" class="game centre" >}} Algorithms {{< /button >}}
 
 
 ### Controls:
