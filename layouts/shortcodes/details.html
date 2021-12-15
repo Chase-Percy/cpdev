@@ -1,0 +1,6 @@
+<details {{ with .Get "dClass" }} class="{{ . }}" {{ end }}>
+    <summary {{ with .Get "sClass" }} class="{{ . }}" {{ end }}>{{ with .Get "title" }} {{ . }} {{ end }}</summary>
+    <ul>
+        {{ .Inner }}
+    </ul>
+</details>

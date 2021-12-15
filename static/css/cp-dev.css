@@ -20,6 +20,15 @@ hr.white {
     border: 1px white;
 }
 
+hr.black {
+    display: block;
+    color: #282828;
+    overflow: hidden;
+    height: 3px;
+    background-color: #282828;
+    border: 1px #282828;
+}
+
 div.endColumns {
     clear: both;
 }
@@ -79,6 +88,52 @@ button.game3 {
     border: solid 2px darkblue;
 }
 
-.game:active {/*on Click*/
+.game:active {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+details.dark {
+  width: 100%;
+  margin: 0 auto;
+  background: #282828;
+  color: white;
+  margin-bottom: .5rem;
+  box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+summary.dark {
+  padding: 1rem;
+  display: block;
+  background: #333;
+  padding-left: 2.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+summary.dark:before {
+  content: '';
+  border-width: .6rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.7rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+details.dark[open] > summary.dark:before {
+  transform: rotate(90deg);
+}
+
+details.dark summary.dark::-webkit-details-marker {
+  display:none;
+}
+
+details.dark > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
 }
