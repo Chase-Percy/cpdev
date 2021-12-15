@@ -25,8 +25,8 @@ the Babylon JS game engine.
 
 {{< blackline >}}
 
-A simple program that implements A* pathfinding and uses it find the shortest path between two points. 
-It updates in realtime and dynamically finds the new shortest path. 
+A simple program that implements A* pathfinding and uses it find the shortest path between two points.
+It updates in realtime and dynamically finds the new shortest path.<br><br>
 
 For more information about A* pathfinding please read {{< link href="https://en.wikipedia.org/wiki/A*_search_algorithm" >}} here! {{< /link >}}
 
@@ -40,13 +40,13 @@ For more information about A* pathfinding please read {{< link href="https://en.
 {{< centreText h="2" >}} Cellular Automata {{< /centreText >}}
 
 {{< lazyimg src="/img/algo/cell.webp" height="50%" width="50%" >}}
-{{< whiteLine >}}
+{{< blackline >}}
 
-A program that implements conways game of life, a variant of cellular automata. 
+A program that implements conways game of life, a variant of cellular automata.<br><br>
 
 The rules for conways game of life can be found {{< link href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" >}} here! {{< /link >}}
 
-{{< whiteLine >}}
+{{< blackline >}}
 
 {{< button href="/algorithms/cellular-automata" class="game centre" >}} PLAY CELLULAR AUTOMATA DEMO {{< /button >}}
 {{</details>}}
