@@ -1,4 +1,4 @@
-<div class="textCentre">
+<div id="{{ .Get "id" }}" class="textCentre">
 {{ with .Get "h" }} <h{{(.)}}> {{ end }}
 {{ with .Get "href" }} <a href="{{.}}"> {{ end }}
 {{ .Inner }}

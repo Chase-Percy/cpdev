@@ -16,5 +16,11 @@ tags: []
 
 ### Controls:
 - Left-click to place a block
-- Right-click to start or stop the simulation
-- Scroll wheel down to clear the board
+
+{{< line >}}
+
+{{< button id="start" class="game3" >}} Start {{< /button >}}
+{{< button id="stop" class="game3" >}} Stop {{< /button >}}
+{{< button id="reset" class="game3" >}} Reset {{< /button >}}
+
+{{< centreText id="status" h="3" >}} Status: Stopped {{< /centreText >}} 

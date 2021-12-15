@@ -53,3 +53,9 @@ figure.lazyimg {
 div.textCentre {
     text-align: center;
 }
+
+button.game3 {
+    height: 100%;
+    width: 32.3%;
+    position: relative;
+}

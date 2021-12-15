@@ -82,8 +82,8 @@ class CA_Graph {
         }
     }
 
-    toggleSimulation() {
-        this.#isRunning = !this.#isRunning;
+    setSimulation(isRunningSetter) {
+        this.#isRunning = isRunningSetter;
     };
 
     clear() {
@@ -112,6 +112,8 @@ class CA_Graph {
         for (let i = 0; i < this.size; ++i) {
             temp[i] = this.#cellMap[i].slice(0);
         }
+
+        let populated = false;
 
         for (let row = 0; row < this.size; ++row) {
             for (let col = 0; col < this.size; ++col) {
@@ -144,6 +146,10 @@ class CA_Graph {
                     + this.#cellMap[row][colPlus]
                     + this.#cellMap[rowPlus][colPlus]);
 
+                if (count > 0) {
+                    populated = true;
+                }
+
                 if (this.#cellMap[row][col]) {
                     switch (count) {
                         case 0:
@@ -166,8 +172,14 @@ class CA_Graph {
             }
         }
 
-        for (let i = 0; i < this.size; ++i) {
-            this.#cellMap[i] = temp[i].slice(0);
+        if (populated) {
+            for (let i = 0; i < this.size; ++i) {
+                this.#cellMap[i] = temp[i].slice(0);
+            }
+        } else {
+            this.clear();
+            this.setSimulation(false);
+            document.getElementById('status').innerHTML = "<h3>Status: Not Running</h3>";
         }
     };
 }
@@ -206,12 +218,8 @@ const createMap = function (scene, mapSize) {
     createPenta(caMap);
 
     scene.onPointerDown = function (event, result) {
-        if (event.button === 2) {
-            caMap.toggleSimulation();
-        } else if (event.button === 0) {
+        if (event.button === 0) {
             caMap.toggleCell(result.pickedPoint.x, result.pickedPoint.z);
-        } else if (event.button === 1) {
-            caMap.clear();
         }
     }
 
@@ -224,14 +232,8 @@ const createScene = function () {
 
     const scene = new BABYLON.Scene(engine);
 
-    const camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 15, new BABYLON.Vector3(mapSize / 2, 0, mapSize / 2));
-    camera.lowerBetaLimit = 0.1;
-    camera.upperBetaLimit = (Math.PI / 2) * 0.9;
-    camera.lowerRadiusLimit = 10;
-    camera.upperRadiusLimit = 30;
-    camera.position = new BABYLON.Vector3(mapSize / 2, 30, 0);
-    camera.attachControl(canvas, true, false);
-    camera.panningSensibility = 0;
+    var camera = new BABYLON.UniversalCamera("UniversalCamera", new BABYLON.Vector3(mapSize / 2, 24, 0), scene);
+    camera.setTarget(new BABYLON.Vector3(mapSize / 2, 0, mapSize / 2));
 
     const ambient = new BABYLON.HemisphericLight("ambient", new BABYLON.Vector3(mapSize / 2, 3, mapSize / 2));
     const dirLight = new BABYLON.DirectionalLight("dir", new BABYLON.Vector3(-2, -1, 0), scene);
@@ -260,3 +262,20 @@ engine.runRenderLoop(function () {
 window.addEventListener("resize", function () {
     engine.resize();
 });
+
+document.getElementById('start').onclick = function () {
+    caMap.setSimulation(true);
+    document.getElementById('status').innerHTML = "<h3>Status: Running</h3>";
+};
+
+document.getElementById('stop').onclick = function () {
+    caMap.setSimulation(false);
+    document.getElementById('status').innerHTML = "<h3>Status: Not Running</h3>";
+};
+
+
+document.getElementById('reset').onclick = function () {
+    caMap.clear();
+    caMap.setSimulation(false);
+    document.getElementById('status').innerHTML = "<h3>Status: Reset (Not Running)</h3>";
+};
