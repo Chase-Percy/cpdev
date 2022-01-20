@@ -16,10 +16,10 @@ title: "CP-DEV"
 
 {{< slider >}}
 
-{{< lazyimg src="img/bbr/banner.png" class="lazyimg" title="Big Balls Roll" link="project/big-balls-roll" height="400">}}
-{{< lazyimg src="img/ta/banner.png" class="lazyimg" title="The Arcanist" link="project/the-arcanist" height="400">}}
-{{< lazyimg src="img/unix/command.png" class="lazyimg" title="Unix Shell" link="project/unix-shell" height="400">}}
-{{< lazyimg src="img/algo/a_star.webp" class="lazyimg" title="Algorithms" link="project/algorithms" height="400">}}
+{{< lazyimg src="img/home/bbr.png" class="lazyimg" title="Big Balls Roll" link="project/big-balls-roll">}}
+{{< lazyimg src="img/home/ta.png" class="lazyimg" title="The Arcanist" link="project/the-arcanist">}}
+{{< lazyimg src="img/home/un.png" class="lazyimg" title="Unix Shell" link="project/unix-shell">}}
+{{< lazyimg src="img/home/a_star.png" class="lazyimg" title="Algorithms" link="project/algorithms">}}
 
 {{< /slider >}}
 
