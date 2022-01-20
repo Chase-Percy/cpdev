@@ -30,3 +30,10 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <link href="{{.Site.BaseURL}}css/contactDetails.css" rel='stylesheet' type='text/css'>
 {{ end }}
+
+{{ if eq .Title "CP-DEV" }}
+<link rel='stylesheet' href="{{.Site.BaseURL}}css/tiny-slider.css" type='text/css'>
+{{ else }}
+ <link rel="stylesheet" href="{{ "css/photoswipe.min.css" | absURL }}" />
+ <link rel="stylesheet" href="{{ "css/photoswipe.default-skin.min.css" | absURL }}" />
+{{ end }}
