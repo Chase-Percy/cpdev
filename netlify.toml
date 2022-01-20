@@ -40,7 +40,8 @@
                                        'sha256-DuBbm8hhpvismraz3MJhBlMD6Gh0LrHHYSn/P7dZLg0='
                                        'sha256-j/wQfv+LDnGZd6+340jjpwCuaN4MphLC5X0dVKcwpKs='
                                        'sha256-1W85jEjWZNk1NOUKfq9C8k3V12XMU7Qc5cIRSJar0gc='
-                                       'sha256-OJSHKOjjFoWqGO7bP0otblj28VVjR5xVY5Vm4tv76A0=';
+                                       'sha256-OJSHKOjjFoWqGO7bP0otblj28VVjR5xVY5Vm4tv76A0='
+                                       'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';
 
                                        script-src 'self'
                                        https://elegant-pasteur-9ecd6b.netlify.app
