@@ -3,9 +3,7 @@ title: "CP-DEV"
 ---
 {{< centreText h="1" >}} Hello :) {{< /centreText >}}
 
-#### Welcome to CP-DEV, a platform for me to share who I am, what I do, and where I'm going!
-
-
+{{< centreText h="4" >}} Welcome to CP-DEV, a platform for me to share who I am, what I do, and where I'm going! {{< /centreText >}}
 
 {{< line >}}
 
