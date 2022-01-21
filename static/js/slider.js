@@ -6,7 +6,7 @@ let slider = tns({
     center: true,
     autoplayHoverPause: false,
     mouseDrag: true,
-    autoplayTimeout: 7000,
+    autoplayTimeout: 5000,
     speed: 1000,
     navPosition: 'bottom',
     controls: false,
