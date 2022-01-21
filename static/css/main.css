@@ -55,7 +55,8 @@ hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color: inherit;
+  background-color: black;
+  border-color: #39D1B4;
   border-radius: 3px;
 }
 

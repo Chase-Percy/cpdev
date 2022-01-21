@@ -1,6 +1,28 @@
-hr {
-    color: royalblue;
-    background-color: royalblue;
+hr.main {
+  height: 1px;
+  width: 25%;
+  margin: 30px auto;
+  background-color: black;
+  border-width: 4px;
+  border-radius: 3px;
+  border-color: #39D1B4;
+  box-shadow: 0 2px 2px -1px #F65A5B;
+}
+
+hr.main::before {
+    content: "";
+          width: 10px;
+          height: 10px;
+          background: #39D1B4;
+          display: inline-block;
+          border: 2px solid #39D1B4;
+          position: absolute;
+          left: 50%;
+          margin: -6px 0 0 -4px;
+          box-shadow: 2px 2px 2px -1px #F65A5B;
+          transform:rotate(45deg);
+          -ms-transform:rotate(45deg); /* IE 9 */
+          -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
 }
 
 hr.blue {
