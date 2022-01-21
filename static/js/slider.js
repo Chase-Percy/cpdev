@@ -10,6 +10,6 @@ let slider = tns({
     speed: 1000,
     navPosition: 'bottom',
     controls: false,
-    autoplayButtonOutput: false
-
+    autoplayButtonOutput: false,
+    gutter: 1
 });
