@@ -18,7 +18,7 @@ hr.main::before {
           border: 2px solid #39D1B4;
           position: absolute;
           left: 50%;
-          margin: -6px 0 0 -4px;
+          margin: -6px 0 0 -5px;
           box-shadow: 2px 2px 2px -1px #F65A5B;
           transform:rotate(45deg);
           -ms-transform:rotate(45deg); /* IE 9 */
