@@ -236,8 +236,8 @@ const createScene = function () {
     camera.setTarget(new BABYLON.Vector3(mapSize / 2, 0, mapSize / 2));
 
     const ambient = new BABYLON.HemisphericLight("ambient", new BABYLON.Vector3(mapSize / 2, 3, mapSize / 2));
-    const dirLight = new BABYLON.DirectionalLight("dir", new BABYLON.Vector3(-2, -1, 0), scene);
-    dirLight.intesity = 0.01;
+    const dirLight = new BABYLON.DirectionalLight("dir", new BABYLON.Vector3(1, -1, 0), scene);
+    dirLight.intesity = 0.5;
 
     return scene;
 };
