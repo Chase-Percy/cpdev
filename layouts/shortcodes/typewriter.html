@@ -1,0 +1,6 @@
+<div>
+<h{{ with .Get "h" }}{{(.)}}{{ end }}
+{{ with .Get "class" }} class="{{(.)}}"{{end}}>
+{{ .Inner }}
+</h>
+</div>
