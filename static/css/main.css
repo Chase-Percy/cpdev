@@ -364,6 +364,12 @@ footer .theme-by {
   color: #0085a1;
 }
 
+.post-title {
+    color: #cb3737;
+}
+.post-subtitle {
+    color: #000000;
+}
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
