@@ -25,21 +25,13 @@ hr.main::before {
           -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
 }
 
-hr.blue {
+hr.transparent {
     display: block;
-    color: royalblue;
+    color: transparent;
     overflow: hidden;
     height: 3px;
-    background-color: royalblue;
-}
-
-hr.white {
-    display: block;
-    color: white;
-    overflow: hidden;
-    height: 3px;
-    background-color: white;
-    border: 1px white;
+    background-color: transparent;
+    border: transparent;
 }
 
 hr.black {
