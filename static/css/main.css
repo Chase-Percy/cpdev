@@ -366,6 +366,7 @@ footer .theme-by {
 
 .post-title {
     color: #cb3737;
+    text-shadow: 1px 1px black;
 }
 .post-subtitle {
     color: #000000;
