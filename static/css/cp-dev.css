@@ -301,5 +301,30 @@ details.dark > ul {
 	100% {
 		transform: translateY(0vh) translateX(110vw) scale(0.45);
 	}
+}
 
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 3em;
+    margin: 0 auto;
+    border-right: 2px solid white;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter-title{
+  animation: typewriter 1s steps(11) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) 15 normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 3em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: black;}
+  to{border-right-color: transparent;}
 }

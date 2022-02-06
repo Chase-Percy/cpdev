@@ -1,9 +1,10 @@
 ---
 title: "CP-DEV"
 ---
-{{< centreText h="1" >}} Hello :) {{< /centreText >}}
+{{< typewriter h="1" class="line-1 anim-typewriter-title" >}} Hello {{< /typewriter >}}
 
-{{< centreText h="4" >}} Welcome to CP-DEV, a platform for me to share who I am, what I do, and where I'm going! {{< /centreText >}}
+{{< centreText h="3">}} Welcome to CP-DEV, a platform for me to share who I am, what I do,
+ and where I'm going! {{< /centreText >}}
 
 {{< line >}}
 
