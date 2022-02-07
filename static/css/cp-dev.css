@@ -186,7 +186,7 @@ details.dark > ul {
 
 .bird-container {
 	position: absolute;
-	top: 5%;
+	top: 11%;
 	left: -10%;
 	transform: scale(0) translateX(-10vw);
 	will-change: transform;
@@ -194,27 +194,27 @@ details.dark > ul {
 	animation-name: fly-right-one;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	}
+}
 
-	.bird-container.--one {
-		animation-duration: 15s;
-		animation-delay: 0s;
-	}
+.bird-container.--one {
+	animation-duration: 15s;
+	animation-delay: 0s;
+}
 
-	.bird-container.--two {
-		animation-duration: 16s;
-		animation-delay: 1s;
-	}
+.bird-container.--two {
+	animation-duration: 16s;
+	animation-delay: 1s;
+}
 
-	.bird-container.--three {
-		animation-duration: 14.6s;
-		animation-delay: 9.5s;
-	}
+.bird-container.--three {
+	animation-duration: 14.6s;
+	animation-delay: 9.5s;
+}
 
-	.bird-container.--four {
-		animation-duration: 16s;
-		animation-delay: 10.25s;
-	}
+.bird-container.--four {
+	animation-duration: 16s;
+	animation-delay: 10.25s;
+}
 
 @keyframes fly-cycle {
 
@@ -295,6 +295,125 @@ details.dark > ul {
 	}
 }
 
+@media only screen and (max-width: 600px) {
+    .bird {
+
+    	width: 44px;
+    	height: 63px;
+    }
+
+    .bird.--one {
+    		animation-duration: 1.45s;
+    		animation-delay: -0.5s;
+    	}
+
+    	.bird.--two {
+    		animation-duration: 1.49s;
+    		animation-delay: -0.75s;
+    	}
+
+    	.bird.--three {
+    		animation-duration: 1.48s;
+    		animation-delay: -0.25s;
+    	}
+
+    	.bird.--four {
+    		animation-duration: 1.5s;
+    		animation-delay: -0.5s;
+    	}
+
+    .bird-container.--one {
+    	animation-duration: 8.5s;
+    	animation-delay: 0s;
+    }
+
+    .bird-container.--two {
+    	animation-duration: 10s;
+    	animation-delay: 2s;
+    }
+
+    .bird-container.--three {
+    	animation-duration: 8.3s;
+    	animation-delay: 8s;
+    }
+
+    .bird-container.--four {
+    	animation-duration: 9s;
+    	animation-delay: 9s;
+    }
+
+    @keyframes fly-right-one {
+
+    	0% {
+    		transform: scale(0.3) translateX(-10vw);
+    	}
+
+    	10% {
+    		transform: translateY(1vh) translateX(10vw) scale(0.4);
+    	}
+
+    	20% {
+    		transform: translateY(0vh) translateX(30vw) scale(0.5);
+    	}
+
+    	30% {
+    		transform: translateY(2vh) translateX(50vw) scale(0.6);
+    	}
+
+    	40% {
+    		transform: translateY(1vh) translateX(70vw) scale(0.6);
+    	}
+
+    	50% {
+    		transform: translateY(0vh) translateX(90vw) scale(0.6);
+    	}
+
+    	60% {
+    		transform: translateY(0vh) translateX(110vw) scale(0.6);
+    	}
+
+    	100% {
+    		transform: translateY(0vh) translateX(110vw) scale(0.6);
+    	}
+
+    }
+
+    @keyframes fly-right-two {
+
+    	0% {
+    		transform: translateY(-1vh) translateX(-10vw) scale(0.5);
+    	}
+
+    	10% {
+    		transform: translateY(0vh) translateX(10vw) scale(0.4);
+    	}
+
+    	20% {
+    		transform: translateY(-2vh) translateX(30vw) scale(0.6);
+    	}
+
+    	30% {
+    		transform: translateY(1vh) translateX(50vw) scale(0.45);
+    	}
+
+    	40% {
+    		transform: translateY(-1.5vh) translateX(70vw) scale(0.5);
+    	}
+
+    	50% {
+    		transform: translateY(0vh) translateX(90vw) scale(0.45);
+    	}
+
+    	51% {
+    		transform: translateY(0vh) translateX(110vw) scale(0.45);
+    	}
+
+    	100% {
+    		transform: translateY(0vh) translateX(110vw) scale(0.45);
+    	}
+    }
+}
+
 .line-1{
     position: relative;
     top: 50%;
@@ -312,10 +431,12 @@ details.dark > ul {
   animation: typewriter 1s steps(11) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) 15 normal;
 }
+
 @keyframes typewriter{
   from{width: 0;}
   to{width: 3em;}
 }
+
 @keyframes blinkTextCursor{
   from{border-right-color: black;}
   to{border-right-color: transparent;}
