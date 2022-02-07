@@ -31,6 +31,20 @@
   <header class="header-section {{ if $bigimg }}has-img{{ end }}">
     {{ if $bigimg }}
       <div class="intro-header big-img">
+      {{ if or (eq .Title "About") (eq .Title "Contact Details") (.IsHome) }}
+                            <div class="bird-container --one">
+                              <div class="bird --one"></div>
+                             </div>
+                             <div class="bird-container --two">
+                               <div class="bird --two"></div>
+                             </div>
+                             <div class="bird-container --three">
+                               <div class="bird --three"></div>
+                             </div>
+                             <div class="bird-container --four">
+                               <div class="bird --four"></div>
+                             </div>
+              {{ end }}
         {{ $subtitle := $.Scratch.Get "subtitle" }}
         <div class="container">
           <div class="row">
@@ -52,20 +66,6 @@
             </div>
           </div>
         </div>
-        {{ if or (eq .Title "About") (eq .Title "Contact Details") (.IsHome) }}
-                      <div class="bird-container --one">
-                        <div class="bird --one"></div>
-                       </div>
-                       <div class="bird-container --two">
-                         <div class="bird --two"></div>
-                       </div>
-                       <div class="bird-container --three">
-                         <div class="bird --three"></div>
-                       </div>
-                       <div class="bird-container --four">
-                         <div class="bird --four"></div>
-                       </div>
-                      {{ end }}
       </div>
     {{end}}
     <div class="intro-header no-img">
