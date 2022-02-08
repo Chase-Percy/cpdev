@@ -39,10 +39,15 @@
   padding: 0;
   margin: 0 5px;
   border-radius: 50%;
-  background: #ddd;
+  background: #1b8871;
   border: 0;
 }
-.tns-nav > .tns-nav-active { background: #999; }
+
+.tns-nav  > [aria-controls]:hover {
+    background: #F65A5B;
+}
+
+.tns-nav > .tns-nav-active { background: #39D1B4; }
 .playbutton-wrapper { text-align: center; }
 .playbutton-wrapper button { height: 34px; padding: 0 10px; font-size: 14px; background: #fff; border-radius: 3px; border: 1px solid  #ccc; cursor: pointer; }
 .wrapper { padding: 0 5em; }
