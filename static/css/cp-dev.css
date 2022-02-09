@@ -368,31 +368,31 @@ details.dark > ul {
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .bird {
-
+        animation-timing-function: steps(20);
     	width: 44px;
     	height: 63px;
     }
 
     .bird.--one {
-    		animation-duration: 1.45s;
+    		animation-duration: 2.05s;
     		animation-delay: -0.5s;
     	}
 
     	.bird.--two {
-    		animation-duration: 1.49s;
+    		animation-duration: 2.04s;
     		animation-delay: -0.75s;
     	}
 
     	.bird.--three {
-    		animation-duration: 1.48s;
+    		animation-duration: 2.08s;
     		animation-delay: -0.25s;
     	}
 
     	.bird.--four {
-    		animation-duration: 1.5s;
-    		animation-delay: -0.5s;
+    		animation-duration: 2.06s;
+    		animation-delay: -0.33s;
     	}
 
     .bird-container.--one {
