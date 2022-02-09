@@ -37,21 +37,75 @@ to be processed by the AI gave us a simplified data structure that required no f
 
 Room generation was to be handled by a room object that creates itself given a set of parameters.   
 These included:
-- Width/Height.
-- Percentage of the floor to fill with obstacles.
-- Percentage of the walls to decorate.
+- Width/Length.
+- Percentage of the floor to randomly fill with obstacles.
+- Percentage of the walls to randomly decorate.
 - An array of model smart pointers to be used for the models that make up the room (walls, props, etc.).
 - The origin of the room (x, z).
 - The door coordinates.
 - A seed.
 
+{{< whiteLine >}}
+{{< details title="Room Constructor" dClass="dark" sClass="dark" >}}
+{{< highlight cpp >}}
+/**
+     * Generates a room given a x,z, an origin (bottom left), and a set of
+     * models
+     * @param x the size of the room on the x axis
+     * @param z the size of the room on the z axis
+     * @param wallFillPercent The percent of the walls to fill with decorations
+     * @param floors the floors for the room, the first element is the default
+     * floor
+     * @param floorFillPercent The percent of the floor to fill with decoration.
+     * @param xOrigin the x origin of the room
+     * @param zOrigin the z origin of the room
+     * @param roomModels the models for the room
+     * @param seed the seed for room generation
+     *
+     */
+    gameRoom(int x,
+             int z,
+             int wallFillPercent,
+             int floorFillPercent,
+             int xOrigin,
+             int zOrigin,
+             const RoomModels& roomModels,
+             int seed,
+             const std::vector<std::pair<int, int>>& doors);
+{{< /highlight >}}
+{{</details>}}
+{{< whiteLine >}}
+
+After room generation had been successfully implemented more planning was done to figure out how to create levels from these
+randomly generated rooms.
+
+There were two major issues to consider when planning the level creation:
+- Every room in the level must be connected and accessible within the level.
+- Within each room there was a walkable path between all doors.
+
+The first issue was resolved by placing the rooms within a 50 by 50 grid in a random order. The first room was guaranteed
+to be at the center of the grid and always of the same size. This was treated as the spawn room for that level and contained no
+obstacles that had collision, only a trapdoor that opened once enough enemies were defeated.
+
+{{< whiteLine >}}
+{{< lazyimg src="/img/ta/portal.png" >}}
+{{< whiteLine >}}
+
+After placing the spawn room, new rooms were then randomly placed relative to the last room that was successfully placed.
+The rooms were placed relative to the last successfully placed room to create a better flow to the map and ensure it wasn't too
+congested.
+
+Rooms were placed by multiplying the current rooms' origin with a random vector. Once placed three checks were performed:
+- Check the room is completely within the 50 x 50 grid.
+- Ensure the room isn't overlapping with any other room.
+- Ensure that the room was in-line with at least one other room.
+
+The reason for the final check was to ensure that all rooms were connected and that a corridor could be placed 
+perpendicularly between the two rooms. 
+
 ### Development
-The process of creating random room generation happened fast. The initial plan that and design came together cleanl During the development of this I had my group members review
+The process of creating random room generation happened fast. The initial plan that and design came together cleanly. During the development of this I had my group members review
 the code and suggest improvements to both design and performance.
-
-### Further Planning
-
-### Development Continued
 
 ### Testing
 Simple tests were written within the Google test framework. These tests ensured that room generation was creating the rooms
