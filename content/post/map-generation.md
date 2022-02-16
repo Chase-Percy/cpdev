@@ -164,6 +164,83 @@ The algorithm worked as follows:
     - Else if the locations to the right aren't blocked; move forward on the first open space.
     - Else delete the obstacle directly in front and move forward.
 
+{{< whiteLine >}}
+{{< details title="Algorithm Implementation" dClass="dark" sClass="dark" >}}
+{{< highlight cpp >}}
+
+void gameRoom::walkRoom(std::pair<int, int> start, direction doorAxis) {
+    if (doorAxis == NaD) {
+        return;
+    }
+
+    // Door or wall centre
+    int row = start.first;
+    int col = start.second;
+
+    // Walking positions
+    int walkingStart{0};
+    int walkingEnd{0};
+    setWalkingStart(walkingStart, walkingEnd, doorAxis);
+
+    // Strafe (side) checking
+    int strafe{0};
+    int strafeEnd{0};
+
+    while (walkingStart != walkingEnd) {
+        // Replace Entity if blocking
+        if (isFloorEntity(row, col)) {
+            removeFloorEntity(row, col);
+            createFloorType(row, col, m_models.floors[0], accessTypes::floor);
+        }
+
+        // Check next step
+        bool walk{false};
+        bool swapped{false};
+        setStrafe(strafe, strafeEnd, doorAxis, row, col);
+        int startingStrafe = strafe;
+        int startingRow = row, startingCol = col;
+
+        while (strafe != strafeEnd) {
+            std::pair<bool, bool> result = checkStrafeCollision(strafe,
+                                                                doorAxis,
+                                                                row,
+                                                                col);
+
+            // Current position is valid
+            if (result.first && result.second) {
+                walk = true;
+                break;
+            }
+
+            // Check other direction
+            if ((!result.first && !result.second) || strafe == strafeEnd) {
+                if (swapped) {
+                    break;
+                }
+                strafeEnd = 0;
+                strafe = startingStrafe;
+                swapped = true;
+            }
+
+            // Update strafe movement
+            strafe = (strafe < strafeEnd) ? ++strafe : --strafe;
+        }
+
+        // If both directions failed, walk forward
+        if (!walk) {
+            row = startingRow;
+            col = startingCol;
+            walkForward(row, col, doorAxis);
+        }
+
+        // Increment / Decrement walking start
+        updateWalking(walkingStart, doorAxis);
+    }
+}
+{{< /highlight >}}
+{{</details>}}
+{{< whiteLine >}}
+
 Once this has been completed for all doors/walls in the room, then it is guaranteed that there will be a path through the room as the
 paths walked through the room create a cross.
 
