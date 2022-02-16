@@ -25,7 +25,7 @@ bigimg: [{src: "/img/ta/banner.webp"}]
 - Chase Percy
 
 ## Repo
-- [The Arcanist](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/)  
+- __[The Arcanist](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/)__  
 (Hosted through GitFront instead of a public GitHub repo to help prevent plagiarism)
 
 ## Project Planning and Tools
@@ -55,20 +55,20 @@ bigimg: [{src: "/img/ta/banner.webp"}]
 {{< whiteLine >}}
 
 ### Game Engine
-- [OFF](https://en.wikipedia.org/wiki/OFF_(file_format)), [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file), and [MTL](https://en.wikipedia.org/wiki/Wavefront_.obj_file#Material_template_library) Loader
-- [VBO](https://en.wikipedia.org/wiki/Vertex_buffer_object) Support
+- __[OFF](https://en.wikipedia.org/wiki/OFF_(file_format))__, __[OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file)__, and __[MTL](https://en.wikipedia.org/wiki/Wavefront_.obj_file#Material_template_library)__ Loader
+- __[VBO](https://en.wikipedia.org/wiki/Vertex_buffer_object)__ Support
 - Support for multiple scenes (Menu, Shays-world, The Arcanist)
 - Skybox
-- Audio ([irrKlang](https://www.ambiera.com/irrklang/))
+- Audio (__[irrKlang](https://www.ambiera.com/irrklang/)__)
 - Persistent settings
-- GUI ([ImGui](https://github.com/ocornut/imgui))
+- GUI (__[ImGui](https://github.com/ocornut/imgui)__)
 
 The engine was primarily developed through the first 4 weeks of the project and was the foundation for
-black-boxing Shays-world and creating our game, The Arcanist. Vertex Buffer Support ([VBO](https://en.wikipedia.org/wiki/Vertex_buffer_object))
-was what allowed us to achieve greater visual fidelity while maintaining good performance using legacy [OpenGL](https://www.khronos.org/opengl/wiki/History_of_OpenGL).
+black-boxing Shays-world and creating our game, The Arcanist. Vertex Buffer Support (__[VBO](https://en.wikipedia.org/wiki/Vertex_buffer_object)__)
+was what allowed us to achieve greater visual fidelity while maintaining good performance using legacy __[OpenGL](https://www.khronos.org/opengl/wiki/History_of_OpenGL)__.
 
 ### GUI
-Designed by me using the [ImGui](https://github.com/ocornut/imgui) Library. 
+Designed by me using the __[ImGui](https://github.com/ocornut/imgui)__ Library. 
 
 {{< gallery dir="/img/ta/gui/" />}}
 {{< whiteLine >}}
@@ -90,6 +90,8 @@ the bounds of the map or walk through obstacles and that projectiles would explo
 ### Seeded Map Generation
 A room generation and Map generation algorithm I made was used to randomly generate a map with a set amount of rooms
 and a range of possible obstacle densities.
+
+__[Further Reading](http://localhost:1313/post/map-generation/)__
 
 {{< lazyimg src="/img/ta/map.png" class="lazyimg" >}}
 {{< whiteLine >}}

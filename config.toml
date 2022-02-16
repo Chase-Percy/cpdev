@@ -3,10 +3,8 @@ languageCode = 'en-us'
 title = 'CP-DEV'
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
-pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
 
 [Params]
   homeTitle = "CP-DEV" # Set a different text for the header on the home page
@@ -18,7 +16,7 @@ pygmentsCodefencesGuessSyntax = true
   commit = false
   rss = true
 # comments = true
-# readingTime = true
+ readingTime = true
 # wordCount = true
 # useHLJS = true
 # socialShare = true

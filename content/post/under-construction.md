@@ -12,6 +12,7 @@ Now I'm not one to blog or write about myself or anything like this really, but 
 page looks bare, and I need some content for it...
 
 If you see this then yea my site is still under construction!  
+<!--more-->
 ... or you scrolled really far down  
 ... or I never really posted much in the future 
 
