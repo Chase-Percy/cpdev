@@ -571,7 +571,7 @@ details.dark > ul {
 
 /* Animation */
 .anim-typewriter-title{
-  animation: typewriter 1s steps(11) 1s 1 normal both,
+  animation: typewriter 1s steps(11) 2.5s 1 normal both,
              blinkTextCursor 500ms steps(44) 15 normal;
 }
 
