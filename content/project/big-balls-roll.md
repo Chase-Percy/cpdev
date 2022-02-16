@@ -25,7 +25,7 @@ bigimg: [{src: "/img/bbr/banner.png"}]
 - Chase Percy
 
 ## Repo
-- [Big Balls Roll](https://github.com/MajorArkwolf/BigBallsRoll)
+- __[Big Balls Roll](https://github.com/MajorArkwolf/BigBallsRoll)__
 
 ## Project Planning and Tools
 {{< columns >}}
@@ -57,7 +57,7 @@ bigimg: [{src: "/img/bbr/banner.png"}]
 A simple texture manager that was responsible for loading textures 
 dynamically during runtime and through pre-loading at engine start 
 up. The manager was responsible for storing texture ID's and providing them
-when a texture was requested. [STB_IMAGE](https://github.com/nothings/stb/blob/master/stb_image.h) was used to load textures from PNG and JPG filetypes.
+when a texture was requested. __[STB_IMAGE](https://github.com/nothings/stb/blob/master/stb_image.h)__ was used to load textures from PNG and JPG filetypes.
 
 {{< lazyimg src="/img/bbr/tm.png" class="lazyimg" >}}
 {{< whiteLine >}}
@@ -72,7 +72,7 @@ the number of collision bodies were in the scene.
 {{< whiteLine >}}
 
 ### GUI
-The GUI was implemented using the [Nuklear](https://github.com/Immediate-Mode-UI/Nuklear) immediate mode GUI 
+The GUI was implemented using the __[Nuklear](https://github.com/Immediate-Mode-UI/Nuklear)__ immediate mode GUI 
 library.
 
 {{< lazyimg src="/img/bbr/gui.png" class="lazyimg" >}}
