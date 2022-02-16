@@ -26,11 +26,12 @@ tags: []
 ## The Process
 
 ### Planning
-With limited time and a goal that I wasn't sure was possible, I decided that starting with the random generation of a 
+With limited time and a goal that I wasn't sure was possible, I began the process of planning how to go about creating random map
+generation. I decided that starting with the random generation of a 
 single room would be ideal. The reason I started smaller, was to treat it as proof of concept and to
 judge if it was possible within the time constraints.
 
-I decided that a grid based approach would be ideal, as the assets we were using for dungeon creation were modular by design. 
+I considered many options such as cellular automata but decided that a grid based approach would be quick and easy, as the assets we were using for dungeon creation were modular by design. 
 Another advantage with a grid based system was how easily it would be to generate the required data for the AI. Since the
 game only required information about the X and Z axis, the map data was easy to store in 2D arrays. Passing the data in 2D arrays
 to be processed by the AI gave us a simplified data structure that required no forward declarations for either component.
@@ -49,29 +50,77 @@ These included:
 {{< details title="Room Constructor" dClass="dark" sClass="dark" >}}
 {{< highlight cpp >}}
 /**
-     * Generates a room given a x,z, an origin (bottom left), and a set of
-     * models
-     * @param x the size of the room on the x axis
-     * @param z the size of the room on the z axis
-     * @param wallFillPercent The percent of the walls to fill with decorations
-     * @param floors the floors for the room, the first element is the default
-     * floor
-     * @param floorFillPercent The percent of the floor to fill with decoration.
-     * @param xOrigin the x origin of the room
-     * @param zOrigin the z origin of the room
-     * @param roomModels the models for the room
-     * @param seed the seed for room generation
-     *
-     */
-    gameRoom(int x,
-             int z,
-             int wallFillPercent,
-             int floorFillPercent,
-             int xOrigin,
-             int zOrigin,
-             const RoomModels& roomModels,
-             int seed,
-             const std::vector<std::pair<int, int>>& doors);
+ * Generates a room given a x,z, an origin (bottom left), and a set of
+ * models
+ * @param x the size of the room on the x axis
+ * @param z the size of the room on the z axis
+ * @param wallFillPercent The percent of the walls to fill with decorations
+ * @param floors the floors for the room, the first element is the default
+ * floor
+ * @param floorFillPercent The percent of the floor to fill with decoration.
+ * @param xOrigin the x origin of the room
+ * @param zOrigin the z origin of the room
+ * @param roomModels the models for the room
+ * @param seed the seed for room generation
+ * 
+*/
+gameRoom::gameRoom(int x,
+                   int z,
+                   int wallFillPercent,
+                   int floorFillPercent,
+                   int xOrigin,
+                   int zOrigin,
+                   const RoomModels& roomModels,
+                   int seed,
+                   const std::vector<std::pair<int, int>>& doors)
+    : m_models(roomModels),
+      m_seed(seed),
+      m_doors(doors) {
+    // Save x and z size
+    if (x < 1) {
+        x = 1;
+    }
+    if (z < 1) {
+        z = 1;
+    }
+
+    // Save floor dimensions
+    m_floor.xMax = x;
+    m_floor.zMax = z;
+    m_floor.max = z * x;
+
+    // Save floor size plus walls
+    const int corners{2};
+    m_wall.xMax = x + corners;
+    m_wall.zMax = z + corners;
+    m_wall.max = x * 2 + z * 2;
+
+    // Set room dimensions
+    m_dimensions.xMax = x + corners;
+    m_dimensions.zMax = z + corners;
+    m_dimensions.max = m_dimensions.xMax * m_dimensions.zMax;
+
+    // Set room map size
+    m_accessible = new accessTypes[m_dimensions.max];
+    // Set it empty
+    memset(m_accessible,
+           accessTypes::empty,
+           sizeof(accessTypes) * m_dimensions.max);
+
+    // Save origin offsets
+    m_offset.xCent = xOrigin + m_dimensions.xMax / 2;
+    m_offset.zCent = zOrigin + m_dimensions.zMax / 2;
+    m_offset.xMax = xOrigin + m_dimensions.xMax;
+    m_offset.zMax = zOrigin + m_dimensions.zMax;
+    m_offset.xMin = xOrigin;
+    m_offset.zMin = zOrigin;
+
+    // Create itself
+    createRoom();
+    addDecoration((float)floorFillPercent, (float)wallFillPercent);
+    generateWallPoints();
+    generateEntityBoundingSpheres();
+}
 {{< /highlight >}}
 {{</details>}}
 {{< whiteLine >}}
@@ -101,11 +150,33 @@ Rooms were placed by multiplying the current rooms' origin with a random vector.
 - Ensure that the room was in-line with at least one other room.
 
 The reason for the final check was to ensure that all rooms were connected and that a corridor could be placed 
-perpendicularly between the two rooms. 
+perpendicularly between the two rooms. Although this solution wasn't ideal, it was a quick solution that provided acceptable results.
+
+Once all the rooms (about 8) have been placed the doors and corridors were randomly placed where two rooms were parallel.
+These doors were only placed on a rooms positive X/Z axis' to ensure that there was only one connection between two rooms.
+
+After the doors were placed a simple algorithm was used to walk from each door to the opposite wall.  
+The algorithm worked as follows:
+- For each door (or wall if no door) in the room:
+  - Attempt to walk from the door/wall to the opposite wall.
+    - If the location in front is not blocked; move forward.
+    - Else if the locations to the left aren't blocked; move forward on the first open space.
+    - Else if the locations to the right aren't blocked; move forward on the first open space.
+    - Else delete the obstacle directly in front and move forward.
+
+Once this has been completed for all doors/walls in the room, then it is guaranteed that there will be a path through the room as the
+paths walked through the room create a cross.
+
+Finally, the corridors were placed between doors to complete the level. Corridors were just rooms that were one tile wide
+and long enough to connect two doors. Corridors have no obstacles in them and they also have no model for where the door should be,
+as it would overlap with the one provided by the room.
 
 ### Development
-The process of creating random room generation happened fast. The initial plan that and design came together cleanly. During the development of this I had my group members review
-the code and suggest improvements to both design and performance.
+The process of creating random room generation happened fast with the initial plan and design came together cleanly. During the development 
+of this I had my group members review the code and suggest improvements to both design and performance. The development took around a week 
+and a half and was a fun and rewarding process.
+
+__[Source Code](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/tree/src/scene/theArchanist/map/)__
 
 ### Testing
 Simple tests were written within the Google test framework. These tests ensured that room generation was creating the rooms
@@ -208,3 +279,7 @@ TEST(RoomGenerationTest, TestWallPoints_zOne) {
 {{< line >}}
 
 ## The Result
+In the end the map generation worked great, and I was pleased with the solution I created within the timeframe and knowledge I had.
+
+{{< whiteLine >}}
+{{< youtube iFozMHvnna0 >}}
