@@ -6,6 +6,7 @@ date: 2022-01-24T16:43:11+08:00
 subtitle: "Creation From An Idea"
 image: ""
 tags: []
+bigimg: [{src: "/img/ta/banner.webp"}]
 ---
 
 ## The Requirements
@@ -245,7 +246,7 @@ Once this has been completed for all doors/walls in the room, then it is guarant
 paths walked through the room create a cross.
 
 Finally, the corridors were placed between doors to complete the level. Corridors were just rooms that were one tile wide
-and long enough to connect two doors. Corridors have no obstacles in them and they also have no model for where the door should be,
+and long enough to connect two doors. Corridors have no obstacles in them, and they also have no model for where the door should be,
 as it would overlap with the one provided by the room.
 
 ### Development

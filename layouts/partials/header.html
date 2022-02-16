@@ -31,7 +31,7 @@
   <header class="header-section {{ if $bigimg }}has-img{{ end }}">
     {{ if $bigimg }}
       <div class="intro-header big-img">
-      {{ if or (eq .Title "About") (eq .Title "Contact Details") (.IsHome) }}
+      {{ if or (eq .Title "About") (eq .Title "Contact Details") (.IsHome) (eq .Title "Creating a Website") }}
                             <div class="bird-container --one">
                               <div class="bird --one"></div>
                              </div>

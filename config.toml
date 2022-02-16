@@ -5,6 +5,7 @@ theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
+enableEmoji = true
 
 [Params]
   homeTitle = "CP-DEV" # Set a different text for the header on the home page
@@ -15,12 +16,7 @@ pygmentsCodeFences = true
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
-# comments = true
- readingTime = true
-# wordCount = true
-# useHLJS = true
-# socialShare = true
-# delayDisqus = true
+  readingTime = true
   showRelatedPosts = true
   hideAuthor = true
   selfHosted = true

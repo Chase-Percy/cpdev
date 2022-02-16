@@ -4,7 +4,7 @@ author: "Chase Percy"
 type: ""
 date: 2021-11-14T16:54:33+08:00
 subtitle: "Getting there..."
-image: ""
+bigimg: [{src: "/img/post/construction.jpg"}]
 tags: []
 ---
 
