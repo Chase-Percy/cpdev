@@ -18,7 +18,7 @@ If you see this then yea my site is still under construction!
 
 Anyway, the plan is to demo a bunch of my projects on here and use this as a little  
 portfolio for myself seeing as I have no other forms of social media to advertise   
-from :)
+from :smile:
 
 so yea...  
 yay for content
