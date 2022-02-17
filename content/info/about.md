@@ -45,7 +45,7 @@ Outside of the tech world, I am happily married with two cats and love music. Th
 is one of my other passions that I invest a lot of my time and attention. I'm laid back and easygoing, happily doing 
 my own thing and living a simple and quiet life.
 
-Anyway, now for some more specific information below :)
+Anyway, now for some more specific information below :smile:
 
 {{< line >}}
 
