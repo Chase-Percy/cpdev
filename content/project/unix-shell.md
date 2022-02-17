@@ -17,14 +17,15 @@ bigimg: [{src: "/img/unix/banner.png"}]
 -- Todo: add video
 
 {{< line >}}
-
+{{< whiteLine >}}
 ## Development Team
 Chase Percy  
 __[Nunzia Sorrentino](https://au.linkedin.com/in/nunzia-sorrentino-bbb393111)__
-
+{{< whiteLine >}}
 ## Repo
 __[Unix Shell](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac3098a5c72e3/ICT374/)__   
 (Hosted through GitFront instead of a public GitHub repo to help prevent plagiarism)
+{{< whiteLine >}}
 ## Project Planning and Tools
 {{% /centre %}}
 {{< columns >}}
@@ -58,14 +59,14 @@ commands from the input.
 For the tokenization process I wanted to ensure that it would be able to scale for any future requirements or larger
 input from a user. To cater for this a vector like data structure was created and used when processing and storing user
 input.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/unix/tokenization.png" >}}
 
 {{< whiteLine >}}
 
 ### Wildcards
 Both the * and ? wildcards are supported and are expanded during the tokenization process.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/unix/wildcard.png" >}}
 
 {{< whiteLine >}}
@@ -73,7 +74,7 @@ Both the * and ? wildcards are supported and are expanded during the tokenizatio
 ### Command Creation
 Command creation is the process of converting the tokens into a format that can be processed by the shell. This takes
 into account the `? & ;` separators and separates commands appropriately.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/unix/command.png" >}}
 
 {{< whiteLine >}}
@@ -82,6 +83,6 @@ into account the `? & ;` separators and separates commands appropriately.
 CD, Change the shell prompt, and exit were provided as built in shell commands that were executed from the parent
 shell. The only built-in that was executed in a child process was the PWD command so that it's output could be used
 with file redirection and piping between processes.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/unix/built-ins.png" >}}
 {{% /centre %}}
