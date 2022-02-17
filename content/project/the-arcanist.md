@@ -12,7 +12,7 @@ bigimg: [{src: "/img/ta/banner.webp"}]
 {{< lazyimg src="/img/ta/icons.png" class="lazyimg" title="CPP | CMAKE | GITHUB" class="lazyimg" >}}
 
 {{< whiteLine >}}
-
+{{% centre %}}
 ## A diablo inspired dungeon crawler
 
 {{< youtube WlOtn7QeDh0 >}}
@@ -20,15 +20,16 @@ bigimg: [{src: "/img/ta/banner.webp"}]
 {{< line >}}
 
 ## Development Team
-- Matthew Davis
-- Michael John
-- Chase Percy
-
+Matthew Davis  
+Michael John  
+Chase Percy  
+{{< whiteLine >}}
 ## Repo
-- __[The Arcanist](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/)__  
+__[The Arcanist](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/)__  
 (Hosted through GitFront instead of a public GitHub repo to help prevent plagiarism)
-
+{{< whiteLine >}}
 ## Project Planning and Tools
+{{% /centre %}}
 {{< columns >}}
 - Weekly meetings
 - Kanban Board
@@ -46,10 +47,11 @@ bigimg: [{src: "/img/ta/banner.webp"}]
 - Doxygen
 {{< endcolumns >}}
 
+
 {{< gallery dir="/img/ta/project/" />}}
 
 {{< line >}}
-
+{{% centre %}}
 ## Features developed by me
 
 {{< whiteLine >}}
@@ -57,7 +59,7 @@ bigimg: [{src: "/img/ta/banner.webp"}]
 ### Game Engine
 - __[OFF](https://en.wikipedia.org/wiki/OFF_(file_format))__, __[OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file)__, and __[MTL](https://en.wikipedia.org/wiki/Wavefront_.obj_file#Material_template_library)__ Loader
 - __[VBO](https://en.wikipedia.org/wiki/Vertex_buffer_object)__ Support
-- Support for multiple scenes (Menu, Shays-world, The Arcanist)
+- Support for multiple game scenes (Menu, Shays-world, The Arcanist)
 - Skybox
 - Audio (__[irrKlang](https://www.ambiera.com/irrklang/)__)
 - Persistent settings
@@ -66,24 +68,24 @@ bigimg: [{src: "/img/ta/banner.webp"}]
 The engine was primarily developed through the first 4 weeks of the project and was the foundation for
 black-boxing Shays-world and creating our game, The Arcanist. Vertex Buffer Support (__[VBO](https://en.wikipedia.org/wiki/Vertex_buffer_object)__)
 was what allowed us to achieve greater visual fidelity while maintaining good performance using legacy __[OpenGL](https://www.khronos.org/opengl/wiki/History_of_OpenGL)__.
-
+{{< whiteLine >}}
 ### GUI
 Designed by me using the __[ImGui](https://github.com/ocornut/imgui)__ Library. 
-
+{{< whiteLine >}}
 {{< gallery dir="/img/ta/gui/" />}}
 {{< whiteLine >}}
 
 ### Arcanist Game Implementation
 This included the game logic for the arcanist (excluding AI). Object events such as model updates, basic enemy
 animations, input handling, level transitions, shadows, collision particles, etc...
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/ta/implementation.png" class="lazyimg" >}}
 {{< whiteLine >}}
 
 ### Collision Detection
 Basic collision detection was used with data provided from map generation. This was used to ensure AI stayed within
 the bounds of the map or walk through obstacles and that projectiles would explode on impacting something. 
-
+{{< whiteLine >}}
 {{< youtube EzsScwbQ-j0  >}}
 {{< whiteLine >}}
 
@@ -92,6 +94,7 @@ A room generation and Map generation algorithm I made was used to randomly gener
 and a range of possible obstacle densities.
 
 __[Further Reading](http://localhost:1313/post/map-generation/)__
+{{< whiteLine >}}
 
 {{< lazyimg src="/img/ta/map.png" class="lazyimg" >}}
 {{< whiteLine >}}
@@ -102,5 +105,6 @@ and rotation of AI entities. Appropriate associated models were mapped to these 
 independent of the AI entities themselves. This was so if an AI entity was killed the object would
 still exist, but now represent a dead enemy at the AI entities last location. I also helped adjust the AI to better
 navigate the rooms and refined certain features such as collisions and tweaking movement values.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/ta/integration.png" class="lazyimg" >}}
+{{% /centre %}}

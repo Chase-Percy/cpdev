@@ -12,21 +12,21 @@ bigimg: [{src: "/img/unix/banner.png"}]
 {{< lazyimg src="/img/unix/icons.png" title="C | GITHUB" >}}
 
 {{< whiteLine >}}
-
+{{% centre %}}
 ## A minimal but complete unix shell
 -- Todo: add video
 
 {{< line >}}
 
 ## Development Team
-- Chase Percy
-- [Nunzia Sorrentino](https://au.linkedin.com/in/nunzia-sorrentino-bbb393111)
+Chase Percy  
+__[Nunzia Sorrentino](https://au.linkedin.com/in/nunzia-sorrentino-bbb393111)__
 
 ## Repo
-- __[Unix Shell](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac3098a5c72e3/ICT374/)__   
+__[Unix Shell](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac3098a5c72e3/ICT374/)__   
 (Hosted through GitFront instead of a public GitHub repo to help prevent plagiarism)
-
 ## Project Planning and Tools
+{{% /centre %}}
 {{< columns >}}
 - Weekly meetings
 - Git with GitHub for source control
@@ -49,7 +49,7 @@ bigimg: [{src: "/img/unix/banner.png"}]
 {{< lazyimg src="/img/unix/kanban.png" >}}
 
 {{< line >}}
-
+{{% centre %}}
 ## Features developed by me
 {{< whiteLine >}}
 ### Tokenization
@@ -84,3 +84,4 @@ shell. The only built-in that was executed in a child process was the PWD comman
 with file redirection and piping between processes.
 
 {{< lazyimg src="/img/unix/built-ins.png" >}}
+{{% /centre %}}

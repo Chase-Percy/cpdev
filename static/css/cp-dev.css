@@ -77,9 +77,27 @@ div.textCentre {
     text-align: center;
 }
 
-div.centre {
+.columnCentre {
+    width: auto;
+    margin: auto;
+    text-align: left;
+}
+
+.centre {
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.centre li {
+    text-align: left;
+}
+
+.centreUl {
+    width: 50%;
     margin: auto;
 }
+
 
 button.centre {
     height: 100%;

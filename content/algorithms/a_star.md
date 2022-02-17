@@ -14,7 +14,8 @@ bigimg: [{src: "/img/algo/banner.png"}]
 {{< whiteLine >}}
 {{< button href="/project/algorithms/" class="game centre" >}} Algorithms {{< /button >}}
 
-
+{{% centre ul="centreUl" %}}
 ### Controls:
 - Click on blocks to replace and remove them
 - Clicking on the red/green blocks will allow you to move them
+{{% /centre %}}

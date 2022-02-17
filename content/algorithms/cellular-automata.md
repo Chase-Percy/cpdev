@@ -15,12 +15,12 @@ bigimg: [{src: "/img/algo/banner.png"}]
 {{< button href="/project/algorithms/" class="game centre" >}} Algorithms {{< /button >}}
 
 {{< whiteLine >}}
-
+{{% centre ul="centreUl" %}}
 #### Rules & shapes can be found [here!](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 ### Controls:
-- Left-click to place a block
-
+- Left-click to place a block or remove an existing block
+{{% /centre %}}
 {{< line >}}
 
 {{< button id="start" class="game game3" >}} Start {{< /button >}}

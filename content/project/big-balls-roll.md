@@ -13,21 +13,32 @@ bigimg: [{src: "/img/bbr/banner.png"}]
 
 {{< whiteLine >}}
 
-## A Marbles and monkey ball inspired game
-
+{{< centreText h="2" >}}
+ A Marbles and monkey ball inspired game
+{{< /centreText >}}
 {{< youtube 2XUEb0cKoXo >}}
 
 {{< line >}}
 
-## Development Team
-- Peter Crabbe
-- Matthew Davis
-- Chase Percy
+{{< centreText h="2" >}}
+Development Team
+{{< /centreText >}}
+
+{{% centre %}}
+Peter Crabbe  
+Matthew Davis  
+Chase Percy  
+
+{{< whiteLine >}}
 
 ## Repo
-- __[Big Balls Roll](https://github.com/MajorArkwolf/BigBallsRoll)__
+__[Big Balls Roll](https://github.com/MajorArkwolf/BigBallsRoll)__
+
+{{< whiteLine >}}
 
 ## Project Planning and Tools
+{{% /centre %}}
+
 {{< columns >}}
 - Weekly meetings
 - Kanban Board
@@ -51,9 +62,11 @@ bigimg: [{src: "/img/bbr/banner.png"}]
 
 {{< line >}}
 
+{{% centre %}}
 ## Features developed by me
 {{< whiteLine >}}
 ### Texture Manager
+
 A simple texture manager that was responsible for loading textures 
 dynamically during runtime and through pre-loading at engine start 
 up. The manager was responsible for storing texture ID's and providing them
@@ -62,7 +75,9 @@ when a texture was requested. __[STB_IMAGE](https://github.com/nothings/stb/blob
 {{< lazyimg src="/img/bbr/tm.png" class="lazyimg" >}}
 {{< whiteLine >}}
 
+
 ### Physics Debug Renderer
+
 A debug renderer to show the Bounding boxes of the physics objects
 within the scene. A vector data structure was implemented so that
 debug data could be inserted dynamically without having to first check
@@ -71,22 +86,28 @@ the number of collision bodies were in the scene.
 {{< lazyimg src="/img/bbr/debug.png" >}}
 {{< whiteLine >}}
 
+
 ### GUI
+
 The GUI was implemented using the __[Nuklear](https://github.com/Immediate-Mode-UI/Nuklear)__ immediate mode GUI 
 library.
 
 {{< lazyimg src="/img/bbr/gui.png" class="lazyimg" >}}
 {{< whiteLine >}}
 
+
 ### Skybox
+
 A simple skybox that was rendered in a 1x1 cube around the players 
 camera and drawn first in the scene with depth off.
 
 {{< lazyimg src="/img/bbr/skybox.png" class="lazyimg" >}}
 {{< whiteLine >}}
 
+
 ### Game Logic (Shared)
 I Helped Peter implement game logic in LUA, such as level transitions and ball movement and control.
 I Added scripts for in-game menu interactions/HUD, scoring, and polish such as models in the game.
 
 {{< lazyimg src="/img/bbr/logic.png" class="lazyimg" >}}
+{{% /centre %}}

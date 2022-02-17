@@ -12,8 +12,9 @@ bigimg: [{src: "/img/trees.jpg"}]
 {{< lazyimg src="/img/me.png" class="lazyimg" >}}
 
 TODO: Get better pic :p
-
+{{% centre %}}
 ## A bit about me
+{{% /centre %}}
 
 My name is Chase Percy, and I am a third-year student at Murdoch University studying a bachelor of science double 
 majoring in Computer Science and Games Technology.
@@ -48,6 +49,7 @@ Anyway, now for some more specific information below :)
 
 {{< line >}}
 
+{{% centre %}}
 ### CV
 
 __[Chase Percy - CV (Not Active)]()__
@@ -56,6 +58,7 @@ __[Chase Percy - CV (Not Active)]()__
 ### Academic Transcript
 
 __[Chase Percy - Academic Transcript (Not Active)]()__
+{{% /centre %}}
 
 {{< line >}}
 
