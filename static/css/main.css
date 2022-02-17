@@ -717,13 +717,13 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gs
 }
 
 /* IPython split style */
-div.splitbox {width:100%; overflow:auto;}
+div.splitbox {width:auto; overflow:auto;}
 
 div.splitbox div.left {
-               width:48%;
+               width:40%;
                float:left;}
 div.splitbox div.right {
-               width:48%;
+               width:40%;
                float:right;}
 
 @media only screen and (max-width: 600px) {

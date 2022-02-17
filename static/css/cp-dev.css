@@ -77,6 +77,10 @@ div.textCentre {
     text-align: center;
 }
 
+div.centre {
+    margin: auto;
+}
+
 button.centre {
     height: 100%;
     width: auto;

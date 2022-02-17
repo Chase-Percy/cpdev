@@ -50,12 +50,12 @@ Anyway, now for some more specific information below :)
 
 ### CV
 
-[Chase Percy - CV (Not Active)]()
+__[Chase Percy - CV (Not Active)]()__
 
 
 ### Academic Transcript
 
-[Chase Percy - Academic Transcript (Not Active)]()
+__[Chase Percy - Academic Transcript (Not Active)]()__
 
 {{< line >}}
 
