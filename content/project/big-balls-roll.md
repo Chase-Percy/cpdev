@@ -71,7 +71,7 @@ A simple texture manager that was responsible for loading textures
 dynamically during runtime and through pre-loading at engine start 
 up. The manager was responsible for storing texture ID's and providing them
 when a texture was requested. __[STB_IMAGE](https://github.com/nothings/stb/blob/master/stb_image.h)__ was used to load textures from PNG and JPG filetypes.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/bbr/tm.png" class="lazyimg" >}}
 {{< whiteLine >}}
 
@@ -82,7 +82,7 @@ A debug renderer to show the Bounding boxes of the physics objects
 within the scene. A vector data structure was implemented so that
 debug data could be inserted dynamically without having to first check
 the number of collision bodies were in the scene.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/bbr/debug.png" >}}
 {{< whiteLine >}}
 
@@ -91,7 +91,7 @@ the number of collision bodies were in the scene.
 
 The GUI was implemented using the __[Nuklear](https://github.com/Immediate-Mode-UI/Nuklear)__ immediate mode GUI 
 library.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/bbr/gui.png" class="lazyimg" >}}
 {{< whiteLine >}}
 
@@ -100,7 +100,7 @@ library.
 
 A simple skybox that was rendered in a 1x1 cube around the players 
 camera and drawn first in the scene with depth off.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/bbr/skybox.png" class="lazyimg" >}}
 {{< whiteLine >}}
 
@@ -108,6 +108,6 @@ camera and drawn first in the scene with depth off.
 ### Game Logic (Shared)
 I Helped Peter implement game logic in LUA, such as level transitions and ball movement and control.
 I Added scripts for in-game menu interactions/HUD, scoring, and polish such as models in the game.
-
+{{< whiteLine >}}
 {{< lazyimg src="/img/bbr/logic.png" class="lazyimg" >}}
 {{% /centre %}}
