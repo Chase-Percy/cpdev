@@ -4,7 +4,7 @@ author: "Chase Percy"
 type: ""
 date: 2022-02-16T11:10:16+08:00
 subtitle: "Hugo & Netlify Powered"
-image: ""
+image: "/img/trees.jpg"
 bigimg: [{src: "/img/trees.jpg"}]
 tags: []
 ---

@@ -4,7 +4,7 @@ author: "Chase Percy"
 type: ""
 date: 2022-01-24T16:43:11+08:00
 subtitle: "Creation From An Idea"
-image: ""
+image: "/img/ta/banner.webp"
 tags: []
 bigimg: [{src: "/img/ta/banner.webp"}]
 ---
