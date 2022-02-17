@@ -68,7 +68,7 @@ __[Big Balls Roll](https://github.com/MajorArkwolf/BigBallsRoll)__
 ### Texture Manager
 
 A simple texture manager that was responsible for loading textures 
-dynamically during runtime and through pre-loading at engine start 
+dynamically during runtime and through preloading at engine start 
 up. The manager was responsible for storing texture ID's and providing them
 when a texture was requested. __[STB_IMAGE](https://github.com/nothings/stb/blob/master/stb_image.h)__ was used to load textures from PNG and JPG filetypes.
 {{< whiteLine >}}
@@ -90,24 +90,28 @@ the number of collision bodies were in the scene.
 ### GUI
 
 The GUI was implemented using the __[Nuklear](https://github.com/Immediate-Mode-UI/Nuklear)__ immediate mode GUI 
-library.
+library. With minimal documentation it was quite a challenge to implement, and at multiple times I was required to read 
+through hundreds of lines of source code to figure out why something wasn't behaving as expected.
 {{< whiteLine >}}
 {{< lazyimg src="/img/bbr/gui.png" class="lazyimg" >}}
 {{< whiteLine >}}
 
-
 ### Skybox
 
-A simple skybox that was rendered in a 1x1 cube around the players 
-camera and drawn first in the scene with depth off.
+The skybox was implemented by creating a 1x1 cube around the camera and applying a texture to each of the internal
+faces of the cube. The location is translated along with the camera every frame so that the player is always able to see it.
+The final requirement was to render the cube first per frame and with the depth buffer disabled so that all other objects
+drawn appear in front of it.
 {{< whiteLine >}}
 {{< lazyimg src="/img/bbr/skybox.png" class="lazyimg" >}}
 {{< whiteLine >}}
 
 
-### Game Logic (Shared)
-I Helped Peter implement game logic in LUA, such as level transitions and ball movement and control.
-I Added scripts for in-game menu interactions/HUD, scoring, and polish such as models in the game.
+### Game Logic (Partial)
+
+The game logic was implemented using LUA and allowed us to use LUA's table structures to have a form of class like data structures.
+I helped Peter implement game logic, such as level transitions and ball movement/control. I also created scripts 
+for in-game menu interactions/HUD, scoring, and polish such as models in the game.
 {{< whiteLine >}}
 {{< lazyimg src="/img/bbr/logic.png" class="lazyimg" >}}
 {{% /centre %}}
