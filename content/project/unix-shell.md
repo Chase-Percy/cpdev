@@ -22,9 +22,8 @@ bigimg: [{src: "/img/unix/banner.png"}]
 Chase Percy  
 __[Nunzia Sorrentino](https://au.linkedin.com/in/nunzia-sorrentino-bbb393111)__
 {{< whiteLine >}}
-## Repo
-__[Unix Shell](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac3098a5c72e3/ICT374/)__   
-(Hosted through GitFront instead of a public GitHub repo to help prevent plagiarism)
+## Source Code
+__[Unix Shell Repo](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac3098a5c72e3/ICT374/)__   
 {{< whiteLine >}}
 ## Project Planning and Tools
 {{% /centre %}}
@@ -48,9 +47,10 @@ __[Unix Shell](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac3098a5c
 {{< whiteLine >}}
 
 {{< lazyimg src="/img/unix/kanban.png" >}}
-
+{{< whiteLine >}}
 {{< line >}}
 {{% centre %}}
+{{< whiteLine >}}
 ## Features developed by me
 {{< whiteLine >}}
 ### Tokenization

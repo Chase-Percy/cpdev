@@ -16,17 +16,16 @@ bigimg: [{src: "/img/ta/banner.webp"}]
 ## A diablo inspired dungeon crawler
 
 {{< youtube WlOtn7QeDh0 >}}
-
+{{< whiteLine >}}
 {{< line >}}
-
+{{< whiteLine >}}
 ## Development Team
 Matthew Davis  
 Michael John  
 Chase Percy  
 {{< whiteLine >}}
-## Repo
-__[The Arcanist](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/)__  
-(Hosted through GitFront instead of a public GitHub repo to help prevent plagiarism)
+## Source Code
+__[The Arcanist Repo](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/)__  
 {{< whiteLine >}}
 ## Project Planning and Tools
 {{% /centre %}}
@@ -49,8 +48,9 @@ __[The Arcanist](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c51
 
 
 {{< gallery dir="/img/ta/project/" />}}
-
+{{< whiteLine >}}
 {{< line >}}
+{{< whiteLine >}}
 {{% centre %}}
 ## Features developed by me
 

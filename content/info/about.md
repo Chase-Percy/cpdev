@@ -41,7 +41,7 @@ and teaching skills, showing patience and understanding while helping others dev
 Group work and leadership come naturally to me, encouraging others and making them feel welcome,
 which is an aspect of IT that I enjoy, even if it means slowing down my progress.
 
-Outside of the tech world, I am happily married with two cats and love music. The guitar
+Outside the tech world, I am happily married with two cats and love music. The guitar
 is one of my other passions that I invest a lot of my time and attention. I'm laid back and easygoing, happily doing 
 my own thing and living a simple and quiet life.
 

@@ -17,9 +17,9 @@ bigimg: [{src: "/img/bbr/banner.png"}]
  A Marbles and monkey ball inspired game
 {{< /centreText >}}
 {{< youtube 2XUEb0cKoXo >}}
-
+{{< whiteLine >}}
 {{< line >}}
-
+{{< whiteLine >}}
 {{< centreText h="2" >}}
 Development Team
 {{< /centreText >}}
@@ -31,8 +31,8 @@ Chase Percy
 
 {{< whiteLine >}}
 
-## Repo
-__[Big Balls Roll](https://github.com/MajorArkwolf/BigBallsRoll)__
+## Source Code
+__[Big Balls Roll Repo](https://github.com/MajorArkwolf/BigBallsRoll)__
 
 {{< whiteLine >}}
 
@@ -59,9 +59,9 @@ __[Big Balls Roll](https://github.com/MajorArkwolf/BigBallsRoll)__
 {{< whiteLine >}}
 
 {{< lazyimg src="/img/bbr/kanban.png" class="lazyimg" >}}
-
+{{< whiteLine >}}
 {{< line >}}
-
+{{< whiteLine >}}
 {{% centre %}}
 ## Features developed by me
 {{< whiteLine >}}
