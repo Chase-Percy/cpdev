@@ -16,3 +16,7 @@ Feel free to send me an email or message if you have any questions, or you are i
 ### Message:
 {{% /centre %}}
 {{< form >}}
+
+{{< centre >}}
+    <b><a href="/info/legal/privacy_policy">Privacy Policy</a></b>
+{{< /centre >}}
