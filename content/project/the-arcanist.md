@@ -93,7 +93,7 @@ the bounds of the map or walk through obstacles and that projectiles would explo
 A room generation and Map generation algorithm I made was used to randomly generate a map with a set amount of rooms
 and a range of possible obstacle densities.
 
-__[Further Reading](http://localhost:1313/post/map-generation/)__
+__[Further Reading]({{< ref "/post/map-generation.md" >}})__
 {{< whiteLine >}}
 
 {{< lazyimg src="/img/ta/map.png" class="lazyimg" >}}

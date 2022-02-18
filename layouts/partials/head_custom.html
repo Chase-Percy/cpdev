@@ -37,3 +37,7 @@
  <link rel="stylesheet" href="{{ "css/photoswipe.min.css" | absURL }}" />
  <link rel="stylesheet" href="{{ "css/photoswipe.default-skin.min.css" | absURL }}" />
 {{ end }}
+
+{{ if eq .Title "Secret Cat Page" }}
+    <link rel="stylesheet" href="{{ "css/cat.css" | absURL }}" />
+{{ end }}

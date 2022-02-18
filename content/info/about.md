@@ -68,6 +68,8 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
 * BCs Science Double majoring in:
   * Computer Science
   * Games Technology
+* 3.8 GPA
+* Academic Excellence Award
 {{< column >}}
 ### IT Interests
 * Algorithms
@@ -119,6 +121,28 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
 * Windows
 * Linux (Native Ubuntu & WSL2/WSLG)
 {{< column >}}
-
+### Life Experience
+* 9 years of work experience (non IT)
+* Happily married
+* Moved to live in Australia in 2015
  
+{{< endcolumns >}}
+{{< whiteLine >}}
+{{< line >}}
+
+{{< whiteLine >}}
+{{% centre %}}
+## What I can offer you
+{{< whiteLine >}}
+{{% /centre %}}
+{{< columns >}}
+- Strong work ethic
+- Problem-solving orientated mind
+- Open two-way communication
+- The ability to self learn and learn from others
+{{< column >}}
+- A relaxed, positive, and friendly personality
+- A passion for helping others
+- Strong interest in all things IT
+- Pictures of my cute __[cats]({{< ref "/project/secretCatPage.md" >}})__ :smile:
 {{< endcolumns >}}
