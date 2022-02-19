@@ -69,7 +69,7 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
   * Computer Science
   * Games Technology
 * 3.933 GPA
-* Academic Excellence Award
+* Vice Chancellor's Commendation for Academic Excellence Award
 {{< column >}}
 ### IT Interests
 * Algorithms
