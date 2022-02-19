@@ -68,7 +68,7 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
 * BCs Science Double majoring in:
   * Computer Science
   * Games Technology
-* 3.8 GPA
+* 3.933 GPA
 * Academic Excellence Award
 {{< column >}}
 ### IT Interests
