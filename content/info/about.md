@@ -139,10 +139,12 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
 - Strong work ethic
 - Problem-solving orientated mind
 - Open two-way communication
-- The ability to self learn and learn from others
+- The ability to self learn and learn from others  
+
 {{< column >}}
 - A relaxed, positive, and friendly personality
 - A passion for helping others
-- Strong interest in all things IT
+- An eye for detail
 - Pictures of my cute __[cats]({{< ref "/project/secretCatPage.md" >}})__ :smile:
+
 {{< endcolumns >}}

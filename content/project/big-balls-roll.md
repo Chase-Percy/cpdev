@@ -46,6 +46,7 @@ __[Big Balls Roll Repo](https://github.com/MajorArkwolf/BigBallsRoll)__
   - Git flow model
   - Git LFS
   - Branch Protection
+
 {{< column >}}
 - CI/CD
   - Travis CI (1/2 the unit)
@@ -54,6 +55,7 @@ __[Big Balls Roll Repo](https://github.com/MajorArkwolf/BigBallsRoll)__
   - Automated unit tests
 - Doxygen
 - LLVM Style Guide
+
 {{< endcolumns >}}
 
 {{< whiteLine >}}

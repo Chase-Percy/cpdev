@@ -35,6 +35,7 @@ __[Unix Shell Repo](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac30
 - Build Generation
   - Make
   - CMake
+
 {{< column >}}
 - CI/CD
   - GitHub Actions
@@ -42,6 +43,7 @@ __[Unix Shell Repo](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac30
   - Valgrind memcheck
   - Make generation testing
 - Kanban Board
+
 {{< endcolumns >}}
 
 {{< whiteLine >}}

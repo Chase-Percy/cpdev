@@ -37,6 +37,7 @@ __[The Arcanist Repo](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec88
   - Git LFS
   - Branch Protection
 - Peer code review
+
 {{< column >}}
 - CI/CD
   - GitHub Actions
@@ -44,6 +45,7 @@ __[The Arcanist Repo](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec88
   - Automated unit tests (Gtest)
   - Clang-format
 - Doxygen
+
 {{< endcolumns >}}
 
 
