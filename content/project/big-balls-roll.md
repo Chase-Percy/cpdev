@@ -43,7 +43,7 @@ __[Big Balls Roll Repo](https://github.com/MajorArkwolf/BigBallsRoll)__
 - Weekly meetings
 - Kanban Board
 - Git with GitHub for source control
-  - Git flow model
+  - __[Git Flow Model]({{< ref "/post/gitflow.md" >}})__
   - Git LFS
   - Branch Protection
 

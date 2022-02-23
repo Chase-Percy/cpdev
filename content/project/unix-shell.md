@@ -30,7 +30,7 @@ __[Unix Shell Repo](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac30
 {{< columns >}}
 - Weekly meetings
 - Git with GitHub for source control
-  - Git flow model
+  - __[Git Flow Model]({{< ref "/post/gitflow.md" >}})__
   - Branch Protection
 - Build Generation
   - Make

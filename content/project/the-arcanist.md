@@ -33,7 +33,7 @@ __[The Arcanist Repo](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec88
 - Weekly meetings
 - Kanban Board
 - Git with GitHub for source control
-  - Git flow model
+  - __[Git Flow Model]({{< ref "/post/gitflow.md" >}})__
   - Git LFS
   - Branch Protection
 - Peer code review
