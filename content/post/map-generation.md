@@ -1,5 +1,5 @@
 ---
-title: "Map Generation"
+title: "Random Map Generation"
 author: "Chase Percy"
 type: ""
 date: 2022-01-24T16:43:11+08:00
