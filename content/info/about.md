@@ -130,7 +130,7 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
 ### Life Experience
 * 9 years of work experience (non IT)
 * Happily married
-* Moved to live in Australia in 2015
+* Moved from New Zealand to Australia in 2015
  
 {{< endcolumns >}}
 {{< whiteLine >}}
