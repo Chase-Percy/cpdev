@@ -69,7 +69,7 @@ bigimg: [{src: "/img/cats/toby_1.jpg"}]
 
 {{< whiteLine >}}
 
-{{< lazyimg src="/img/cats/c9" class="lazyimg" >}}
+{{< lazyimg src="/img/cats/c9.jpg" class="lazyimg" >}}
 
 {{< whiteLine >}}
 
