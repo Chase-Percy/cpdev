@@ -43,6 +43,10 @@ hr.black {
     border: 1px #282828;
 }
 
+img.rounded {
+    border-radius: 25px;
+}
+
 div.endColumns {
     clear: both;
 }
