@@ -1,4 +1,4 @@
-<hr class="transparent">
+<div class="spacer"></div>
 <article class="post-preview">
     <a href="{{ .Permalink }}">
     {{ if .Params.image }}
@@ -22,7 +22,7 @@
         {{ end }}
     </a>
 
-    <hr class="transparent">
+    <div class="spacer"></div>
     <div class="post-entry">
         {{ if .Truncated }}
         {{ .Summary }}
@@ -31,7 +31,7 @@
         {{ .Content }}
         {{ end }}
     </div>
-    <hr class="transparent">
+    <div class="spacer"></div>
     {{ if .Params.tags }}
     <div class="blog-tags">
         {{ range .Params.tags }}
