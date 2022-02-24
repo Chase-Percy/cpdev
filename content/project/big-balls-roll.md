@@ -15,6 +15,7 @@ bigimg: [{src: "/img/bbr/banner.png"}]
 
 {{< centreText h="2" >}}
  A Marbles and monkey ball inspired game
+ {{< whiteLine >}}
 {{< /centreText >}}
 {{< youtube 2XUEb0cKoXo >}}
 {{< whiteLine >}}

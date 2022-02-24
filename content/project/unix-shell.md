@@ -14,7 +14,9 @@ bigimg: [{src: "/img/unix/banner.png"}]
 {{< whiteLine >}}
 {{% centre %}}
 ## A minimal but complete unix shell
--- Todo: add video
+{{< whiteLine >}}
+{{< youtube bSUyzbG0CxU >}}
+{{< whiteLine >}}
 
 {{< line >}}
 {{< whiteLine >}}
