@@ -1,43 +1,48 @@
 <link rel='stylesheet' type='text/css' href="{{.Site.BaseURL}}css/cp-dev.css">
 
 {{ if or (eq .Title "A*") (eq .Title "Cellular Automata") }}
-<style>
-    #renderCanvas {
-        width: auto;
-        max-width: 768px;
-        margin-right: auto;
-        margin-left: auto;
-        height: auto;
-        min-height: 480px;
-        touch-action: none;
-    }
-
-    @media only screen and (max-width: 767px) {
+    <style>
         #renderCanvas {
-                width: 100%;
-                max-width: 767px;
-                margin-right: auto;
-                margin-left: auto;
-                height: auto;
-                min-height: 280px;
-                touch-action: none;
-            }
-    }
-</style>
+            width: auto;
+            max-width: 768px;
+            margin-right: auto;
+            margin-left: auto;
+            height: auto;
+            min-height: 480px;
+            touch-action: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+            #renderCanvas {
+                    width: 100%;
+                    max-width: 767px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    height: auto;
+                    min-height: 280px;
+                    touch-action: none;
+                }
+        }
+    </style>
 {{ end }}
 
 {{ if eq .Title "Contact Details" }}
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link href="{{.Site.BaseURL}}css/contactDetails.css" rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="{{.Site.BaseURL}}css/contactDetails.css" rel='stylesheet' type='text/css'>
 {{ end }}
 
 {{ if eq .Title "CP-DEV" }}
-<link rel='stylesheet' href="{{.Site.BaseURL}}css/tiny-slider.css" type='text/css'>
+    <link rel='stylesheet' href="{{.Site.BaseURL}}css/tiny-slider.css" type='text/css'>
+    <link rel='stylesheet' href="{{.Site.BaseURL}}css/typewriter.css" type='text/css'>
 {{ else }}
- <link rel="stylesheet" href="{{ "css/photoswipe.min.css" | absURL }}" />
- <link rel="stylesheet" href="{{ "css/photoswipe.default-skin.min.css" | absURL }}" />
+    <link rel="stylesheet" href="{{ "css/photoswipe.min.css" | absURL }}" />
+    <link rel="stylesheet" href="{{ "css/photoswipe.default-skin.min.css" | absURL }}" />
 {{ end }}
 
 {{ if eq .Title "Secret Cat Page" }}
     <link rel="stylesheet" href="{{ "css/cat.css" | absURL }}" />
+{{ end }}
+
+{{ if or (eq .Title "CP-DEV") (eq .Title "Creating a Website") (eq .Title "About") (eq .Title "Contact Details") }}
+    <link rel='stylesheet' href="{{.Site.BaseURL}}css/birds.css" type='text/css'>
 {{ end }}
