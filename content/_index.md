@@ -6,13 +6,13 @@ title: "CP-DEV"
 {{< centreText h="3">}} Welcome to CP-DEV, a platform for me to share who I am, what I do,
  and where I'm going! {{< /centreText >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< line >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< centreText h="1" >}} Projects {{< /centreText >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< slider >}}
 
@@ -23,8 +23,8 @@ title: "CP-DEV"
 
 {{< /slider >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< line >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< centreText h="1" >}} Posts {{< /centreText >}}

@@ -47,7 +47,7 @@ These included:
 - The door coordinates.
 - A seed.
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< details title="Room Constructor" dClass="dark" sClass="dark" >}}
 {{< highlight cpp >}}
 /**
@@ -124,7 +124,7 @@ gameRoom::gameRoom(int x,
 }
 {{< /highlight >}}
 {{</details>}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 After room generation had been successfully implemented more planning was done to figure out how to create levels from these
 randomly generated rooms.
@@ -137,9 +137,9 @@ The first issue was resolved by placing the rooms within a 50 by 50 grid in a ra
 to be at the center of the grid and always of the same size. This was treated as the spawn room for that level and contained no
 obstacles that had collision, only a trapdoor that opened once enough enemies were defeated.
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/ta/portal.png" >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 After placing the spawn room, new rooms were then randomly placed relative to the last room that was successfully placed.
 The rooms were placed relative to the last successfully placed room to create a better flow to the map and ensure it wasn't too
@@ -165,7 +165,7 @@ The algorithm worked as follows:
     - Else if the locations to the right aren't blocked; move forward on the first open space.
     - Else delete the obstacle directly in front and move forward.
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< details title="Algorithm Implementation" dClass="dark" sClass="dark" >}}
 {{< highlight cpp >}}
 
@@ -240,7 +240,7 @@ void gameRoom::walkRoom(std::pair<int, int> start, direction doorAxis) {
 }
 {{< /highlight >}}
 {{</details>}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 Once this has been completed for all doors/walls in the room, then it is guaranteed that there will be a path through the room as the
 paths walked through the room create a cross.
@@ -264,7 +264,7 @@ Stress testing was also performed by generating and rendering new maps every sec
 This test allowed a benchmark performance as more features were added and also lead to the discovery of a rare
 edge case crash that I was able to fix.
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< details title="Testing Snippet" dClass="dark" sClass="dark" >}}
 {{< highlight cpp >}}
@@ -359,5 +359,5 @@ TEST(RoomGenerationTest, TestWallPoints_zOne) {
 ## The Result
 In the end the map generation worked great, and I was pleased with the solution I created within the timeframe and knowledge I had.
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< youtube iFozMHvnna0 >}}

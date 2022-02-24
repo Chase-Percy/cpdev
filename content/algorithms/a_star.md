@@ -11,7 +11,7 @@ bigimg: [{src: "/img/algo/banner.png"}]
 
 {{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< button href="/project/algorithms/" class="game centre" >}} Algorithms {{< /button >}}
 
 {{% centre ul="centreUl" %}}

@@ -11,22 +11,22 @@ bigimg: [{src: "/img/unix/banner.png"}]
 
 {{< lazyimg src="/img/unix/icons.png" title="C | GITHUB" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{% centre %}}
 ## A minimal but complete unix shell
-{{< whiteLine >}}
+{{< spacer >}}
 {{< youtube bSUyzbG0CxU >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< line >}}
-{{< whiteLine >}}
+{{< spacer >}}
 ## Development Team
 Chase Percy  
 __[Nunzia Sorrentino](https://au.linkedin.com/in/nunzia-sorrentino-bbb393111)__
-{{< whiteLine >}}
+{{< spacer >}}
 ## Source Code
 __[Unix Shell Repo](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac3098a5c72e3/ICT374/)__   
-{{< whiteLine >}}
+{{< spacer >}}
 ## Project Planning and Tools
 {{% /centre %}}
 {{< columns >}}
@@ -48,45 +48,45 @@ __[Unix Shell Repo](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac30
 
 {{< endcolumns >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/unix/kanban.png" >}}
-{{< whiteLine >}}
+{{< spacer >}}
 {{< line >}}
 {{% centre %}}
-{{< whiteLine >}}
+{{< spacer >}}
 ## Features developed by me
-{{< whiteLine >}}
+{{< spacer >}}
 ### Tokenization
 The tokenizer is responsible for transforming user input into a format that can be processed when the program creates
 commands from the input.
 For the tokenization process I wanted to ensure that it would be able to scale for any future requirements or larger
 input from a user. To cater for this a vector like data structure was created and used when processing and storing user
 input.
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/unix/tokenization.png" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 ### Wildcards
 Both the * and ? wildcards are supported and are expanded during the tokenization process.
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/unix/wildcard.png" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 ### Command Creation
 Command creation is the process of converting the tokens into a format that can be processed by the shell. This takes
 into account the `? & ;` separators and separates commands appropriately.
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/unix/command.png" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 ### Shell Built-ins
 CD, Change the shell prompt, and exit were provided as built in shell commands that were executed from the parent
 shell. The only built-in that was executed in a child process was the PWD command so that it's output could be used
 with file redirection and piping between processes.
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/unix/built-ins.png" >}}
 {{% /centre %}}

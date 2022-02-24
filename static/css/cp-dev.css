@@ -34,15 +34,6 @@ hr.transparent {
     border: transparent;
 }
 
-hr.black {
-    display: block;
-    color: #282828;
-    overflow: hidden;
-    height: 3px;
-    background-color: #282828;
-    border: 1px #282828;
-}
-
 img.rounded {
     border-radius: 25px;
 }

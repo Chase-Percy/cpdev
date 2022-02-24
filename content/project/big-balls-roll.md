@@ -11,16 +11,16 @@ bigimg: [{src: "/img/bbr/banner.png"}]
 
 {{< lazyimg src="/img/bbr/icons.png" class="lazyimg" title="C | LUA | CMAKE | GITHUB" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< centreText h="2" >}}
  A Marbles and monkey ball inspired game
- {{< whiteLine >}}
+ {{< spacer >}}
 {{< /centreText >}}
 {{< youtube 2XUEb0cKoXo >}}
-{{< whiteLine >}}
+{{< spacer >}}
 {{< line >}}
-{{< whiteLine >}}
+{{< spacer >}}
 {{< centreText h="2" >}}
 Development Team
 {{< /centreText >}}
@@ -30,12 +30,12 @@ Peter Crabbe
 Matthew Davis  
 Chase Percy  
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 ## Source Code
 __[Big Balls Roll Repo](https://github.com/MajorArkwolf/BigBallsRoll)__
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 ## Project Planning and Tools
 {{% /centre %}}
@@ -59,24 +59,24 @@ __[Big Balls Roll Repo](https://github.com/MajorArkwolf/BigBallsRoll)__
 
 {{< endcolumns >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/bbr/kanban.png" class="lazyimg" >}}
-{{< whiteLine >}}
+{{< spacer >}}
 {{< line >}}
-{{< whiteLine >}}
+{{< spacer >}}
 {{% centre %}}
 ## Features developed by me
-{{< whiteLine >}}
+{{< spacer >}}
 ### Texture Manager
 
 A simple texture manager that was responsible for loading textures 
 dynamically during runtime and through preloading at engine start 
 up. The manager was responsible for storing texture ID's and providing them
 when a texture was requested. __[STB_IMAGE](https://github.com/nothings/stb/blob/master/stb_image.h)__ was used to load textures from PNG and JPG filetypes.
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/bbr/tm.png" class="lazyimg" >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 
 ### Physics Debug Renderer
@@ -85,9 +85,9 @@ A debug renderer to show the Bounding boxes of the physics objects
 within the scene. A vector data structure was implemented so that
 debug data could be inserted dynamically without having to first check
 the number of collision bodies were in the scene.
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/bbr/debug.png" >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 
 ### GUI
@@ -95,9 +95,9 @@ the number of collision bodies were in the scene.
 The GUI was implemented using the __[Nuklear](https://github.com/Immediate-Mode-UI/Nuklear)__ immediate mode GUI 
 library. With minimal documentation it was quite a challenge to implement, and at multiple times I was required to read 
 through hundreds of lines of source code to figure out why something wasn't behaving as expected.
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/bbr/gui.png" class="lazyimg" >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 ### Skybox
 
@@ -105,9 +105,9 @@ The skybox was implemented by creating a 1x1 cube around the camera and applying
 faces of the cube. The location is translated along with the camera every frame so that the player is always able to see it.
 The final requirement was to render the cube first per frame and with the depth buffer disabled so that all other objects
 drawn appear in front of it.
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/bbr/skybox.png" class="lazyimg" >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 
 ### Game Logic (Partial)
@@ -115,6 +115,6 @@ drawn appear in front of it.
 The game logic was implemented using LUA and allowed us to use LUA's table structures to have a form of class like data structures.
 I helped Peter implement game logic, such as level transitions and ball movement/control. I also created scripts 
 for in-game menu interactions/HUD, scoring, and polish such as models in the game.
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/bbr/logic.png" class="lazyimg" >}}
 {{% /centre %}}

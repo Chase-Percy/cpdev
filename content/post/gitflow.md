@@ -18,13 +18,13 @@ and basic structure it provides for a project.
 
 <!--more-->
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< lazyimg src="/img/post/gitflow_c.png" height="70%" width="70%" class="lazyimg" >}}
 {{% centre %}}
 Vincent Driessen __|__ __[A Successful Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)__ __|__ __[Creative Commons BY-SA](https://creativecommons.org/licenses/by-sa/2.0/)__
 {{% /centre %}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 The model is quite self-explanatory, the image above encompasses the simplistic nature of the model and shows how a group of aspiring
 developers can easily understand the branching requirements for the project. There are times though where inexperience lead
 to a few chaining monolithic branches, or merges that went against the strict policies this model has in place, but for the most part

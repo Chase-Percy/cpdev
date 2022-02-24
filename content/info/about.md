@@ -10,12 +10,12 @@ bigimg: [{src: "/img/trees.jpg"}]
 ---
 
 {{< lazyimg src="/img/Chase_c.jpg" img-class="rounded" class="lazyimg about" >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{% centre %}}
 ## A bit about me
 {{% /centre %}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 My name is Chase Percy, and I am a third-year student at Murdoch University studying a bachelor of science double 
 majoring in Computer Science and Games Technology.
@@ -48,25 +48,25 @@ my own thing and living a simple and quiet life.
 
 Anyway, now for some more specific information below :smile:
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< line >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{% centre %}}
 ### CV
 
 __[Chase Percy - CV (Not Active)]()__
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 ### Academic Transcript
 
 __[Chase Percy - Academic Transcript (Not Active)]()__
 {{% /centre %}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< line >}}
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< columns >}}
 ### Education
@@ -87,7 +87,7 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
 {{< endcolumns >}}
 
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< columns >}}
 ### Development Tools
@@ -120,7 +120,7 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
  * Oracle SQL
 {{< endcolumns >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< columns >}}
 ### Operating System Experience
@@ -133,13 +133,13 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
 * Moved from New Zealand to Australia in 2015
  
 {{< endcolumns >}}
-{{< whiteLine >}}
+{{< spacer >}}
 {{< line >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{% centre %}}
 ## What I can offer you
-{{< whiteLine >}}
+{{< spacer >}}
 {{% /centre %}}
 {{< columns >}}
 - Strong work ethic

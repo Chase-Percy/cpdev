@@ -11,10 +11,10 @@ bigimg: [{src: "/img/algo/banner.png"}]
 
 {{< lazyimg src="/img/algo/icons.png" class="lazyimg" title="JAVASCRIPT | BABYLON JS" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{< button href="/project/algorithms/" class="game centre" >}} Algorithms {{< /button >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 {{% centre ul="centreUl" %}}
 #### Rules & shapes can be found [here!](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 

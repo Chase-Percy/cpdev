@@ -11,67 +11,67 @@ bigimg: [{src: "/img/cats/toby_1.jpg"}]
 
 {{% centre %}}
 # Welcome to the secret cat page, here you may worship Toby and Olive :smile:
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< line >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 ## Scaredy boy: Toby
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/toby_2.jpg" class="lazyimg" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< line >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 ## The true queen: Olive
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/olive_1.jpg" class="lazyimg" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< line >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 ## And some final cat spam, enjoy!
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/c3.jpg" class="lazyimg" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/c4.jpg" class="lazyimg" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/c5.jpg" class="lazyimg" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/c6.jpg" class="lazyimg" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/c7.jpg" class="lazyimg" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/c8.jpg" class="lazyimg" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/c9.jpg" class="lazyimg" >}}
 
-{{< whiteLine >}}
+{{< spacer >}}
 
 {{< lazyimg src="/img/cats/c10.jpg" class="lazyimg" >}}
 
