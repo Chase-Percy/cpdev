@@ -25,13 +25,10 @@ hr.main::before {
           -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
 }
 
-hr.transparent {
-    display: block;
-    color: transparent;
-    overflow: hidden;
+.spacer {
     height: 3px;
-    background-color: transparent;
-    border: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 img.rounded {
