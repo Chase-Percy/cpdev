@@ -47,6 +47,18 @@ img.rounded {
     border-radius: 25px;
 }
 
+.about {
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+@media only screen and (max-width: 528px) {
+  .about {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
 div.endColumns {
     clear: both;
 }

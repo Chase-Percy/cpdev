@@ -9,7 +9,7 @@ tags: []
 bigimg: [{src: "/img/trees.jpg"}]
 ---
 
-{{< lazyimg src="/img/Chase_c.jpg" img-class="rounded" class="lazyimg" >}}
+{{< lazyimg src="/img/Chase_c.jpg" img-class="rounded" class="lazyimg about" >}}
 {{< whiteLine >}}
 
 {{% centre %}}
