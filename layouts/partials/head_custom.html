@@ -31,7 +31,7 @@
     <link href="{{.Site.BaseURL}}css/contactDetails.css" rel='stylesheet' type='text/css'>
 {{ end }}
 
-{{ if eq .Title "CP-DEV" }}
+{{ if (.IsHome) }}
     <link rel='stylesheet' href="{{.Site.BaseURL}}css/tiny-slider.css" type='text/css'>
     <link rel='stylesheet' href="{{.Site.BaseURL}}css/typewriter.css" type='text/css'>
 {{ else }}
@@ -43,6 +43,6 @@
     <link rel="stylesheet" href="{{ "css/cat.css" | absURL }}" />
 {{ end }}
 
-{{ if or (eq .Title "CP-DEV") (eq .Title "Creating a Website") (eq .Title "About") (eq .Title "Contact Details") }}
+{{ if or (.IsHome) (eq .Title "Creating a Website") (eq .Title "About") (eq .Title "Contact Details") }}
     <link rel='stylesheet' href="{{.Site.BaseURL}}css/birds.css" type='text/css'>
 {{ end }}
