@@ -8,7 +8,6 @@ image: ""
 tags: []
 bigimg: [{src: "/img/ta/banner.webp"}]
 ---
-
 {{< lazyimg src="/img/ta/icons.png" class="lazyimg" title="CPP | CMAKE | GITHUB" class="lazyimg" >}}
 
 {{< spacer >}}
@@ -85,15 +84,15 @@ animations, input handling, level transitions, shadows, collision particles, etc
 {{< spacer >}}
 
 ### Collision Detection
-Basic collision detection was used with data provided from map generation. This was used to ensure AI stayed within
-the bounds of the map or walk through obstacles and that projectiles would explode on impacting something. 
+Basic collision detection was used with data provided from map generation. This ensured the AI stayed within
+the bounds of the map or walk through obstacles, and that projectiles would explode on impacting something. 
 {{< spacer >}}
 {{< youtube EzsScwbQ-j0  >}}
 {{< spacer >}}
 
 ### Seeded Map Generation
-A room generation and Map generation algorithm I made was used to randomly generate a map with a set amount of rooms
-and a range of possible obstacle densities.
+A room generation and Map generation algorithm I made was used to generate a map with a set amount of rooms randomly
+and a place range of possible obstacles within.
 
 __[Further Reading]({{< ref "/post/map-generation.md" >}})__
 {{< spacer >}}
@@ -104,9 +103,8 @@ __[Further Reading]({{< ref "/post/map-generation.md" >}})__
 ### Connection Between Game State & AI  
 The AI and game state were associated through game objects which were updated to match the location
 and rotation of AI entities. Appropriate associated models were mapped to these objects and were kept
-independent of the AI entities themselves. This was so if an AI entity was killed the object would
-still exist, but now represent a dead enemy at the AI entities last location. I also helped adjust the AI to better
-navigate the rooms and refined certain features such as collisions and tweaking movement values.
+independent of the AI entities themselves. If an AI entity was killed, the object would
+still exist but now represent a dead enemy at the AI entity's last location. I also helped adjust the AI to navigate better around the rooms and refined features such as collisions and tweaking movement values.
 {{< spacer >}}
 {{< lazyimg src="/img/ta/integration.png" class="lazyimg" >}}
 {{% /centre %}}

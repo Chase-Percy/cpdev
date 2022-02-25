@@ -8,7 +8,6 @@ image: ""
 tags: []
 bigimg: [{src: "/img/unix/banner.png"}]
 ---
-
 {{< lazyimg src="/img/unix/icons.png" title="C | GITHUB" >}}
 
 {{< spacer >}}
@@ -60,9 +59,9 @@ __[Unix Shell Repo](https://gitfront.io/r/cp-dev/10f2867377fcb983d308959b7c5ac30
 ### Tokenization
 The tokenizer is responsible for transforming user input into a format that can be processed when the program creates
 commands from the input.
-For the tokenization process I wanted to ensure that it would be able to scale for any future requirements or larger
-input from a user. To cater for this a vector like data structure was created and used when processing and storing user
-input.
+For the tokenization process, I wanted to ensure that it would scale for any future requirements or larger
+input from a user. A vector-like data structure was created and used when processing and storing user
+input to cater for this.
 {{< spacer >}}
 {{< lazyimg src="/img/unix/tokenization.png" >}}
 
@@ -76,16 +75,15 @@ Both the * and ? wildcards are supported and are expanded during the tokenizatio
 {{< spacer >}}
 
 ### Command Creation
-Command creation is the process of converting the tokens into a format that can be processed by the shell. This takes
-into account the `? & ;` separators and separates commands appropriately.
+Command creation is converting the tokens into a format that the shell can process. This considers the `? & ;` separators and separates commands appropriately.
 {{< spacer >}}
 {{< lazyimg src="/img/unix/command.png" >}}
 
 {{< spacer >}}
 
 ### Shell Built-ins
-CD, Change the shell prompt, and exit were provided as built in shell commands that were executed from the parent
-shell. The only built-in that was executed in a child process was the PWD command so that it's output could be used
+CD, Change the shell prompt, and exit is provided as built-in shell commands that were executed from the parent
+shell. The only built-in that was executed in a child process was the PWD command so that its output could be used
 with file redirection and piping between processes.
 {{< spacer >}}
 {{< lazyimg src="/img/unix/built-ins.png" >}}

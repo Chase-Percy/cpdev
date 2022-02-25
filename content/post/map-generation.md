@@ -8,10 +8,12 @@ image: "/img/ta/banner.webp"
 tags: []
 bigimg: [{src: "/img/ta/banner.webp"}]
 ---
-
+{{% centre %}}
 ## The Requirements
-- Design a random map generation algorithm to provide re-playability for the player.
-- The algorithm had to be fast enough to not hinder gameplay with excessive load times.
+{{% /centre %}}
+{{< spacer >}}
+- Design a random map generation algorithm to provide replayability for the player.
+- The algorithm had to be fast enough not to hinder gameplay with excessive load times.
 - It had to work with the AI component that was still under development.
   - Wall locations and dimensions.
   - Entities/Obstacles within each room.
@@ -19,26 +21,29 @@ bigimg: [{src: "/img/ta/banner.webp"}]
   - A guarantee that all rooms were accessible and that the AI and player could navigate between doors without being obstructed.
 - It had to be completed within a limited timeframe (2 weeks) alongside other game developments.
 - Allow different art assets to be swapped out easily.
-- Seeded so maps can be replayed.
+- Seeded map generation for replayability.
 <!--more-->
 
+{{< spacer >}}
 {{< line >}}
+{{< spacer >}}
 
+{{% centre %}}
 ## The Process
-
+{{< spacer >}}
 ### Planning
+{{% /centre %}}
 With limited time and a goal that I wasn't sure was possible, I began the process of planning how to go about creating random map
 generation. I decided that starting with the random generation of a 
-single room would be ideal. The reason I started smaller, was to treat it as proof of concept and to
+single room would be ideal. I started with a smaller scope to treat it as proof of concept and 
 judge if it was possible within the time constraints.
 
-I considered many options such as cellular automata but decided that a grid based approach would be quick and easy, as the assets we were using for dungeon creation were modular by design. 
-Another advantage with a grid based system was how easily it would be to generate the required data for the AI. Since the
-game only required information about the X and Z axis, the map data was easy to store in 2D arrays. Passing the data in 2D arrays
+I considered many options, such as cellular automata. Still, I decided that a grid-based approach would be quick and easy, as the assets we were using for dungeon creation were modular by design. 
+Another advantage of a grid-based system was how easy it would be to generate the required data for the AI. Since the
+game only needed information about the X and Z axis, the map data was easily stored in 2D arrays. Passing the data in 2D arrays
 to be processed by the AI gave us a simplified data structure that required no forward declarations for either component.
 
-Room generation was to be handled by a room object that creates itself given a set of parameters.   
-These included:
+Room generation involves a room object that creates itself given a set of parameters. These included:
 - Width/Length.
 - Percentage of the floor to randomly fill with obstacles.
 - Percentage of the walls to randomly decorate.
@@ -51,14 +56,14 @@ These included:
 {{< details title="Room Constructor" dClass="dark" sClass="dark" >}}
 {{< highlight cpp >}}
 /**
- * Generates a room given a x,z, an origin (bottom left), and a set of
+ * Generates a room given an x,z, an origin (bottom left), and a set of
  * models
- * @param x the size of the room on the x axis
- * @param z the size of the room on the z axis
- * @param wallFillPercent The percent of the walls to fill with decorations
+ * @param x the size of the room on the x-axis
+ * @param z the size of the room on the z-axis
+ * @param wallFillPercent The percentage of the walls to fill with decorations
  * @param floors the floors for the room, the first element is the default
  * floor
- * @param floorFillPercent The percent of the floor to fill with decoration.
+ * @param floorFillPercent The percentage of the floor to fill with decoration.
  * @param xOrigin the x origin of the room
  * @param zOrigin the z origin of the room
  * @param roomModels the models for the room
@@ -126,43 +131,43 @@ gameRoom::gameRoom(int x,
 {{</details>}}
 {{< spacer >}}
 
-After room generation had been successfully implemented more planning was done to figure out how to create levels from these
+After the successful implementation of room generation, I did more planning to figure out how to create levels from these
 randomly generated rooms.
 
-There were two major issues to consider when planning the level creation:
-- Every room in the level must be connected and accessible within the level.
-- Within each room there was a walkable path between all doors.
+There were two significant issues to consider when planning the level creation:
+- Every room within the level must be connected and accessible within the level.
+- Within each room, there was a walkable path between all doors.
 
-The first issue was resolved by placing the rooms within a 50 by 50 grid in a random order. The first room was guaranteed
-to be at the center of the grid and always of the same size. This was treated as the spawn room for that level and contained no
-obstacles that had collision, only a trapdoor that opened once enough enemies were defeated.
+The first issue was resolved by randomly placing the rooms within a 50 by 50 grid. The first room was guaranteed
+to be at the centre of the grid and always of the same size. This was treated as the spawn room for that level and contained no
+obstacles that had a collision, only a trapdoor that opened once enough enemies were defeated.
 
 {{< spacer >}}
 {{< lazyimg src="/img/ta/portal.png" >}}
 {{< spacer >}}
 
-After placing the spawn room, new rooms were then randomly placed relative to the last room that was successfully placed.
-The rooms were placed relative to the last successfully placed room to create a better flow to the map and ensure it wasn't too
+After placing the spawn room, new rooms were then randomly placed relative to the last successfully placed room.
+The rooms were placed relative to the previous successfully placed room to create a better flow to the map and ensure it wasn't too
 congested.
 
-Rooms were placed by multiplying the current rooms' origin with a random vector. Once placed three checks were performed:
-- Check the room is completely within the 50 x 50 grid.
+Rooms were placed by multiplying the current rooms' origin with a random vector. Once set, three checks were performed:
+- Check the room is entirely within the 50 x 50 grid.
 - Ensure the room isn't overlapping with any other room.
 - Ensure that the room was in-line with at least one other room.
 
 The reason for the final check was to ensure that all rooms were connected and that a corridor could be placed 
 perpendicularly between the two rooms. Although this solution wasn't ideal, it was a quick solution that provided acceptable results.
 
-Once all the rooms (about 8) have been placed the doors and corridors were randomly placed where two rooms were parallel.
-These doors were only placed on a rooms positive X/Z axis' to ensure that there was only one connection between two rooms.
+Once all the rooms (about 8) had been placed, the doors and corridors were randomly placed where two parallel rooms.
+These doors were only placed on a room's positive X/Z axis' to ensure only one connection between two rooms.
 
-After the doors were placed a simple algorithm was used to walk from each door to the opposite wall.  
+After the doors were placed, a simple algorithm was used to walk from each door to the opposite wall.  
 The algorithm worked as follows:
-- For each door (or wall if no door) in the room:
+- For each door (or a wall if no door) in the room:
   - Attempt to walk from the door/wall to the opposite wall.
-    - If the location in front is not blocked; move forward.
-    - Else if the locations to the left aren't blocked; move forward on the first open space.
-    - Else if the locations to the right aren't blocked; move forward on the first open space.
+    - If the location in front is not blocked, move forward.
+    - Else, if the locations to the left aren't blocked, move forward on the first open space.
+    - Else, if the locations to the right aren't blocked, move forward on the first open space.
     - Else delete the obstacle directly in front and move forward.
 
 {{< spacer >}}
@@ -249,20 +254,27 @@ Finally, the corridors were placed between doors to complete the level. Corridor
 and long enough to connect two doors. Corridors have no obstacles in them, and they also have no model for where the door should be,
 as it would overlap with the one provided by the room.
 
-### Development
-The process of creating random room generation happened fast with the initial plan and design came together cleanly. During the development 
-of this I had my group members review the code and suggest improvements to both design and performance. The development took around a week 
-and a half and was a fun and rewarding process.
+{{< spacer >}}
 
+{{% centre %}}
+### Development
+{{% /centre %}}
+Creating random room generation happened fast, with the initial plan and design coming together cleanly. During this development 
+I had my group members review the code and suggest improvements to design and performance. The development took around a week 
+and a half and was fun and rewarding.
+
+{{% centre %}}
 __[Source Code](https://gitfront.io/r/cp-dev/10d5e1649dea095933feec282ec8865c5173d144/ICT290/tree/src/scene/theArchanist/map/)__
 
+{{< spacer >}}
 ### Testing
+{{% /centre %}}
 Simple tests were written within the Google test framework. These tests ensured that room generation was creating the rooms
-correctly regarding the parameters passed in, such as ensuring correct dimensions.
+correctly regarding the parameters passed in, such as providing correct dimensions.
 
 Stress testing was also performed by generating and rendering new maps every second for several minutes.
-This test allowed a benchmark performance as more features were added and also lead to the discovery of a rare
-edge case crash that I was able to fix.
+This test allowed a benchmark performance as more features were added and led to the discovery of a rare
+edge case crash that I could fix.
 
 {{< spacer >}}
 
@@ -354,10 +366,14 @@ TEST(RoomGenerationTest, TestWallPoints_zOne) {
 {{< /highlight >}}
 {{</details>}}
 
+{{< spacer >}}
 {{< line >}}
+{{< spacer >}}
 
+{{% centre %}}
 ## The Result
-In the end the map generation worked great, and I was pleased with the solution I created within the timeframe and knowledge I had.
+{{% /centre %}}
+In the end, the map generation worked great, and I was pleased with the solution I created within the timeframe and knowledge I had.
 
 {{< spacer >}}
 {{< youtube iFozMHvnna0 >}}
