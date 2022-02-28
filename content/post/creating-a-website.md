@@ -38,3 +38,5 @@ I also use a Content-Security-Policy (CSP) to ensure only authorised content loa
 
 The website's design itself is minimal and basic, but for my first attempt at a website, I am quite happy with it. This website is 
 a platform for me to demonstrate what I can do and who I am, and because of that, I plan to keep developing it long into the future.
+
+Explore the source code here: __[Website Source Code](https://github.com/Chase-Percy/cpdev)__
