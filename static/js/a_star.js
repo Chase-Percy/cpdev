@@ -300,7 +300,7 @@ const createScene = function () {
 
     const scene = new BABYLON.Scene(engine);
 
-    let mapSize = 10;
+    let mapSize = 13;
     var camera = new BABYLON.UniversalCamera("UniversalCamera", new BABYLON.Vector3(-3, 12, mapSize / 2), scene);
     camera.setTarget(new BABYLON.Vector3(mapSize / 2, 0, mapSize / 2));
 
