@@ -8,7 +8,7 @@ image: ""
 tags: []
 bigimg: [{src: "/img/ta/banner.webp"}]
 ---
-{{< lazyimg src="/img/ta/icons.png" class="lazyimg" title="CPP | CMAKE | GITHUB" class="lazyimg" >}}
+{{< lazyimg src="/img/ta/icons.png" class="lazyimg" title="C++ | CMAKE | GITHUB" class="lazyimg" >}}
 
 {{< spacer >}}
 {{% centre %}}

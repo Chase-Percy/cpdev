@@ -72,10 +72,16 @@ enableEmoji = true
 
 [[menu.main]]
     parent = "Projects"
+    name = "Ant Game"
+    url = "project/ant-game"
+    weight = 5
+
+[[menu.main]]
+    parent = "Projects"
     identifier = "Algorithms"
     url = "project/algorithms"
     name = "Algorithms"
-    weight = 5
+    weight = 6
 
 [[menu.main]]
     name = "Contact"

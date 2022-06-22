@@ -20,6 +20,7 @@ title: "CP-DEV"
 {{< lazyimg src="img/home/ta.png" class="lazyimg" title="The Arcanist" link="project/the-arcanist">}}
 {{< lazyimg src="img/home/un.png" class="lazyimg" title="Unix Shell" link="project/unix-shell">}}
 {{< lazyimg src="img/home/Eco_Warriors.png" class="lazyimg" title="Eco Warriors" link="project/eco-warriors">}}
+{{< lazyimg src="img/home/ant.png" class="lazyimg" title="Ant Game" link="project/ant-game">}}
 {{< lazyimg src="img/home/a_star.png" class="lazyimg" title="Algorithms" link="project/algorithms">}}
 
 {{< /slider >}}
