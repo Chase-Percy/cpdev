@@ -14,7 +14,7 @@ bigimg: [{src: "/img/ant/banner.png"}]
 {{< spacer >}}
 
 {{< centreText h="2" >}}
- An Educational Adventure
+ A Random Assortment of Ideas
  {{< spacer >}}
 {{< /centreText >}}
 {{< youtube oCxbHj_EfVQ >}}
