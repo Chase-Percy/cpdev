@@ -75,7 +75,7 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
   * Computer Science
   * Games Technology
 * 3.933 GPA
-* Vice Chancellor's Commendation for Academic Excellence Award
+* Vice Chancellor's Commendation for Academic Excellence Award (2020 & 2021)
 {{< column >}}
 ### IT Interests
 * Algorithms
@@ -96,7 +96,6 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
 * GitHub
   * Repository hosting
   * Project management
-  * Kanban
   * Bug Tracking
 * Build System
   * Make
@@ -106,8 +105,9 @@ __[Chase Percy - Academic Transcript (Not Active)]()__
 * Documentation
   * Doxygen
   * Javadoc
-* Static Analyzer
-  * CPPCheck
+* Project Management
+  * GitHub Projects
+  * Trello
 {{< column >}}
 ### Development languages
  * C
