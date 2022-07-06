@@ -61,7 +61,10 @@ __[Chase Percy - CV (Not Active)]()__
 
 ### Academic Transcript
 
-__[Chase Percy - Academic Transcript (Not Active)]()__
+{{% download download="/downloadable/Academic_Record.png" filename="Chase Percy - Academic Transcript" %}}
+__Chase Percy - Academic Transcript__
+{{% /download %}}
+
 {{% /centre %}}
 
 {{< spacer >}}
