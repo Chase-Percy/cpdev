@@ -78,10 +78,16 @@ enableEmoji = true
 
 [[menu.main]]
     parent = "Projects"
+    name = "Machine Learning"
+    url = "project/machine-learning"
+    weight = 6
+
+[[menu.main]]
+    parent = "Projects"
     identifier = "Algorithms"
     url = "project/algorithms"
     name = "Algorithms"
-    weight = 6
+    weight = 7
 
 [[menu.main]]
     name = "Contact"
