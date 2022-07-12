@@ -84,10 +84,16 @@ enableEmoji = true
 
 [[menu.main]]
     parent = "Projects"
+    name = "Magazine Service"
+    url = "project/mag-service"
+    weight = 7
+
+[[menu.main]]
+    parent = "Projects"
     identifier = "Algorithms"
     url = "project/algorithms"
     name = "Algorithms"
-    weight = 7
+    weight = 8
 
 [[menu.main]]
     name = "Contact"
