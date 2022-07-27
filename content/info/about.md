@@ -55,7 +55,9 @@ Anyway, now for some more specific information below :smile:
 {{% centre %}}
 ### CV
 
-__[Chase Percy - CV (Not Active)]()__
+{{% download download="/downloadable/CV.pdf" filename="Chase Percy - CV" %}}
+__Chase Percy - CV__
+{{% /download %}}
 
 {{< spacer >}}
 
@@ -77,7 +79,7 @@ __Chase Percy - Academic Transcript__
 * BCs Science Double majoring in:
   * Computer Science
   * Games Technology
-* 3.933 GPA
+* 3.9 GPA
 * Vice Chancellor's Commendation for Academic Excellence Award (2020 & 2021)
 {{< column >}}
 ### IT Interests
